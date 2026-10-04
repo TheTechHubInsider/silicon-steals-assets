@@ -1,0 +1,42 @@
+# Silicon Steals - Robots Configuration
+# Optimized for Web Indexing and Generative AI Search Engine Ingestion
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Explicit permissions for leading Generative AI Search & Answer Engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Canonical Sitemaps & Machine-Readable AI Standards
+Sitemap: https://siliconsteals.com/sitemap.xml
+Sitemap: https://siliconsteals.com/llms.txt

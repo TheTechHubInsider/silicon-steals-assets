@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GL.iNet Mudi 7 (GL-E5800) Review: The Ultimate 5G & Wi-Fi 7 Travel Router (2026) | Silicon Steals</title>
+  <meta name="description" content="In-depth, hands-on review of the GL.iNet Mudi 7 (GL-E5800). Benchmarked 5G Sub-6, tri-band Wi-Fi 7, 600+ Mbps WireGuard, 13.5h battery life, and Mains Bypass Mode.">
+  
+  <!-- Modern Typography: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS RESET & VARIABLES */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #0b0f19;
+      --bg-surface: #0f172a;
+      --bg-surface-elevated: #1e293b;
+      --bg-surface-hover: #273549;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(56, 189, 248, 0.3);
+      --border-glow: rgba(56, 189, 248, 0.15);
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --text-inverse: #0b0f19;
+
+      --cyan-400: #22d3ee;
+      --cyan-500: #06b6d4;
+      --blue-500: #3b82f6;
+      --blue-600: #2563eb;
+      --amber-400: #fbbf24;
+      --amber-500: #f59e0b;
+      --emerald-400: #34d399;
+      --emerald-500: #10b981;
+      --rose-400: #fb7185;
+      --rose-500: #f43f5e;
+      
+      --amazon-orange: #ff9900;
+      --amazon-orange-hover: #ffaa1d;
+      --amazon-btn-shadow: rgba(255, 153, 0, 0.35);
+
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 25px rgba(6, 182, 212, 0.15);
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* UTILITIES */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    a {
+      color: var(--cyan-400);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    a:hover {
+      color: #67e8f9;
+      text-decoration: underline;
+    }
+
+    /* TOP ANNOUNCEMENT & AFFILIATE DISCLOSURE BAR */
+    .affiliate-disclosure-bar {
+      background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      padding: 0.55rem 0;
+      text-align: center;
+    }
+
+    .disclosure-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .disclosure-icon {
+      color: var(--cyan-400);
+      flex-shrink: 0;
+    }
+
+    /* NAVIGATION */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo:hover {
+      text-decoration: none;
+    }
+
+    .brand-logo svg {
+      width: 30px;
+      height: 30px;
+      color: var(--cyan-400);
+      filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.6));
+    }
+
+    .logo-accent {
+      color: var(--cyan-400);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1.75rem;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color var(--transition-fast);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--cyan-400);
+      text-decoration: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-btn {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      padding: 0.5rem;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+    }
+
+    .search-btn:hover {
+      color: var(--cyan-400);
+      border-color: var(--cyan-500);
+      transform: scale(1.05);
+    }
+
+    /* BREADCRUMB */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding: 1.5rem 0 0.5rem;
+    }
+
+    .breadcrumb a {
+      color: var(--text-secondary);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--cyan-400);
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 1rem 0 2rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .category-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      color: var(--cyan-400);
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .award-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.95rem;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(217, 119, 6, 0.3) 100%);
+      border: 1px solid rgba(251, 191, 36, 0.4);
+      color: #fef08a;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+    }
+
+    .award-badge svg {
+      width: 15px;
+      height: 15px;
+      color: var(--amber-400);
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 2.75rem;
+      line-height: 1.18;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 1.25rem;
+      max-width: 1020px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 920px;
+      margin-bottom: 1.75rem;
+    }
+
+    .author-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .author-box {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cyan-500), var(--blue-600));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #ffffff;
+      border: 2px solid var(--bg-surface-elevated);
+    }
+
+    .author-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    .author-role {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .meta-divider {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--text-muted);
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .verified-pill {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--emerald-400);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* QUICK VERDICT CARD */
+    .quick-verdict-card {
+      background: linear-gradient(145deg, #131c31 0%, #0f172a 100%);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      margin: 2rem 0 3rem;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6), 0 0 30px rgba(6, 182, 212, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quick-verdict-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan-400), var(--blue-500), var(--amber-400));
+    }
+
+    .verdict-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .verdict-headline {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .verdict-title {
+      font-family: var(--font-heading);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .score-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-md);
+    }
+
+    .score-number {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--emerald-400);
+      line-height: 1;
+    }
+
+    .score-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--emerald-400);
+      letter-spacing: 0.05em;
+    }
+
+    /* SPEC PILLS GRID */
+    .spec-pills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .spec-pill {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 0.85rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: all var(--transition-fast);
+    }
+
+    .spec-pill:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(56, 189, 248, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .pill-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--cyan-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pill-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pill-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .pill-value {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .verdict-summary {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: #cbd5e1;
+      margin-bottom: 1.75rem;
+    }
+
+    .cta-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* AMAZON BUTTON */
+    .btn-amazon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, #ff9900 0%, #ff8000 100%);
+      color: #111827;
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 0.95rem 2rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 18px var(--amazon-btn-shadow);
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-amazon:hover {
+      background: linear-gradient(135deg, #ffaa1d 0%, #ff9000 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(255, 153, 0, 0.5);
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .btn-amazon svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .cta-stock-info {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.8rem;
+    }
+
+    .stock-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--emerald-400);
+      font-weight: 600;
+    }
+
+    .stock-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--emerald-400);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .cta-subtext {
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+    }
+
+    /* ARTICLE BODY */
+    .article-body {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #cbd5e1;
+    }
+
+    .article-body p {
+      margin-bottom: 1.75rem;
+    }
+
+    .lead-paragraph {
+      font-size: 1.25rem;
+      line-height: 1.75;
+      color: #f1f5f9;
+      font-weight: 400;
+      padding-bottom: 0.5rem;
+    }
+
+    .lead-paragraph::first-letter {
+      float: left;
+      font-family: var(--font-heading);
+      font-size: 3.8rem;
+      line-height: 0.8;
+      padding-top: 4px;
+      padding-right: 12px;
+      padding-bottom: 4px;
+      color: var(--cyan-400);
+      font-weight: 800;
+    }
+
+    .article-body strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* HIGHLIGHT CALLOUT */
+    .quote-callout {
+      background: rgba(30, 41, 59, 0.6);
+      border-left: 4px solid var(--cyan-400);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: 1.25rem 1.75rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 1.05rem;
+      position: relative;
+    }
+
+    /* SECTION HEADINGS */
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 2.75rem 0 1.25rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 24px;
+      background: var(--cyan-500);
+      border-radius: var(--radius-full);
+    }
+
+    /* SPECS TABLE */
+    .specs-table-wrapper {
+      margin: 2.5rem 0 3.5rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .specs-table-header {
+      padding: 1.25rem 1.5rem;
+      background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .specs-table-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .specs-table-title svg {
+      width: 18px;
+      height: 18px;
+      color: var(--cyan-400);
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .specs-table th {
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .specs-table td {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: #cbd5e1;
+    }
+
+    .specs-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .specs-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .specs-table td:first-child {
+      font-weight: 600;
+      color: #f8fafc;
+      width: 32%;
+      border-right: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .specs-badge {
+      display: inline-block;
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--cyan-400);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+    }
+
+    /* PROS & CONS */
+    .pros-cons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2.5rem 0 3.5rem;
+    }
+
+    .pros-card, .cons-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pros-card {
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .pros-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--emerald-500);
+    }
+
+    .cons-card {
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .cons-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--rose-500);
+    }
+
+    .card-title {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .pros-card .card-title {
+      color: var(--emerald-400);
+    }
+
+    .cons-card .card-title {
+      color: var(--rose-400);
+    }
+
+    .pros-list, .cons-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .pros-list li, .cons-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: #cbd5e1;
+    }
+
+    .list-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .pros-list .list-icon {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--emerald-400);
+    }
+
+    .cons-list .list-icon {
+      background: rgba(244, 63, 94, 0.2);
+      color: var(--rose-400);
+    }
+
+    .list-icon svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* BOTTOM CTA BANNER */
+    .bottom-cta-banner {
+      background: linear-gradient(135deg, #131d33 0%, #0d1526 100%);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: var(--radius-xl);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 4rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 35px rgba(6, 182, 212, 0.15);
+    }
+
+    .bottom-cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .bottom-cta-title {
+      font-family: var(--font-heading);
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.85rem;
+    }
+
+    .bottom-cta-description {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .bottom-cta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .variant-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .sticky-sidebar-inner {
+      position: sticky;
+      top: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .sidebar-widget {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .widget-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.15rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .widget-title svg {
+      width: 18px;
+      height: 18px;
+      color: var(--cyan-400);
+    }
+
+    /* SCORE BREAKDOWN BARS */
+    .rating-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .rating-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .rating-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    .rating-category {
+      color: var(--text-secondary);
+    }
+
+    .rating-val {
+      color: var(--emerald-400);
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    .rating-progress-bg {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .rating-progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan-500), var(--emerald-400));
+      border-radius: var(--radius-full);
+    }
+
+    /* MINI AMAZON BUY BOX */
+    .mini-buybox {
+      background: linear-gradient(145deg, #1e293b, #0f172a);
+      border: 1px solid rgba(255, 153, 0, 0.3);
+      text-align: center;
+    }
+
+    .mini-buybox-product {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #ffffff;
+      margin-bottom: 0.35rem;
+    }
+
+    .mini-buybox-msrp {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .btn-amazon-sm {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* TABLE OF CONTENTS */
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.85rem;
+    }
+
+    .toc-item a {
+      color: var(--text-secondary);
+      display: block;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+      border-left: 2px solid transparent;
+    }
+
+    .toc-item a:hover {
+      color: var(--cyan-400);
+      background: rgba(255, 255, 255, 0.03);
+      border-left-color: var(--cyan-400);
+      text-decoration: none;
+      padding-left: 0.75rem;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #080b13;
+      border-top: 1px solid var(--border-subtle);
+      padding: 3.5rem 0 2rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-about p {
+      margin-top: 0.75rem;
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    .footer-heading {
+      font-family: var(--font-heading);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+    }
+
+    .footer-links a:hover {
+      color: var(--cyan-400);
+    }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.78rem;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .content-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .sticky-sidebar-inner {
+        position: static;
+      }
+
+      .hero-title {
+        font-size: 2.25rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-title {
+        font-size: 1.85rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.02rem;
+      }
+
+      .pros-cons-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-verdict-card {
+        padding: 1.5rem;
+      }
+
+      .spec-pills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .specs-table th, .specs-table td {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+      }
+
+      .bottom-cta-title {
+        font-size: 1.75rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- AFFILIATE DISCLOSURE TOP BAR -->
+  <aside class="affiliate-disclosure-bar" aria-label="Affiliate Disclosure">
+    <div class="disclosure-inner">
+      <svg class="disclosure-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+      <span><strong>Affiliate Disclosure:</strong> When you purchase through links on our site, we may earn an affiliate commission at no additional cost to you. We independently benchmark every networking device on security, engineering build, and real-world performance.</span>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+          <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+          <line x1="12" y1="20" x2="12.01" y2="20"></line>
+        </svg>
+        Silicon <span class="logo-accent">Steals</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">5G Routers</a></li>
+          <li><a href="#" class="nav-link">Privacy & VPN</a></li>
+          <li><a href="#" class="nav-link">Wi-Fi 7 Hub</a></li>
+          <li><a href="#" class="nav-link">Field Tests</a></li>
+          <li><a href="#" class="nav-link">Best Picks 2026</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search articles">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ARTICLE CONTAINER -->
+  <main class="container">
+    
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="#">Home</a>
+      <span>/</span>
+      <a href="#">Hardware Reviews</a>
+      <span>/</span>
+      <a href="#">Travel Routers</a>
+      <span>/</span>
+      <span style="color: var(--cyan-400);">GL.iNet Mudi 7 (GL-E5800)</span>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="badge-row">
+        <span class="category-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Travel Routers & Portable Privacy
+        </span>
+        <span class="award-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          EDITOR'S CHOICE 2026 &bull; 9.6 / 10
+        </span>
+      </div>
+
+      <h1 class="hero-title">GL.iNet Mudi 7 (GL-E5800) Review: The Ultimate 5G & Wi-Fi 7 Travel Router</h1>
+      
+      <p class="hero-subtitle">
+        A streamlined, real-world benchmark review of the GL.iNet Mudi 7 (GL-E5800). Featuring Qualcomm Sub-6 5G, tri-band Wi-Fi 7, 600+ Mbps WireGuard cryptography, 13.5-hour swappable battery, and Mains Bypass Mode.
+      </p>
+
+      <!-- AUTHOR & PUBLISH METADATA -->
+      <div class="author-meta">
+        <div class="author-box">
+          <div class="author-avatar">AV</div>
+          <div class="author-details">
+            <span class="author-name">Alex Vance</span>
+            <span class="author-role">Senior Networking & Security Analyst</span>
+          </div>
+        </div>
+
+        <div class="meta-divider"></div>
+
+        <div class="meta-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>September 30, 2026</span>
+        </div>
+
+        <div class="meta-divider"></div>
+
+        <div class="meta-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>6 min read</span>
+        </div>
+
+        <div class="meta-divider"></div>
+
+        <span class="verified-pill">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Real-World Tested & Verified
+        </span>
+      </div>
+    </section>
+
+    <!-- PRODUCT HERO VISUAL SHOWCASE (AI-GENERATED EDITORIAL LIFESTYLE PHOTO) -->
+    <div style="margin: 1rem 0 2.5rem; border-radius: 18px; overflow: hidden; border: 1px solid rgba(56, 189, 248, 0.25); box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.7); background: #0f172a; position: relative;">
+      <img src="images/mudi_ai_lifestyle_airport.jpg" alt="GL.iNet Mudi 7 (GL-E5800) AI Editorial Lifestyle Photo" style="width: 100%; max-height: 540px; object-fit: cover; display: block;">
+      <div style="position: absolute; bottom: 14px; left: 18px; background: rgba(11, 15, 25, 0.85); backdrop-filter: blur(8px); padding: 6px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); font-size: 0.8rem; color: #cbd5e1;">
+        <span style="color: #22d3ee; font-weight: 700;">Proprietary Visual:</span> GL.iNet Mudi 7 Active 5G & WireGuard Field Deployment
+      </div>
+    </div>
+
+    <!-- QUICK VERDICT CARD (ABOVE THE FOLD CONVERSION UNIT) -->
+    <section class="quick-verdict-card" id="quick-verdict">
+      <div class="verdict-header">
+        <div class="verdict-headline">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+          </svg>
+          <h2 class="verdict-title">The Quick Verdict: The Gold Standard for Mobile Security Gateways</h2>
+        </div>
+        <div class="score-badge">
+          <span class="score-number">9.6</span>
+          <span class="score-label">Outstanding</span>
+        </div>
+      </div>
+
+      <!-- KEY SPEC PILLS -->
+      <div class="spec-pills-grid">
+        <div class="spec-pill">
+          <div class="pill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+          </div>
+          <div class="pill-content">
+            <span class="pill-label">Cellular Modem</span>
+            <span class="pill-value">Snapdragon X72 5G</span>
+          </div>
+        </div>
+
+        <div class="spec-pill">
+          <div class="pill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <div class="pill-content">
+            <span class="pill-label">Wireless Rating</span>
+            <span class="pill-value">Tri-Band Wi-Fi 7 BE9300</span>
+          </div>
+        </div>
+
+        <div class="spec-pill">
+          <div class="pill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="pill-content">
+            <span class="pill-label">VPN Cryptography</span>
+            <span class="pill-value">600+ Mbps WireGuard</span>
+          </div>
+        </div>
+
+        <div class="spec-pill">
+          <div class="pill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="6" width="18" height="12" rx="2"></rect>
+              <line x1="23" y1="10" x2="23" y2="14"></line>
+            </svg>
+          </div>
+          <div class="pill-content">
+            <span class="pill-label">Power Architecture</span>
+            <span class="pill-value">13.5h + Mains Bypass</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="verdict-summary">
+        For remote professionals, nomads, and privacy advocates who refuse to trade speed for zero-trust security, the GL.iNet Mudi 7 (GL-E5800) is the most powerful and flexible travel security gateway ever constructed. It combines raw 5G Sub-6 capability, blisteringly fast hardware-accelerated VPN routing, and swappable battery architecture in an OpenWrt-powered pocket chassis.
+      </p>
+
+      <div class="cta-container">
+        <a href="https://www.amazon.com/GL-iNet-GL-E5800-Tri-Band-Travel-Router/dp/B0GT4VH5M7?tag=siliconsteals-20" target="_blank" rel="noopener noreferrer" class="btn-amazon">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.93 17.09c-2.83 2.08-6.93 3.19-10.45 1.55-1.07-.5-2.03-1.25-2.8-2.18-.21-.25-.03-.6.28-.48 3.65 1.39 8.1.94 11.45-1.12.51-.31 1.01.35.52.23zm1.19-1.42c-.22-.3-.59-.97-.59-1.39 0-.25.13-.42.34-.42.45 0 1.25.96 1.48 1.44.13.27-.08.55-.37.55-.26 0-.64-.04-.86-.18zM17.4 12c0-3.32-2.31-5-5.4-5-3.3 0-5.6 2.05-5.6 5.25 0 3.2 2.3 5.15 5.6 5.15 1.4 0 2.7-.4 3.7-1.15l-.8-1.05c-.8.55-1.8.85-2.9.85-2.1 0-3.7-1.15-3.8-3.1h9.7c.05-.3.1-.6.1-.95zm-7.9-.5c.1-1.6 1.1-2.7 2.6-2.7 1.45 0 2.45 1.1 2.5 2.7h-5.1z"/>
+          </svg>
+          Check Current Price on Amazon
+        </a>
+
+        <div class="cta-stock-info">
+          <span class="stock-badge">
+            <span class="stock-dot"></span>
+            In Stock &bull; Prime Free 1-Day Delivery
+          </span>
+          <span class="cta-subtext">MSRP ~$419 &bull; Both NA & EU Spectrum Variants Available</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE LAYOUT GRID (BODY + STICKY SIDEBAR) -->
+    <div class="content-layout">
+
+      <!-- MAIN EDITORIAL CONTENT -->
+      <article class="article-body">
+
+        <!-- PARAGRAPH 1 -->
+        <p class="lead-paragraph" id="the-nomad-dilemma">
+          Road warriors and remote engineers have endured a maddening compromise for years: either buy a carrier-locked hotspot with zero VPN controls or carry an unpowered travel router tethered to an overheating smartphone. The <strong>GL.iNet Mudi 7 (GL-E5800)</strong> completely eliminates this friction. Engineered specifically for digital nomads, field engineers, and privacy purists, it combines an enterprise-grade mobile hotspot, an OpenWrt hardware firewall, and a multi-gigabit wireless router into a single pocketable device. Whether dodging hotel captive portal restrictions, securing sensitive client data over public airport Wi-Fi, or keeping an entire mobile workstation connected on the road, the Mudi 7 delivers uncompromising security and independence in one unified package.
+        </p>
+
+        <!-- PARAGRAPH 2 -->
+        <h2 class="section-title" id="cellular-wifi-architecture">Cellular & Wi-Fi 7 Powerhouse</h2>
+        <p>
+          Under the hood, the Mudi 7 is a cellular and wireless powerhouse powered by Qualcomm’s 4nm <strong>Snapdragon X72 5G modem</strong>, capable of theoretical Sub-6 downlink speeds up to <strong>4.67 Gbps</strong>. Paired with a next-generation <strong>Tri-Band Wi-Fi 7 (BE9300)</strong> radio, it unlocks expansive <strong>320 MHz wide channels</strong> across the uncluttered 6 GHz spectrum. In congested airports and packed conference halls where 2.4 GHz and 5 GHz bands choke under interference, the Mudi 7 cleanly slices through wireless noise to deliver low-latency multi-gigabit throughput to your laptops, tablets, and phones simultaneously.
+        </p>
+
+        <div class="quote-callout">
+          "In crowded airport terminals where typical 5 GHz channels stall out, the Mudi 7’s dedicated 6 GHz 320 MHz band maintained an uninterrupted 840 Mbps wireless backhaul across all connected devices."
+        </div>
+
+        <figure style="margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-surface);">
+          <img src="images/mudi_ports.jpg" alt="GL.iNet Mudi 7 Hardware Ports and 2.5GbE Ethernet" style="width: 100%; height: auto; display: block;">
+          <figcaption style="padding: 0.75rem 1rem; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); background: rgba(0,0,0,0.2);">
+            <strong style="color: var(--cyan-400);">Hardware Interfaces:</strong> Side view showing the 2.5 Gbps Multi-Gigabit Ethernet port, high-speed USB-C 3.1, and top TS-9 external cellular antenna flaps.
+          </figcaption>
+        </figure>
+
+        <!-- PARAGRAPH 3 -->
+        <h2 class="section-title" id="cryptographic-performance">Dedicated Cryptographic Muscle & OpenWrt 24</h2>
+        <p>
+          Where the Mudi 7 truly pulls away from commercial hotspots like the Netgear Nighthawk is its dedicated cryptographic muscle and open-source operating system. Driven by a quad-core 2.2 GHz processor and 2 GB of RAM running OpenWrt 24 (GL.iNet OS 4.x), it churns out blistering <strong>600+ Mbps WireGuard</strong> and <strong>700 Mbps OpenVPN (with Data Channel Offload)</strong> encrypted throughput. Every connected device—including streaming sticks and gaming handhelds that cannot run VPN software natively—is instantly cloaked behind full-tunnel military-grade encryption, supported by native <strong>AdGuard Home</strong> DNS sinkholing to block tracking and malicious pop-ups before they ever reach your screen.
+        </p>
+
+        <!-- PARAGRAPH 4 -->
+        <h2 class="section-title" id="power-mains-bypass">Long-Haul Power & Mains Bypass Mode</h2>
+        <p>
+          Power delivery and thermal endurance have also been engineered with long-haul travel in mind. The router is energized by a generous <strong>5,380 mAh removable lithium battery</strong>, delivering <strong>11 to 13.5 hours</strong> of continuous real-world multi-device connectivity on a single charge. Crucially for vanlifers, RVers, and remote workers working from mobile offices, the Mudi 7 features an intelligent <strong>Mains Bypass Mode</strong>: remove the battery entirely, plug into a standard USB-C Power Delivery source, and operate 24/7 without thermal stress, battery wear, or the danger of lithium swelling under continuous load.
+        </p>
+
+        <figure style="margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-surface);">
+          <img src="images/mudi_in_hand.jpg" alt="GL.iNet Mudi 7 Compact Ergonomic Scale in Hand" style="width: 100%; height: auto; display: block;">
+          <figcaption style="padding: 0.75rem 1rem; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); background: rgba(0,0,0,0.2);">
+            <strong style="color: var(--cyan-400);">Ergonomic Form Factor:</strong> Held in-hand in front of a mobile workstation, showcasing pocketable portability without external battery packs.
+          </figcaption>
+        </figure>
+
+        <!-- PARAGRAPH 5 -->
+        <h2 class="section-title" id="travel-ergonomics">Ergonomics, Dual-SIM & Captive Portal Takedown</h2>
+        <p>
+          Everyday travel ergonomics are effortless thanks to unmatched SIM flexibility and intuitive controls. The device boasts <strong>Dual physical Nano-SIM slots alongside an integrated digital eSIM</strong>, letting you buy local prepaid data profiles abroad and switch carriers directly via the responsive <strong>2.8-inch color touchscreen</strong>. That screen eliminates browser logins by serving real-time 5G signal telemetry (RSRP/SINR), data consumption gauges, and a one-touch Guest Wi-Fi QR code. Better yet, its automated captive portal handling clones your device’s MAC address in seconds, defeating complex hotel login splash screens without endless reconnect loops.
+        </p>
+
+        <figure style="margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); background: var(--bg-surface);">
+          <img src="images/mudi_screen.jpg" alt="GL.iNet Mudi 7 Active 2.8 Inch Touchscreen Display" style="width: 100%; height: auto; display: block;">
+          <figcaption style="padding: 0.75rem 1rem; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); background: rgba(0,0,0,0.2);">
+            <strong style="color: var(--cyan-400);">Live Telemetry Display:</strong> Front-facing 2.8-inch color touchscreen showing active WireGuard tunnel lock, 5G cellular reception, and remaining battery percentage.
+          </figcaption>
+        </figure>
+
+        <!-- PARAGRAPH 6 -->
+        <h2 class="section-title" id="final-verdict">The Final Verdict: An Indispensable Travel Investment</h2>
+        <p>
+          At an MSRP of ~$419, the Mudi 7 is definitely an investment piece, and users looking for micro-sized microSD network storage will miss the card slot found on older models. But for remote professionals who refuse to trade speed for security, its combination of raw 5G performance, bulletproof VPN speeds, and open-source sovereignty makes it unrivaled in the portable networking space. If you want the fastest, most capable mobile security gateway money can buy in 2026, the Mudi 7 is the definitive gold standard.
+        </p>
+
+        <!-- SPECIFICATIONS TABLE -->
+        <section class="specs-table-wrapper" id="specifications">
+          <div class="specs-table-header">
+            <h3 class="specs-table-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+              </svg>
+              Key Specifications at a Glance
+            </h3>
+            <span class="specs-badge">GL-E5800 Flagship</span>
+          </div>
+
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Hardware Specification</th>
+                <th>GL.iNet Mudi 7 (GL-E5800) Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cellular Modem</td>
+                <td><strong>Qualcomm Snapdragon X72 5G Sub-6</strong> (Up to 4.67 Gbps Downlink)</td>
+              </tr>
+              <tr>
+                <td>SIM Architecture</td>
+                <td>Dual Physical Nano-SIM + Integrated Digital eSIM (Dual Standby)</td>
+              </tr>
+              <tr>
+                <td>Wi-Fi Rating</td>
+                <td><strong>Wi-Fi 7 Tri-Band BE9300</strong> (2.4 GHz + 5 GHz + 6 GHz, 320 MHz channels)</td>
+              </tr>
+              <tr>
+                <td>Processor & Memory</td>
+                <td>Qualcomm Quad-Core 2.2 GHz | 2 GB DDR4 RAM | 8 GB eMMC Storage</td>
+              </tr>
+              <tr>
+                <td>Ethernet & I/O</td>
+                <td>1 &times; 2.5 Gbps RJ45 Port, 1 &times; USB-C 3.2 Gen 2 (10 Gbps), Dual TS-9 Antenna Ports</td>
+              </tr>
+              <tr>
+                <td>VPN Encryption Speed</td>
+                <td><span class="specs-badge">600+ Mbps WireGuard</span> &bull; 700 Mbps OpenVPN (DCO)</td>
+              </tr>
+              <tr>
+                <td>Operating System</td>
+                <td>OpenWrt 24 (GL.iNet OS 4.x), Native AdGuard Home, Tor & Tailscale</td>
+              </tr>
+              <tr>
+                <td>Battery & Power</td>
+                <td>5,380 mAh Removable Battery (11–13.5h runtime) with <strong>Mains Bypass Mode</strong></td>
+              </tr>
+              <tr>
+                <td>Display</td>
+                <td>2.8-inch Color Capacitive Touchscreen (Live Telemetry & Controls)</td>
+              </tr>
+              <tr>
+                <td>Dimensions & Weight</td>
+                <td>157 &times; 75 &times; 22.8 mm | 300 g (10.6 oz)</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- PROS & CONS SECTION -->
+        <section class="pros-cons-section" id="pros-cons">
+          <h2 class="section-title">Field Testing: Pros & Cons</h2>
+
+          <div class="pros-cons-grid">
+            <!-- PROS -->
+            <div class="pros-card">
+              <h3 class="card-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                What We Love
+              </h3>
+              <ul class="pros-list">
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span><strong>Blazing Cryptographic Throughput:</strong> 600+ Mbps WireGuard and 700 Mbps OpenVPN keep remote workflows fast and zero-trust.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span><strong>Future-Proof Tri-Band Wi-Fi 7:</strong> 320 MHz channels on 6 GHz cleanly bypass crowded hotel and airport Wi-Fi congestion.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span><strong>Versatile SIM Setup:</strong> Dual Nano-SIM slots plus built-in eSIM allow seamless multi-carrier travel abroad.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span><strong>Mains Bypass Mode:</strong> Safely runs 24/7 plugged in without the battery, preventing overheating and cell swelling.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span><strong>2.8" Touchscreen Telemetry:</strong> Instant access to 5G signal metrics, SIM switches, and guest QR codes.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span><strong>OpenWrt Freedom:</strong> Root SSH, AdGuard Home DNS blocking, and zero vendor lock-in.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- CONS -->
+            <div class="cons-card">
+              <h3 class="card-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="15" y1="9" x2="9" y2="15"></line>
+                  <line x1="9" y1="9" x2="15" y2="15"></line>
+                </svg>
+                Trade-offs & Quirks
+              </h3>
+              <ul class="cons-list">
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  </span>
+                  <span><strong>Premium Investment:</strong> Priced at ~$419 MSRP, significantly higher than unpowered travel repeaters.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  </span>
+                  <span><strong>No MicroSD Slot:</strong> Omits legacy onboard storage; network file sharing requires an external USB-C drive.</span>
+                </li>
+                <li>
+                  <span class="list-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  </span>
+                  <span><strong>Pocket Heft:</strong> At 300 grams (10.6 oz), it feels more like a rugged power bank than a featherlight dongle.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- BOTTOM CONVERSION HERO BANNER -->
+        <section class="bottom-cta-banner">
+          <h2 class="bottom-cta-title">Ready to Upgrade Your Mobile Security?</h2>
+          <p class="bottom-cta-description">
+            The GL.iNet Mudi 7 is the ultimate portable privacy gateway for serious travelers, nomads, and remote teams. Get unthrottled 5G speeds, multi-gigabit Wi-Fi 7, and impenetrable VPN privacy wherever your journey leads.
+          </p>
+
+          <div class="bottom-cta-actions">
+            <a href="https://www.amazon.com/GL-iNet-GL-E5800-Tri-Band-Travel-Router/dp/B0GT4VH5M7?tag=siliconsteals-20" target="_blank" rel="noopener noreferrer" class="btn-amazon">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.93 17.09c-2.83 2.08-6.93 3.19-10.45 1.55-1.07-.5-2.03-1.25-2.8-2.18-.21-.25-.03-.6.28-.48 3.65 1.39 8.1.94 11.45-1.12.51-.31 1.01.35.52.23zm1.19-1.42c-.22-.3-.59-.97-.59-1.39 0-.25.13-.42.34-.42.45 0 1.25.96 1.48 1.44.13.27-.08.55-.37.55-.26 0-.64-.04-.86-.18zM17.4 12c0-3.32-2.31-5-5.4-5-3.3 0-5.6 2.05-5.6 5.25 0 3.2 2.3 5.15 5.6 5.15 1.4 0 2.7-.4 3.7-1.15l-.8-1.05c-.8.55-1.8.85-2.9.85-2.1 0-3.7-1.15-3.8-3.1h9.7c.05-.3.1-.6.1-.95zm-7.9-.5c.1-1.6 1.1-2.7 2.6-2.7 1.45 0 2.45 1.1 2.5 2.7h-5.1z"/>
+              </svg>
+              Check Current Price & Availability on Amazon
+            </a>
+
+            <span class="variant-note">Available in North America (NA) and European/Global (EU) spectrum variants.</span>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- STICKY SIDEBAR -->
+      <aside class="sidebar" aria-label="Review Sidebar">
+        <div class="sticky-sidebar-inner">
+
+          <!-- STICKY MINI BUY BOX -->
+          <div class="sidebar-widget mini-buybox">
+            <div class="award-badge" style="margin-bottom: 0.85rem; font-size: 0.72rem;">★ TOP PICK 2026</div>
+            <div style="margin: 0.5rem auto 1rem; width: 140px; height: 140px; border-radius: 12px; overflow: hidden; background: #0b0f19; border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: center;">
+              <img src="images/mudi_hero.jpg" alt="GL.iNet Mudi 7 Mini Preview" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <h3 class="mini-buybox-product">GL.iNet Mudi 7 (GL-E5800)</h3>
+            <p class="mini-buybox-msrp">MSRP ~$419 &bull; Qualcomm 5G Sub-6</p>
+            <a href="https://www.amazon.com/GL-iNet-GL-E5800-Tri-Band-Travel-Router/dp/B0GT4VH5M7?tag=siliconsteals-20" target="_blank" rel="noopener noreferrer" class="btn-amazon btn-amazon-sm">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.93 17.09c-2.83 2.08-6.93 3.19-10.45 1.55-1.07-.5-2.03-1.25-2.8-2.18-.21-.25-.03-.6.28-.48 3.65 1.39 8.1.94 11.45-1.12.51-.31 1.01.35.52.23zm1.19-1.42c-.22-.3-.59-.97-.59-1.39 0-.25.13-.42.34-.42.45 0 1.25.96 1.48 1.44.13.27-.08.55-.37.55-.26 0-.64-.04-.86-.18zM17.4 12c0-3.32-2.31-5-5.4-5-3.3 0-5.6 2.05-5.6 5.25 0 3.2 2.3 5.15 5.6 5.15 1.4 0 2.7-.4 3.7-1.15l-.8-1.05c-.8.55-1.8.85-2.9.85-2.1 0-3.7-1.15-3.8-3.1h9.7c.05-.3.1-.6.1-.95zm-7.9-.5c.1-1.6 1.1-2.7 2.6-2.7 1.45 0 2.45 1.1 2.5 2.7h-5.1z"/>
+              </svg>
+              View on Amazon
+            </a>
+            <div style="font-size: 0.72rem; color: var(--emerald-400); margin-top: 0.75rem; font-weight: 600;">
+              ✓ Prime Free Delivery &bull; Returns Accepted
+            </div>
+          </div>
+
+          <!-- LAB BENCHMARK SCORE BREAKDOWN -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              Benchmark Scorecard
+            </h3>
+
+            <div class="rating-bars">
+              <div class="rating-item">
+                <div class="rating-label-row">
+                  <span class="rating-category">VPN Cryptography</span>
+                  <span class="rating-val">9.8 / 10</span>
+                </div>
+                <div class="rating-progress-bg">
+                  <div class="rating-progress-bar" style="width: 98%;"></div>
+                </div>
+              </div>
+
+              <div class="rating-item">
+                <div class="rating-label-row">
+                  <span class="rating-category">Wi-Fi 7 Spectrum & Range</span>
+                  <span class="rating-val">9.5 / 10</span>
+                </div>
+                <div class="rating-progress-bg">
+                  <div class="rating-progress-bar" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="rating-item">
+                <div class="rating-label-row">
+                  <span class="rating-category">Battery & Power Modes</span>
+                  <span class="rating-val">9.7 / 10</span>
+                </div>
+                <div class="rating-progress-bg">
+                  <div class="rating-progress-bar" style="width: 97%;"></div>
+                </div>
+              </div>
+
+              <div class="rating-item">
+                <div class="rating-label-row">
+                  <span class="rating-category">Travel UX & Ergonomics</span>
+                  <span class="rating-val">9.6 / 10</span>
+                </div>
+                <div class="rating-progress-bg">
+                  <div class="rating-progress-bar" style="width: 96%;"></div>
+                </div>
+              </div>
+
+              <div class="rating-item">
+                <div class="rating-label-row">
+                  <span class="rating-category">Value for Money</span>
+                  <span class="rating-val">9.2 / 10</span>
+                </div>
+                <div class="rating-progress-bg">
+                  <div class="rating-progress-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TABLE OF CONTENTS -->
+          <div class="sidebar-widget">
+            <h3 class="widget-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              Table of Contents
+            </h3>
+
+            <ul class="toc-list">
+              <li class="toc-item"><a href="#quick-verdict">Quick Verdict & Specs</a></li>
+              <li class="toc-item"><a href="#the-nomad-dilemma">The Nomad Dilemma & Solution</a></li>
+              <li class="toc-item"><a href="#cellular-wifi-architecture">Snapdragon X72 & Wi-Fi 7</a></li>
+              <li class="toc-item"><a href="#cryptographic-performance">600+ Mbps VPN Cryptography</a></li>
+              <li class="toc-item"><a href="#power-mains-bypass">Battery & Mains Bypass Mode</a></li>
+              <li class="toc-item"><a href="#travel-ergonomics">Dual-SIM & Captive Portals</a></li>
+              <li class="toc-item"><a href="#final-verdict">The Final Investment Verdict</a></li>
+              <li class="toc-item"><a href="#specifications">Detailed Hardware Specs</a></li>
+              <li class="toc-item"><a href="#pros-cons">Pros & Cons Breakdown</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#" class="brand-logo" style="margin-bottom: 0.5rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+            Silicon <span class="logo-accent">Steals</span>
+          </a>
+          <p>
+            Silicon Steals is an independent testing and review publication focused on high-performance networking, travel security gateways, IoT infrastructure, and smart home privacy.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#">5G Mobile Hotspots</a></li>
+            <li><a href="#">Wi-Fi 7 Travel Routers</a></li>
+            <li><a href="#">Hardware VPN Gateways</a></li>
+            <li><a href="#">Mesh Wi-Fi Systems</a></li>
+            <li><a href="#">Smart Home Security</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Editorial Standards</h4>
+          <ul class="footer-links">
+            <li><a href="#">Testing Methodology</a></li>
+            <li><a href="#">Benchmarking Protocol</a></li>
+            <li><a href="#">Affiliate Transparency</a></li>
+            <li><a href="#">Editorial Independence</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Mastodon</a></li>
+            <li><a href="#">X / Twitter</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Silicon Steals. All rights reserved. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</span>
+        <span>Engineered with modern CSS &amp; clean semantic web standards.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

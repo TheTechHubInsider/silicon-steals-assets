@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqara Smart Lock U200 Review: Apple Home Key on Any Door (2026) | Silicon Steals</title>
+  <meta name="description" content="In-depth Aqara Smart Lock U200 Kit review. Discover why this Matter over Thread retrofit lock with native Apple Home Key is our Editor's Choice for 2026.">
+  <meta name="p:domain_verify" content="6dd7fe2c26d585f587303f59e9a816a1">
+
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS RESET & CORE TOKENS */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #090d16;
+      --bg-card: #131c31;
+      --bg-card-elevated: #1a2540;
+      --bg-card-subtle: #0e1526;
+      --border-subtle: #1e293b;
+      --border-accent: rgba(14, 165, 233, 0.35);
+      --border-glow: rgba(14, 165, 233, 0.2);
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --text-inverse: #090d16;
+
+      --cyan-400: #38bdf8;
+      --cyan-500: #0ea5e9;
+      --cyan-600: #0284c7;
+      --blue-500: #3b82f6;
+      --blue-600: #2563eb;
+      --amber-400: #fbbf24;
+      --amber-500: #f59e0b;
+      --emerald-400: #34d399;
+      --emerald-500: #10b981;
+      --rose-400: #fb7185;
+      --rose-500: #f43f5e;
+      
+      --amazon-orange: #ff9900;
+      --amazon-orange-hover: #f59e0b;
+      --amazon-orange-dark: #d97706;
+      --amazon-btn-shadow: rgba(255, 153, 0, 0.32);
+
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+      --radius-full: 9999px;
+
+      --shadow-card: 0 12px 32px -8px rgba(0, 0, 0, 0.65);
+      --shadow-glow: 0 0 28px rgba(14, 165, 233, 0.22);
+      --transition-fast: 0.18s ease;
+      --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.75;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    a {
+      color: var(--cyan-400);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    a:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+    .font-mono {
+      font-family: var(--font-mono);
+    }
+
+    /* TOP ANNOUNCEMENT & TRUST BAR */
+    .trust-bar {
+      background: linear-gradient(90deg, #090d16 0%, #131c31 50%, #090d16 100%);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      padding: 0.6rem 0;
+      text-align: center;
+    }
+
+    .trust-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .trust-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      color: var(--cyan-400);
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .trust-text {
+      color: var(--text-secondary);
+    }
+
+    .trust-text strong {
+      color: var(--text-primary);
+    }
+
+    /* STICKY HEADER & NAV */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 13, 22, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-logo:hover {
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 1.15rem;
+      box-shadow: 0 0 14px rgba(14, 165, 233, 0.35);
+    }
+
+    .brand-text span {
+      background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1.75rem;
+    }
+
+    .nav-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: color var(--transition-fast);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--cyan-400);
+      text-decoration: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav-pill-deal {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .nav-pill-deal:hover {
+      background: rgba(245, 158, 11, 0.22);
+      color: #fde68a;
+      text-decoration: none;
+      box-shadow: 0 0 14px rgba(245, 158, 11, 0.3);
+    }
+
+    /* BREADCRUMB */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 1.4rem 0 0.5rem;
+    }
+
+    .breadcrumb a {
+      color: var(--text-secondary);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--cyan-400);
+    }
+
+    .breadcrumb-sep {
+      color: var(--text-muted);
+      display: inline-flex;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 1rem 0 2rem;
+    }
+
+    .award-badge-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: linear-gradient(90deg, rgba(14, 165, 233, 0.15) 0%, rgba(19, 28, 49, 0.8) 100%);
+      border: 1px solid rgba(14, 165, 233, 0.45);
+      border-radius: var(--radius-full);
+      padding: 0.45rem 1.15rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.18);
+    }
+
+    .award-star-icon {
+      color: #fbbf24;
+      display: inline-flex;
+    }
+
+    .award-badge-text {
+      color: #f8fafc;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .award-badge-score {
+      background: #0ea5e9;
+      color: #090d16;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-full);
+      font-family: var(--font-mono);
+      margin-left: 0.25rem;
+    }
+
+    .hero-title {
+      font-size: 2.65rem;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      max-width: 980px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .meta-item svg {
+      color: var(--cyan-400);
+    }
+
+    .meta-item strong {
+      color: var(--text-secondary);
+    }
+
+    .meta-tag {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-sm);
+      color: var(--cyan-400);
+      font-weight: 600;
+    }
+
+    /* HERO SHOWCASE CARD */
+    .hero-showcase {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 2.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem;
+      margin-top: 2rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-showcase::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #0ea5e9, #38bdf8, #ff9900);
+    }
+
+    .hero-image-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #1b2642 0%, #0d1424 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      position: relative;
+      box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-image-wrap img {
+      max-width: 100%;
+      max-height: 380px;
+      object-fit: contain;
+      border-radius: var(--radius-md);
+      transition: transform var(--transition-normal);
+      filter: drop-shadow(0 14px 24px rgba(0,0,0,0.65));
+    }
+
+    .hero-image-wrap:hover img {
+      transform: scale(1.025);
+    }
+
+    .hero-image-caption {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-deal-pane {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .deal-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      color: #f87171;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      width: fit-content;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero-product-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.4rem;
+      color: #ffffff;
+    }
+
+    .hero-product-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin-bottom: 0.85rem;
+    }
+
+    .price-box {
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin: 0.75rem 0 1rem;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .price-current {
+      font-family: var(--font-mono);
+      font-size: 2.15rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .price-msrp {
+      font-family: var(--font-mono);
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .price-savings {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--emerald-400);
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+    }
+
+    .price-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* SPEC PILLS GRID */
+    .spec-pills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65rem;
+      margin: 0.85rem 0 1.25rem;
+    }
+
+    .spec-pill {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 0.65rem 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .spec-pill-icon {
+      color: var(--cyan-400);
+      flex-shrink: 0;
+      display: flex;
+    }
+
+    .spec-pill-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .spec-pill-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .spec-pill-val {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: var(--font-mono);
+    }
+
+    /* HIGH-CONVERTING AMAZON BUTTONS */
+    .btn-amazon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(180deg, var(--amazon-orange) 0%, var(--amazon-orange-hover) 100%);
+      color: #0b0f19;
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 1rem 1.75rem;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 6px 20px var(--amazon-btn-shadow);
+      transition: all var(--transition-fast);
+      letter-spacing: -0.01em;
+      position: relative;
+    }
+
+    .btn-amazon:hover {
+      background: linear-gradient(180deg, var(--amazon-orange-hover) 0%, var(--amazon-orange-dark) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(255, 153, 0, 0.45);
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .btn-amazon svg {
+      flex-shrink: 0;
+    }
+
+    .btn-amazon-secondary {
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-accent);
+      color: var(--cyan-400);
+      font-weight: 700;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-md);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .btn-amazon-secondary:hover {
+      background: rgba(14, 165, 233, 0.15);
+      border-color: var(--cyan-400);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .amazon-subtext {
+      text-align: center;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      margin-top: 0.65rem;
+    }
+
+    /* QUICK VERDICT CALLOUT CARD */
+    .verdict-banner-card {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(19, 28, 49, 0.95) 100%);
+      border: 1px solid rgba(14, 165, 233, 0.35);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .verdict-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+    }
+
+    .verdict-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .verdict-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .verdict-score-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #0ea5e9;
+      color: #090d16;
+      font-family: var(--font-mono);
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-full);
+    }
+
+    .verdict-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+    }
+
+    .verdict-target-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .target-box {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1.25rem;
+    }
+
+    .target-box-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .target-box-title.buy {
+      color: var(--emerald-400);
+    }
+
+    .target-box-title.skip {
+      color: var(--rose-400);
+    }
+
+    .target-box p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* MAIN LAYOUT (2-COLUMN GRID) */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 2.75rem;
+      margin-top: 1.5rem;
+      align-items: start;
+    }
+
+    /* ARTICLE CONTENT STYLES */
+    .article-body {
+      background: transparent;
+    }
+
+    .section-block {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 90px;
+    }
+
+    .section-heading-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1.35rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-num {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--cyan-400);
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .section-title {
+      font-size: 1.65rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .article-p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #cbd5e1;
+      margin-bottom: 1.4rem;
+    }
+
+    .article-p strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    /* FEATURE HIGHLIGHT CARDS */
+    .feature-card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin: 1.75rem 0;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .feature-card-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(14, 165, 233, 0.3);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cyan-400);
+    }
+
+    .feature-card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .feature-card-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* CALLOUT BOXES */
+    .callout-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--cyan-500);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.5rem;
+      margin: 1.8rem 0;
+    }
+
+    .callout-box.deal-callout {
+      border-left-color: var(--amazon-orange);
+      background: linear-gradient(135deg, rgba(19, 28, 49, 0.95) 0%, rgba(35, 25, 15, 0.65) 100%);
+    }
+
+    .callout-box.warning-callout {
+      border-left-color: var(--amber-500);
+      background: linear-gradient(135deg, rgba(19, 28, 49, 0.95) 0%, rgba(40, 30, 10, 0.5) 100%);
+    }
+
+    .callout-title {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .callout-title svg {
+      color: var(--cyan-400);
+    }
+
+    .callout-box.deal-callout .callout-title svg {
+      color: var(--amazon-orange);
+    }
+
+    .callout-box.warning-callout .callout-title svg {
+      color: var(--amber-400);
+    }
+
+    .callout-text {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* IN-CONTENT AFFILIATE CTA CARD */
+    .mid-article-cta {
+      background: linear-gradient(135deg, #131c31 0%, #1a2540 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 2rem;
+      margin: 2.75rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .mid-cta-left {
+      flex: 1;
+    }
+
+    .mid-cta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fbbf24;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+    }
+
+    .mid-cta-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.35rem;
+    }
+
+    .mid-cta-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .mid-cta-action {
+      flex-shrink: 0;
+    }
+
+    /* SPECIFICATIONS TABLE */
+    .specs-table-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-card);
+    }
+
+    .specs-table-header {
+      background: var(--bg-card-elevated);
+      padding: 1.25rem 1.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .specs-table-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .specs-table-title svg {
+      color: var(--cyan-400);
+    }
+
+    .specs-table-badge {
+      font-size: 0.76rem;
+      font-family: var(--font-mono);
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(14, 165, 233, 0.35);
+      color: var(--cyan-400);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    .specs-table th {
+      background: var(--bg-card-subtle);
+      padding: 0.85rem 1.25rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .specs-table td {
+      padding: 0.95rem 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    .specs-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .specs-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .spec-name {
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .spec-val-highlight {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--cyan-400);
+    }
+
+    /* PROS & CONS SECTION */
+    .pros-cons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .pros-card, .cons-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-xl);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pros-card {
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .pros-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--emerald-500);
+    }
+
+    .cons-card {
+      border: 1px solid rgba(244, 63, 94, 0.35);
+    }
+
+    .cons-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--rose-500);
+    }
+
+    .card-header-row {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .pros-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--emerald-400);
+    }
+
+    .cons-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--rose-400);
+    }
+
+    .pro-con-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .pro-con-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+    }
+
+    .pro-icon {
+      color: var(--emerald-400);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+      display: flex;
+    }
+
+    .con-icon {
+      color: var(--rose-400);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+      display: flex;
+    }
+
+    .pro-con-text strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    /* COMPARISON TABLE SECTION */
+    .comparison-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow-x: auto;
+      margin: 2.75rem 0;
+      box-shadow: var(--shadow-card);
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+      min-width: 680px;
+    }
+
+    .comp-table th {
+      padding: 1.25rem 1.2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: bottom;
+    }
+
+    .comp-table th.col-feature {
+      width: 25%;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .comp-table th.col-target {
+      width: 28%;
+      background: rgba(14, 165, 233, 0.08);
+      border-left: 2px solid var(--cyan-500);
+      border-right: 2px solid var(--cyan-500);
+      border-top: 3px solid var(--cyan-500);
+    }
+
+    .comp-table th.col-comp {
+      width: 23%;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .comp-table td {
+      padding: 1rem 1.2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      vertical-align: middle;
+    }
+
+    .comp-table td.col-target {
+      background: rgba(14, 165, 233, 0.05);
+      border-left: 2px solid var(--cyan-500);
+      border-right: 2px solid var(--cyan-500);
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comp-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .comp-table tr:hover td.col-target {
+      background: rgba(14, 165, 233, 0.1);
+    }
+
+    .comp-model-name {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.25rem;
+    }
+
+    .comp-badge-winner {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: var(--cyan-500);
+      color: #090d16;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.15rem 0.55rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .badge-yes {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--emerald-400);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .badge-no {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--rose-400);
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* FAQ ACCORDION SECTION */
+    .faq-container {
+      margin: 3rem 0;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: border-color var(--transition-fast);
+    }
+
+    .faq-item:hover {
+      border-color: var(--border-accent);
+    }
+
+    .faq-question {
+      padding: 1.25rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+
+    .faq-question::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-chevron {
+      color: var(--cyan-400);
+      transition: transform var(--transition-fast);
+      flex-shrink: 0;
+    }
+
+    details[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    details[open] .faq-question {
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--cyan-400);
+    }
+
+    .faq-answer {
+      padding: 1.25rem 1.5rem;
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      background: var(--bg-card-subtle);
+    }
+
+    .faq-answer p {
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* BOTTOM CTA BANNER */
+    .bottom-cta-banner {
+      background: radial-gradient(circle at 50% 0%, #1a2744 0%, #0d1424 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-xl);
+      padding: 3rem 2rem;
+      margin: 4rem 0 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), var(--shadow-glow);
+    }
+
+    .bottom-cta-banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #ff9900, #0ea5e9, #ff9900);
+    }
+
+    .bottom-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #fbbf24;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.35rem 0.95rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.25rem;
+    }
+
+    .bottom-cta-title {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.85rem;
+      letter-spacing: -0.02em;
+    }
+
+    .bottom-cta-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto 1.75rem;
+      line-height: 1.65;
+    }
+
+    .bottom-price-highlight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .bottom-btn-wrap {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    /* SIDEBAR STYLES */
+    .sidebar {
+      position: sticky;
+      top: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sidebar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .sidebar-card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .sidebar-card-title svg {
+      color: var(--cyan-400);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .toc-item a {
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.35rem 0.5rem;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+      line-height: 1.4;
+    }
+
+    .toc-item a:hover {
+      color: #ffffff;
+      background: var(--bg-card-elevated);
+      text-decoration: none;
+    }
+
+    .toc-num {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--cyan-400);
+      background: rgba(14, 165, 233, 0.12);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    .sidebar-deal-box {
+      background: linear-gradient(180deg, #162038 0%, #101728 100%);
+      border: 1px solid rgba(255, 153, 0, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem;
+      text-align: center;
+    }
+
+    .sidebar-deal-thumb {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 0.85rem;
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));
+    }
+
+    .sidebar-deal-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.35;
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar-price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-current-price {
+      font-family: var(--font-mono);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .sidebar-msrp {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #060910;
+      border-top: 1px solid var(--border-subtle);
+      padding: 3.5rem 0 2.5rem;
+      margin-top: 5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .footer-nav a {
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .footer-nav a:hover {
+      color: var(--cyan-400);
+      text-decoration: none;
+    }
+
+    .footer-ftc-box {
+      background: rgba(19, 28, 49, 0.4);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      line-height: 1.65;
+      color: var(--text-secondary);
+    }
+
+    .footer-ftc-box strong {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 1024px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        display: none;
+      }
+      .hero-showcase {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 1.85rem;
+      }
+      .spec-pills-grid {
+        grid-template-columns: 1fr;
+      }
+      .verdict-target-grid {
+        grid-template-columns: 1fr;
+      }
+      .pros-cons-grid {
+        grid-template-columns: 1fr;
+      }
+      .feature-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .mid-article-cta {
+        flex-direction: column;
+        text-align: center;
+      }
+      .mid-cta-action {
+        width: 100%;
+      }
+      .btn-amazon {
+        width: 100%;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ys89jeejuo");
+</script>
+</head>
+<body>
+
+  <!-- TOP TRUST & FTC DISCLOSURE BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <span class="trust-badge-pill">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        FTC Disclosure
+      </span>
+      <span class="trust-text">
+        <strong>Silicon Steals</strong> is reader-supported. We independently evaluate every smart home device. When you purchase through our links, we may earn an affiliate commission at no extra cost to you.
+      </span>
+    </div>
+  </div>
+
+  <!-- STICKY SITE HEADER -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="https://siliconsteals.com/" class="brand-logo">
+        <div class="brand-mark">S</div>
+        <div class="brand-text">Silicon <span>Steals</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="https://siliconsteals.com/" class="nav-link">Home</a></li>
+        <li><a href="https://siliconsteals.com/deals" class="nav-link">Verified Deals</a></li>
+        <li><a href="#quick-verdict" class="nav-link">Verdict</a></li>
+        <li><a href="#specs-matrix" class="nav-link">Full Specs</a></li>
+        <li><a href="#comparison" class="nav-link">Comparison</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="nav-pill-deal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Amazon Deal: 20% Off
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- BREADCRUMB NAVIGATION -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://siliconsteals.com/">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="https://siliconsteals.com/deals">Smart Home Reviews</a>
+      <span class="breadcrumb-sep">/</span>
+      <span style="color: var(--text-primary);">Aqara Smart Lock U200 Review</span>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="award-badge-container">
+        <span class="award-star-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </span>
+        <span class="award-badge-text">Editor's Choice: Best Retrofit Smart Lock 2026</span>
+        <span class="award-badge-score">9.5 / 10</span>
+      </div>
+
+      <h1 class="hero-title">Aqara Smart Lock U200 Review: Apple Home Key on Any Door</h1>
+      <p class="hero-subtitle">
+        The ultimate retrofit smart lock for Apple Home, Home Assistant, and Matter over Thread—upgrade your entry door without modifying exterior hardware, violating rental leases, or surrendering your physical backup keys.
+      </p>
+
+      <div class="meta-row">
+        <div class="meta-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>By <strong>David Cole</strong>, IoT & Smart Home Editor</span>
+        </div>
+        <div class="meta-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Updated <strong>October 2026</strong></span>
+        </div>
+        <div class="meta-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span><strong>7 Min Read</strong></span>
+        </div>
+        <div class="meta-tag">Smart Home Security</div>
+        <div class="meta-tag">Editorial Evaluation</div>
+      </div>
+
+      <!-- HERO SHOWCASE CARD (IMAGE + PRICING CALLOUT) -->
+      <div class="hero-showcase">
+        <div class="hero-image-wrap">
+          <img src="images/aqara_u200.webp" onerror="this.onerror=null; this.src='/images/deals/aqara_u200.webp';" alt="Aqara Smart Lock U200 Kit with biometric keypad and Apple Home Key">
+          <div class="hero-image-caption">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>Aqara U200 Interior Retrofit Drive Unit & IPX5 Biometric Keypad</span>
+          </div>
+        </div>
+
+        <div class="hero-deal-pane">
+          <div>
+            <div class="deal-badge-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              LIMITED-TIME 20% COUPON
+            </div>
+            <h2 class="hero-product-title">Aqara Smart Lock U200 Kit (Model: EL-D02D)</h2>
+            <p class="hero-product-desc">
+              Matter over Thread interior retrofit lock bundled with an IPX5 biometric wireless keypad, native Apple Home Key NFC, and rechargeable battery pack.
+            </p>
+
+            <div class="price-box">
+              <div class="price-row">
+                <span class="price-current">$215.99</span>
+                <span class="price-msrp">$269.99</span>
+                <span class="price-savings">Save $54 (20% OFF)</span>
+              </div>
+              <div class="price-note">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Clip on-page Amazon coupon at checkout • Free Prime Delivery</span>
+              </div>
+            </div>
+
+            <!-- GLANCEABLE SPECS PILLS -->
+            <div class="spec-pills-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </span>
+                <div class="spec-pill-text">
+                  <span class="spec-pill-label">Apple Home Key</span>
+                  <span class="spec-pill-val">Native NFC Express</span>
+                </div>
+              </div>
+
+              <div class="spec-pill">
+                <span class="spec-pill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h12"/><path d="M12 6v12"/><circle cx="12" cy="12" r="9"/></svg>
+                </span>
+                <div class="spec-pill-text">
+                  <span class="spec-pill-label">Protocol</span>
+                  <span class="spec-pill-val">Matter over Thread</span>
+                </div>
+              </div>
+
+              <div class="spec-pill">
+                <span class="spec-pill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </span>
+                <div class="spec-pill-text">
+                  <span class="spec-pill-label">Exterior Door</span>
+                  <span class="spec-pill-val">100% Keys Retained</span>
+                </div>
+              </div>
+
+              <div class="spec-pill">
+                <span class="spec-pill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="11" x2="23" y2="13"/></svg>
+                </span>
+                <div class="spec-pill-text">
+                  <span class="spec-pill-label">Lock Battery</span>
+                  <span class="spec-pill-val">~6 Months Li-Ion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="btn-amazon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Check Current Price &amp; Coupon on Amazon
+            </a>
+            <p class="amazon-subtext">Verified ASIN: B0FQMXS7WC • Prices &amp; coupons subject to change</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK VERDICT BANNER -->
+    <div id="quick-verdict" class="verdict-banner-card">
+      <div class="verdict-header">
+        <div class="verdict-title-wrap">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <h2 class="verdict-title">The Quick Verdict: The Smart Home Enthusiast's Dream Lock</h2>
+        </div>
+        <div class="verdict-score-badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          9.5 / 10 Score
+        </div>
+      </div>
+      <p class="verdict-text">
+        The <strong>Aqara Smart Lock U200 Kit (Model: EL-D02D)</strong> is the most versatile, technically accomplished retrofit smart lock on the market. By marrying native Apple Home Key and local Matter over Thread communication with a zero-exterior-modification retrofit motor, it solves the smart lock dilemma for renters, HOA-regulated homeowners, and multi-ecosystem households alike.
+      </p>
+
+      <div class="verdict-target-grid">
+        <div class="target-box">
+          <div class="target-box-title buy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Who Should Buy
+          </div>
+          <p>
+            Apple Home users wanting instant tap-to-unlock, apartment renters preserving landlord master keys, and local smart-home builders using Home Assistant with Matter over Thread.
+          </p>
+        </div>
+
+        <div class="target-box">
+          <div class="target-box-title skip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            Who Should Skip
+          </div>
+          <p>
+            Anyone without an existing Thread Border Router who refuses to add one, or doors with less than 2.5 inches of clearance between the deadbolt and decorative trim.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN TWO-COLUMN LAYOUT -->
+    <div class="layout-grid">
+
+      <!-- LEFT: ARTICLE CONTENT BODY -->
+      <article class="article-body">
+
+        <!-- PARAGRAPH 1: THE HOOK & OVERVIEW -->
+        <section id="section-overview" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">01</span>
+            <h2 class="section-title">The Hook &amp; Overview: Smart Entry Without the Landlord Headache</h2>
+          </div>
+
+          <p class="article-p">
+            Smart lock upgrades traditionally force an agonizing compromise: either replace your entire deadbolt—violating apartment lease agreements, tripping strict HOA exterior hardware covenants, and throwing away your physical keys—or settle for a clunky motorized turner tied to a battery-hogging Wi-Fi bridge. The <strong>Aqara Smart Lock U200 Kit</strong> elegantly dismantles that dilemma. Designed strictly as an interior retrofit system, the motorized drive unit mounts cleanly over your door's existing thumbturn mechanism, accommodating standard North American single-cylinder deadbolts (with flat horizontal, vertical, or diagonal tailpieces) as well as Euro-profile cylinders.
+          </p>
+
+          <p class="article-p">
+            The entire exterior lock cylinder, trim, and mechanical keyway remain 100% untouched. Your landlord's master key still works, you retain your original metal keys for absolute emergency fallback, and from the street, your front door looks completely stock.
+          </p>
+
+          <div class="feature-card-grid">
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <h3 class="feature-card-title">100% Renter &amp; HOA Compliant</h3>
+              <p class="feature-card-desc">No alterations to exterior cylinders or trim. Preserves building master keys and passes strict residential aesthetic guidelines.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <h3 class="feature-card-title">Physical Key Fallback</h3>
+              <p class="feature-card-desc">Your original brass metal keys continue to operate mechanically, providing guaranteed failsafe entry at all times.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FULL TECHNICAL SPECIFICATIONS TABLE -->
+        <section id="specs-matrix" class="section-block">
+          <div class="specs-table-container">
+            <div class="specs-table-header">
+              <div class="specs-table-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span>Quick Glance Specs Matrix</span>
+              </div>
+              <span class="specs-table-badge">Model EL-D02D</span>
+            </div>
+
+            <table class="specs-table">
+              <thead>
+                <tr>
+                  <th style="width: 35%;">Specification</th>
+                  <th style="width: 65%;">Aqara Smart Lock U200 Kit Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="spec-name">Model Number</td>
+                  <td><span class="spec-val-highlight">EL-D02D</span> (US/EU Universal Kit)</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Installation Format</td>
+                  <td>Interior Retrofit (Replaces interior thumbturn; preserves exterior cylinder)</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Deadbolt Compatibility</td>
+                  <td>US Single-Cylinder Deadbolts (2-3/8" &amp; 2-3/4" backsets); Euro-Profile with emergency clutch</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Wireless Protocols</td>
+                  <td><span class="spec-val-highlight">Matter over Thread</span>, Bluetooth 5.1 LE, NFC (Type A)</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Apple Home Key</td>
+                  <td><strong style="color: var(--emerald-400);">Yes</strong> (Native NFC; Express Mode &amp; Power Reserve up to 5 hours)</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Biometric Keypad</td>
+                  <td>Included (IPX5 weatherproof, sub-0.5s 3D capacitive scanner, up to 50 prints)</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Lock Power Source</td>
+                  <td>Rechargeable 7.4V 2000 mAh Lithium-Ion battery pack (~6 months per charge)</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Keypad Power Source</td>
+                  <td>4× AAA Alkaline batteries (included, ~6–8 months) OR 12V–24V AC/DC doorbell hardwiring</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Emergency Failsafe</td>
+                  <td>USB-C power bank pass-through port on bottom + original physical exterior keys</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Supported Ecosystems</td>
+                  <td>Apple Home, Home Assistant, Amazon Alexa, Google Home, Samsung SmartThings</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Dimensions (Interior)</td>
+                  <td>62.3 × 60.6 × 152.5 mm (2.45 × 2.39 × 6.00 in) — Requires ~2.5" jamb clearance</td>
+                </tr>
+                <tr>
+                  <td class="spec-name">Dimensions (Keypad)</td>
+                  <td>42.7 × 33.0 × 146.0 mm (1.68 × 1.30 × 5.75 in)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- PARAGRAPH 2: APPLE HOME KEY & BIOMETRIC KEYPAD -->
+        <section id="section-homekey" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Apple Home Key &amp; Biometric Keypad: Tap-and-Go Precision</h2>
+          </div>
+
+          <p class="article-p">
+            Where the Aqara U200 leaves every other retrofit lock in the dust is its exterior authentication hardware. The kit includes an IPX5 weatherproof wireless keypad equipped with an ultra-responsive 3D capacitive fingerprint reader that unlocks in under 0.5 seconds, even with slightly damp fingers. But the real star is native <strong>Apple Home Key</strong>.
+          </p>
+
+          <p class="article-p">
+            By resting your iPhone or Apple Watch against the keypad's dedicated NFC zone, the deadbolt retracts instantly. With Apple's Express Mode engaged, you don't even need to wake your screen or authenticate with FaceID—just tap and walk in. Better yet, Apple's Power Reserve feature keeps Home Key operational for up to five hours after your iPhone battery drops to zero percent. Beyond biometrics and Apple devices, the keypad accepts 6-to-10 digit PIN codes, temporary one-time passcodes (ideal for dog walkers or Airbnb turnovers), and two included encrypted Aqara NFC key cards.
+          </p>
+
+          <div class="callout-box">
+            <div class="callout-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Hardware Performance: Apple Power Reserve Integration</span>
+            </div>
+            <p class="callout-text">
+              Unlike cloud-reliant locks that fail when phone batteries die or local Wi-Fi drops, Apple Home Key runs on secure NFC microcode. Even if your iPhone shuts down completely from an empty battery, the secure element remains powered for up to 5 hours to grant emergency door entry.
+            </p>
+          </div>
+        </section>
+
+        <!-- MID-ARTICLE HIGH-CONVERTING CTA BLOCK -->
+        <div class="mid-article-cta">
+          <div class="mid-cta-left">
+            <div class="mid-cta-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Amazon Verified Deal • Save $54
+            </div>
+            <h3 class="mid-cta-title">Upgrade to Apple Home Key Without Changing Your Deadbolt</h3>
+            <p class="mid-cta-desc">Clip the 20% on-page coupon to get the full Aqara U200 Kit with Keypad for just $215.99.</p>
+          </div>
+          <div class="mid-cta-action">
+            <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="btn-amazon" style="padding: 0.85rem 1.4rem; font-size: 0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Check Price on Amazon
+            </a>
+          </div>
+        </div>
+
+        <!-- PARAGRAPH 3: MATTER OVER THREAD & LOCAL CONTROL -->
+        <section id="section-matter" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Matter over Thread &amp; Multi-Ecosystem Freedom: Instant, Local Mesh Control</h2>
+          </div>
+
+          <p class="article-p">
+            Beneath the sleek matte casing, the U200 skips noisy, 2.4 GHz Wi-Fi radios in favor of native <strong>Matter over Thread</strong>. Operating on a self-healing low-power IPv6 mesh, the lock communicates directly with your Thread Border Router (such as an Apple TV 4K 128GB, HomePod mini, Echo Hub, Nest Hub Max, or an Aqara Hub M3). Response latency is virtually nonexistent: tap the toggle in Apple Home or prompt Siri, and the internal motor spins into gear in a fraction of a second.
+          </p>
+
+          <p class="article-p">
+            Crucially, Matter’s Multi-Admin architecture frees you from proprietary ecosystem walls. You can natively commission the lock into Apple Home for tap-to-unlock Home Key convenience while simultaneously binding it locally into <a href="/#deals">Home Assistant</a> via your Connect ZBT-1 or SkyConnect dongle. Every lock/unlock action and battery status report executes locally on your home network without routing through a distant vendor cloud.
+          </p>
+
+          <div class="callout-box">
+            <div class="callout-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Editorial Evaluation: Matter Multi-Admin Execution</span>
+            </div>
+            <p class="callout-text">
+              Multi-Admin allows true dual-platform supremacy: family members can use native Apple Home Key on their iPhones while your local Home Assistant server runs advanced geofencing automations, without any cross-talk delay or cloud subscription fees.
+            </p>
+          </div>
+        </section>
+
+        <!-- PARAGRAPH 4: BATTERY ARCHITECTURE & EMERGENCY POWER -->
+        <section id="section-battery" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Battery Architecture &amp; Emergency Power: Dual-Layered Redundancy</h2>
+          </div>
+
+          <p class="article-p">
+            Power management on the U200 is remarkably well-engineered. The interior motor unit is powered by a high-capacity 7.4V 2000 mAh rechargeable lithium-ion pack engineered to deliver up to six months of operation based on eight daily cycles. When it eventually runs low, you can either pop the pack out to recharge via USB-C or snap on a standard portable power bank using the included hanging pouch without ever removing the lock from your door.
+          </p>
+
+          <p class="article-p">
+            The exterior keypad runs for 6 to 8 months on four included AAA alkaline batteries, or it can be permanently hardwired directly into existing 12V–24V AC/DC doorbell transformer wires for set-and-forget power. Should the battery ever run completely flat while you are away, a weather-sealed USB-C port on the underside of the keypad delivers instant emergency jump power from any pocket battery bank—ensuring you are never locked out.
+          </p>
+        </section>
+
+        <!-- PARAGRAPH 5: HONEST TRADE-OFFS & LIMITATIONS -->
+        <section id="section-tradeoffs" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">05</span>
+            <h2 class="section-title">Honest Trade-offs &amp; Practical Limitations: What to Know Before You Buy</h2>
+          </div>
+
+          <p class="article-p">
+            Despite its stellar engineering, the U200 carries three realistic caveats you need to evaluate before ordering. First, the interior unit has a substantial footprint: measuring six inches tall and protruding nearly 2.4 inches from the door panel, it requires at least 2.5 inches of clear clearance between the center of your deadbolt and any door casing, sidelights, or glass inserts.
+          </p>
+
+          <p class="article-p">
+            Second, out-of-home remote control and voice automations strictly require an existing Thread Border Router on your network; there is no bundled Wi-Fi bridge in the box, meaning standalone users are restricted to short-range Bluetooth control via the Aqara Home app. Finally, like all motorized turners, the U200 demands clean physical alignment. If your door has weatherstrip binding that requires you to push or pull hard on the handle to throw the deadbolt, the U200’s motor will hit torque resistance and trigger a jam notification. A quick five-minute strike-plate adjustment or latch lubrication is mandatory for frictionless operation.
+          </p>
+
+          <div class="callout-box warning-callout">
+            <div class="callout-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>Installation Checklist: Door Jamb Clearance &amp; Deadbolt Alignment</span>
+            </div>
+            <p class="callout-text">
+              Measure before buying: ensure at least 2.5 inches of flat space between your deadbolt centerline and door trim. If your manual deadbolt requires pushing the door inward to turn smoothly, file down your strike plate slightly before installing the U200 motor.
+            </p>
+          </div>
+        </section>
+
+        <!-- TWO-COLUMN PROS & CONS SECTION -->
+        <section id="section-pros-cons" class="section-block">
+          <div class="pros-cons-grid">
+            <!-- PROS CARD -->
+            <div class="pros-card">
+              <div class="card-header-row">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <h3 class="pros-title">What We Love (Pros)</h3>
+              </div>
+              <ul class="pro-con-list">
+                <li class="pro-con-item">
+                  <span class="pro-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Native Apple Home Key</strong> with Express Mode and 5-hour Power Reserve functionality.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="pro-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>100% exterior hardware retention</strong>: Landlord master keys and physical backup keys stay completely functional.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="pro-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Fast Matter over Thread speed</strong>: Instant, sub-second local response across Apple Home, Home Assistant, and Alexa.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="pro-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Comprehensive biometric keypad</strong>: Sub-0.5s 3D fingerprint reader, backlit numeric PIN pad, and NFC key cards included.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="pro-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Dual keypad power options</strong>: Runs on 4× AAA alkaline batteries or permanent 12V–24V AC/DC doorbell transformer wiring.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="pro-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Rechargeable lithium battery pack</strong> with USB-C emergency pass-through and hanging charging pouch.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- CONS CARD -->
+            <div class="cons-card">
+              <div class="card-header-row">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <h3 class="cons-title">What Needs Work (Cons)</h3>
+              </div>
+              <ul class="pro-con-list">
+                <li class="pro-con-item">
+                  <span class="con-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>No built-in Wi-Fi bridge</strong>: Out-of-home remote control requires an active Thread Border Router (Apple TV, HomePod, Echo Hub).
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="con-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Substantial interior footprint</strong>: Protrudes 2.4 inches from the door, requiring ~2.5" clear clearance to door frames.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="con-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Deadbolt alignment sensitive</strong>: Stiff friction latches or warped door jambs can cause motor stall warnings without adjustment.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="con-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Firmware updates over Bluetooth</strong>: Major OTA firmware transfers can take 15–20 minutes to complete from phone.
+                  </div>
+                </li>
+                <li class="pro-con-item">
+                  <span class="con-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  </span>
+                  <div class="pro-con-text">
+                    <strong>Advanced PIN management</strong>: Complex recurring access schedules are easiest to configure through the Aqara Home app.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- COMPETITOR COMPARISON TABLE -->
+        <section id="comparison" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">06</span>
+            <h2 class="section-title">How It Compares: Retrofit &amp; Smart Lock Showdown</h2>
+          </div>
+
+          <p class="article-p">
+            Compared to the <strong>SwitchBot Lock Pro</strong>, the Aqara U200 justifies its slight price premium with native Apple Home Key integration, direct Thread mesh connectivity without requiring a proprietary hub bridge, and an included rechargeable lithium battery pack. Against the heavyweight <strong>Schlage Encode Plus</strong>, the U200 delivers identical Apple Home Key tap-to-unlock responsiveness and adds a lightning-fast biometric fingerprint scanner—all while costing nearly $85 less and sparing renters and HOA homeowners from the headache of tearing apart their exterior deadbolts.
+          </p>
+
+          <div class="comparison-container">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th class="col-feature">Feature / Model</th>
+                  <th class="col-target">
+                    <div class="comp-badge-winner">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                      Editor's Choice
+                    </div>
+                    <div class="comp-model-name">Aqara Smart Lock U200 Kit</div>
+                    <span style="font-size: 0.8rem; color: var(--cyan-400);">Model EL-D02D</span>
+                  </th>
+                  <th class="col-comp">
+                    <div class="comp-model-name">SwitchBot Lock Pro</div>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Retrofit Competitor</span>
+                  </th>
+                  <th class="col-comp">
+                    <div class="comp-model-name">Schlage Encode Plus</div>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Full Deadbolt Swap</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Form Factor</strong></td>
+                  <td class="col-target"><strong>Interior Retrofit</strong></td>
+                  <td>Interior Retrofit</td>
+                  <td>Full Deadbolt Replacement</td>
+                </tr>
+                <tr>
+                  <td><strong>Apple Home Key Support</strong></td>
+                  <td class="col-target">
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (Native NFC)
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge-no">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                      NO
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (Native NFC)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Wireless Protocols</strong></td>
+                  <td class="col-target"><strong>Matter over Thread</strong> + BLE</td>
+                  <td>Bluetooth (Matter via Hub 2)</td>
+                  <td>Thread + Wi-Fi built-in</td>
+                </tr>
+                <tr>
+                  <td><strong>Keypad Included in Kit</strong></td>
+                  <td class="col-target">
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (Biometric + PIN)
+                    </span>
+                  </td>
+                  <td>Optional Add-on Bundle</td>
+                  <td>Built-in exterior touchscreen</td>
+                </tr>
+                <tr>
+                  <td><strong>Fingerprint Scanner</strong></td>
+                  <td class="col-target">
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (Sub-0.5s 3D)
+                    </span>
+                  </td>
+                  <td>Optional Keypad Touch only</td>
+                  <td>
+                    <span class="badge-no">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                      NO
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Retains Original Keys</strong></td>
+                  <td class="col-target">
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (100% Untouched)
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (100% Untouched)
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge-no">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                      NO (Cylinder Swap)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Renter &amp; HOA Friendly</strong></td>
+                  <td class="col-target"><strong>Exceptional</strong></td>
+                  <td>Exceptional</td>
+                  <td>Unsuitable for rentals</td>
+                </tr>
+                <tr>
+                  <td><strong>Lock Power Mechanism</strong></td>
+                  <td class="col-target"><strong>Rechargeable 2000 mAh Li-ion</strong></td>
+                  <td>4× AA Alkaline batteries</td>
+                  <td>4× AA Alkaline batteries</td>
+                </tr>
+                <tr>
+                  <td><strong>Keypad Hardwire Capable</strong></td>
+                  <td class="col-target">
+                    <span class="badge-yes">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      YES (12V–24V AC/DC)
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge-no">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                      NO (CR123A batteries)
+                    </span>
+                  </td>
+                  <td>N/A (Built-in lock face)</td>
+                </tr>
+                <tr>
+                  <td><strong>Typical Street / Promo Price</strong></td>
+                  <td class="col-target"><span class="spec-val-highlight">$215.99</span> ($269.99 MSRP)</td>
+                  <td>$179.99 – $199.99</td>
+                  <td>$299.99 – $329.99</td>
+                </tr>
+                <tr>
+                  <td><strong>Product Link</strong></td>
+                  <td class="col-target">
+                    <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="btn-amazon-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;">
+                      Check Deal on Amazon
+                    </a>
+                  </td>
+                  <td>
+                    <span style="font-size: 0.85rem; color: var(--text-muted);">Check Amazon</span>
+                  </td>
+                  <td>
+                    <span style="font-size: 0.85rem; color: var(--text-muted);">Check Amazon</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- PARAGRAPH 6: PURCHASING VERDICT & VALUE -->
+        <section id="section-verdict" class="section-block">
+          <div class="section-heading-wrap">
+            <span class="section-num">07</span>
+            <h2 class="section-title">The Purchasing Verdict &amp; Value: The Retrofit Benchmark</h2>
+          </div>
+
+          <p class="article-p">
+            If you live in an apartment, belong to an HOA that polices exterior hardware aesthetics, or simply refuse to surrender your physical deadbolt keys, the Aqara U200 is easily the smartest entrance upgrade you can install. It bridges the gap between mechanical security and cutting-edge digital convenience better than any competitor to date.
+          </p>
+
+          <p class="article-p">
+            While its list price sits at $269.99, Amazon regularly runs a 20% discount coupon that drops the kit down to <strong>$215.99—putting $54 back in your pocket</strong>. For Apple ecosystem devotees, smart home builders building out a resilient <a href="/#deals">Matter over Thread smart home</a>, or anyone looking to integrate smart entry alongside their <a href="/reolink_poe/">PoE camera security system</a>, the Aqara U200 earns our enthusiastic <strong>Editor's Choice Award</strong>.
+          </p>
+        </section>
+
+        <!-- FREQUENTLY ASKED QUESTIONS (FAQ) ACCORDION -->
+        <section id="faq" class="section-block faq-container">
+          <div class="section-heading-wrap">
+            <span class="section-num">08</span>
+            <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+          </div>
+
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Does the Aqara U200 require an Aqara hub to work with Apple Home Key?</span>
+              <span class="faq-chevron">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>No.</strong> The Aqara U200 functions natively with Apple Home Key through Matter over Thread using any compatible Apple Thread Border Router (such as an Apple HomePod mini or Apple TV 4K 128GB). An Aqara Hub M3 is completely optional and only necessary if you specifically want out-of-home remote configuration through Aqara’s proprietary mobile app rather than Apple Home.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can I keep my existing physical keys and deadbolt with the Aqara U200?</span>
+              <span class="faq-chevron">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>Yes.</strong> The Aqara U200 installs exclusively over the interior thumbturn on the inside face of your door. 100% of your exterior deadbolt trim, keyway cylinder, and physical brass backup keys remain intact and fully functional. Your landlord or family members can continue to unlock the door with traditional keys at any time.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What happens if my phone battery dies or my home internet goes down?</span>
+              <span class="faq-chevron">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                The lock operates completely offline without internet or Wi-Fi. Apple Home Key Express Mode includes Apple's Power Reserve feature, allowing your iPhone to unlock the door for up to five hours after the phone's battery has completely drained. Furthermore, the exterior biometric fingerprint reader, numeric PIN keypad, included NFC key cards, and your original metal keys all operate locally without requiring an active network connection.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How does the Aqara U200 connect to Home Assistant without cloud dependence?</span>
+              <span class="faq-chevron">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                The U200 connects natively to Home Assistant using the standard <code>Matter</code> integration coupled with a local Thread Border Router (such as a Home Assistant Connect ZBT-1, SkyConnect, or an Apple TV). Because all communication flows via local IPv6 Thread mesh packets, state changes and lock/unlock commands execute locally with zero cloud latency and no recurring subscription fees.
+              </p>
+            </div>
+          </details>
+        </section>
+
+      </article>
+
+      <!-- RIGHT: STICKY DESKTOP SIDEBAR -->
+      <aside class="sidebar">
+
+        <!-- STICKY SIDEBAR DEAL BOX -->
+        <div class="sidebar-deal-box">
+          <div class="deal-badge-pill" style="margin: 0 auto 0.75rem;">20% OFF COUPON</div>
+          <img src="images/aqara_u200.webp" onerror="this.onerror=null; this.src='/images/deals/aqara_u200.webp';" alt="Aqara U200 Smart Lock" class="sidebar-deal-thumb">
+          <h4 class="sidebar-deal-title">Aqara Smart Lock U200 Kit</h4>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.75rem;">Matter over Thread &amp; Apple Home Key</p>
+          <div class="sidebar-price-row">
+            <span class="sidebar-current-price">$215.99</span>
+            <span class="sidebar-msrp">$269.99</span>
+          </div>
+          <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="btn-amazon" style="font-size: 0.92rem; padding: 0.85rem 1rem;">
+            Claim Deal on Amazon
+          </a>
+          <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.5rem;">Free Prime 1-2 Day Shipping</p>
+        </div>
+
+        <!-- TABLE OF CONTENTS CARD -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            Table of Contents
+          </h3>
+          <ul class="toc-list">
+            <li class="toc-item"><a href="#quick-verdict"><span class="toc-num">00</span> Quick Verdict</a></li>
+            <li class="toc-item"><a href="#section-overview"><span class="toc-num">01</span> The Hook &amp; Overview</a></li>
+            <li class="toc-item"><a href="#specs-matrix"><span class="toc-num">02</span> Technical Specs Matrix</a></li>
+            <li class="toc-item"><a href="#section-homekey"><span class="toc-num">03</span> Apple Home Key Precision</a></li>
+            <li class="toc-item"><a href="#section-matter"><span class="toc-num">04</span> Matter over Thread Control</a></li>
+            <li class="toc-item"><a href="#section-battery"><span class="toc-num">05</span> Battery Architecture</a></li>
+            <li class="toc-item"><a href="#section-tradeoffs"><span class="toc-num">06</span> Honest Trade-offs</a></li>
+            <li class="toc-item"><a href="#section-pros-cons"><span class="toc-num">07</span> Pros &amp; Cons</a></li>
+            <li class="toc-item"><a href="#comparison"><span class="toc-num">08</span> Competitor Comparison</a></li>
+            <li class="toc-item"><a href="#section-verdict"><span class="toc-num">09</span> Purchasing Verdict</a></li>
+            <li class="toc-item"><a href="#faq"><span class="toc-num">10</span> FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- QUICK SPECS SIDEBAR SUMMARY -->
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Quick Verdict Specs
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.85rem;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem;">
+              <span style="color: var(--text-muted);">Home Key NFC:</span>
+              <span style="color: var(--emerald-400); font-weight: 700;">Native Express</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem;">
+              <span style="color: var(--text-muted);">Wireless:</span>
+              <span style="color: var(--cyan-400); font-family: var(--font-mono); font-weight: 700;">Thread + BLE</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem;">
+              <span style="color: var(--text-muted);">Lock Battery:</span>
+              <span style="color: #ffffff; font-family: var(--font-mono);">2000 mAh Li-ion</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.4rem;">
+              <span style="color: var(--text-muted);">Keypad Ingress:</span>
+              <span style="color: #ffffff; font-family: var(--font-mono);">IPX5 Weatherproof</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem;">
+              <span style="color: var(--text-muted);">Physical Keys:</span>
+              <span style="color: var(--emerald-400); font-weight: 700;">100% Retained</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- BOTTOM CTA BANNER -->
+    <section class="bottom-cta-banner">
+      <div class="bottom-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Editor's Choice Retrofit Lock 2026
+      </div>
+      <h2 class="bottom-cta-title">Claim Your Deal on the Aqara Smart Lock U200 Kit</h2>
+      <p class="bottom-cta-desc">
+        Enjoy frictionless Apple Home Key entry, biometric convenience, and seamless Matter over Thread multi-ecosystem integration without modifying exterior locks or breaking lease terms.
+      </p>
+
+      <div class="bottom-price-highlight">
+        <span class="price-current" style="font-size: 2.5rem;">$215.99</span>
+        <span class="price-msrp" style="font-size: 1.35rem;">$269.99</span>
+        <span class="price-savings" style="font-size: 0.95rem;">Save $54 with 20% Coupon</span>
+      </div>
+
+      <div class="bottom-btn-wrap">
+        <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="btn-amazon" style="font-size: 1.15rem; padding: 1.15rem 2rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Claim Deal on Amazon
+        </a>
+        <p class="amazon-subtext" style="margin-top: 0.85rem;">
+          Direct Amazon affiliate link • ASIN: B0FQMXS7WC • Clip on-page coupon for $54 discount
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a href="https://siliconsteals.com/" class="brand-logo">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">Silicon <span>Steals</span></div>
+        </a>
+        <ul class="footer-nav">
+          <li><a href="https://siliconsteals.com/">Home</a></li>
+          <li><a href="https://siliconsteals.com/deals">Tech Deals</a></li>
+          <li><a href="/cozyla_calendar/web_layout_preview.html">Cozyla Review</a></li>
+          <li><a href="/reolink_poe/">Reolink 4K PoE Review</a></li>
+          <li><a href="https://www.pinterest.com/thetechhubinsider/" target="_blank" rel="noopener">Official Pinterest</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-ftc-box">
+        <p>
+          <strong>FTC Affiliate Disclosure:</strong> Silicon Steals participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. Prices, coupons, and availability are verified regularly but subject to change by retailers. All editorial reviews reflect independent evaluation and testing.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Silicon Steals. All rights reserved.</div>
+        <div>
+          Follow our curated visual boards on <a href="https://www.pinterest.com/thetechhubinsider/" target="_blank" rel="noopener" style="color: var(--cyan-400);">Official Pinterest</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

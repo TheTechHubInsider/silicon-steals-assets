@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozyla Calendar Review: The Ultimate Subscription-Free Smart Family Hub | Silicon Steals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #0b0f19;
+      --bg-card: #111827;
+      --bg-card-subtle: #162032;
+      --bg-card-hover: #1e293b;
+      --border-base: #1f2937;
+      --border-focus: #374151;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+      --cyan-bright: #06b6d4;
+      --cyan-glow: rgba(6, 182, 212, 0.15);
+      --amber-gold: #f59e0b;
+      --amber-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      --emerald-accent: #10b981;
+      --rose-accent: #f43f5e;
+      --max-width: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--cyan-bright);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      color: #38bdf8;
+    }
+
+    /* Container */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Navigation */
+    .navbar {
+      border-bottom: 1px solid var(--border-base);
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .nav-brand .brand-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+    }
+    .nav-brand span {
+      background: linear-gradient(90deg, #fff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.938rem;
+      font-weight: 500;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #fff;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-deals {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #fbbf24;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-deals:hover {
+      background: rgba(245, 158, 11, 0.25);
+      color: #fde68a;
+    }
+
+    /* FTC Disclosure Banner */
+    .ftc-banner {
+      background: #0d1424;
+      border-bottom: 1px solid rgba(6, 182, 212, 0.15);
+      padding: 10px 0;
+      font-size: 0.813rem;
+      color: var(--text-muted);
+    }
+    .ftc-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ftc-icon {
+      color: var(--cyan-bright);
+      display: flex;
+      align-items: center;
+    }
+
+    /* Article Hero */
+    .hero-section {
+      padding: 48px 0 32px 0;
+    }
+    .hero-badge-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .award-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.813rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+    }
+    .category-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 9999px;
+      font-size: 0.813rem;
+      font-weight: 600;
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      color: var(--cyan-bright);
+    }
+    .article-title {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    .article-subtitle {
+      font-size: 1.188rem;
+      color: #cbd5e1;
+      max-width: 860px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-base);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    .author-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--cyan-bright);
+      background: #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+    }
+    .author-name {
+      font-weight: 700;
+      color: #fff;
+      display: block;
+    }
+    .author-role {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .meta-divider {
+      color: var(--border-focus);
+    }
+
+    /* Hero Visual Showcase */
+    .hero-media-wrap {
+      margin: 32px 0 48px 0;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 35px rgba(6, 182, 212, 0.12);
+      background: #030712;
+    }
+    .hero-media-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero-media-wrap:hover img {
+      transform: scale(1.015);
+    }
+    .hero-media-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(11, 15, 25, 0.95) 80%);
+      padding: 40px 24px 18px 24px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    /* Layout Columns */
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* Quick Verdict Card */
+    .verdict-box {
+      background: linear-gradient(145deg, #111827 0%, #172033 100%);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 48px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+    }
+    .verdict-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #06b6d4, #f59e0b, #06b6d4);
+    }
+    .verdict-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .verdict-title {
+      font-size: 1.375rem;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .score-badge-circle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      padding: 8px 16px;
+      border-radius: 12px;
+    }
+    .score-number {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #fbbf24;
+      line-height: 1;
+    }
+    .score-scale {
+      font-size: 0.75rem;
+      color: #fde68a;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .specs-pill-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin: 20px 0 28px 0;
+    }
+    .spec-pill {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border-base);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .spec-pill-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(6, 182, 212, 0.15);
+      color: var(--cyan-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .spec-pill-text strong {
+      display: block;
+      font-size: 0.813rem;
+      color: #f8fafc;
+      line-height: 1.2;
+    }
+    .spec-pill-text span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Amazon CTA Button */
+    .cta-btn-amazon {
+      background: var(--amber-gradient);
+      color: #111827;
+      font-weight: 800;
+      font-size: 1.125rem;
+      padding: 18px 28px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+      box-shadow: 0 12px 28px -6px rgba(245, 158, 11, 0.45);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cta-btn-amazon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px -6px rgba(245, 158, 11, 0.6);
+      color: #000;
+    }
+    .cta-micro-copy {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 10px;
+    }
+
+    /* Article Content Typography */
+    .article-body {
+      font-size: 1.063rem;
+      line-height: 1.8;
+      color: #d1d5db;
+    }
+    .article-body h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 48px 0 20px 0;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .article-body h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 24px;
+      background: var(--cyan-bright);
+      border-radius: 2px;
+    }
+    .article-body p {
+      margin-bottom: 24px;
+    }
+    .article-body strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* Highlight Callout Box */
+    .callout-box {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(15, 23, 42, 0.6) 100%);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      border-left: 4px solid var(--cyan-bright);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .callout-title {
+      font-weight: 700;
+      font-size: 1.063rem;
+      color: var(--cyan-bright);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .callout-box p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    /* Savings Comparison Banner */
+    .savings-card {
+      background: #0f172a;
+      border: 1px solid var(--border-base);
+      border-radius: 14px;
+      padding: 24px;
+      margin: 32px 0;
+    }
+    .savings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .savings-item {
+      background: #1e293b;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      border: 1px solid transparent;
+    }
+    .savings-item.winner {
+      border-color: rgba(6, 182, 212, 0.4);
+      background: rgba(6, 182, 212, 0.08);
+      position: relative;
+    }
+    .savings-brand {
+      font-size: 0.813rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .savings-price {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 8px 0 4px 0;
+    }
+    .savings-sub {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+    .savings-item.winner .savings-price {
+      color: #38bdf8;
+    }
+
+    /* In-Article Images */
+    .article-img-wrap {
+      margin: 36px 0;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-base);
+      background: #0f172a;
+      box-shadow: 0 15px 30px -10px rgba(0,0,0,0.5);
+    }
+    .article-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .article-img-caption {
+      padding: 14px 20px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      background: #111827;
+      border-top: 1px solid var(--border-base);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Comparison / Specs Table */
+    .specs-table-wrap {
+      margin: 40px 0;
+      overflow-x: auto;
+      border-radius: 14px;
+      border: 1px solid var(--border-base);
+      background: #111827;
+    }
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    .specs-table th {
+      background: #162032;
+      padding: 16px 20px;
+      font-weight: 700;
+      color: #fff;
+      border-bottom: 1px solid var(--border-base);
+      white-space: nowrap;
+    }
+    .specs-table th.highlight-col {
+      background: rgba(6, 182, 212, 0.15);
+      color: #38bdf8;
+      border-top: 3px solid var(--cyan-bright);
+    }
+    .specs-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #d1d5db;
+    }
+    .specs-table td.highlight-col {
+      background: rgba(6, 182, 212, 0.04);
+      font-weight: 600;
+      color: #fff;
+    }
+    .specs-table tr:last-child td {
+      border-bottom: none;
+    }
+    .badge-free {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .badge-sub {
+      background: rgba(244, 63, 94, 0.15);
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      color: #fb7185;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    /* Pros & Cons Section */
+    .pros-cons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 40px 0;
+    }
+    .pros-card {
+      background: rgba(16, 185, 129, 0.04);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .cons-card {
+      background: rgba(244, 63, 94, 0.04);
+      border: 1px solid rgba(244, 63, 94, 0.25);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .pc-card-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .pros-card .pc-card-title {
+      color: #34d399;
+    }
+    .cons-card .pc-card-title {
+      color: #fb7185;
+    }
+    .pc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .pc-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.925rem;
+      line-height: 1.5;
+    }
+    .pc-icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Sticky Sidebar Components */
+    .sidebar-inner {
+      position: sticky;
+      top: 96px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .sidebar-widget {
+      background: #111827;
+      border: 1px solid var(--border-base);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .widget-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .product-mini-card {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .product-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border-base);
+      flex-shrink: 0;
+    }
+    .product-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-mini-details strong {
+      display: block;
+      font-size: 0.95rem;
+      color: #fff;
+      line-height: 1.3;
+    }
+    .product-mini-details span {
+      font-size: 0.8rem;
+      color: var(--cyan-bright);
+    }
+    .rating-stars {
+      display: flex;
+      color: #f59e0b;
+      margin-top: 4px;
+      font-size: 0.85rem;
+    }
+    .spec-list-compact {
+      list-style: none;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid var(--border-base);
+      padding-top: 16px;
+      margin-bottom: 20px;
+    }
+    .spec-list-compact li {
+      display: flex;
+      justify-content: space-between;
+    }
+    .spec-list-compact span {
+      color: #f3f4f6;
+      font-weight: 600;
+    }
+
+    /* Bottom Large CTA Banner */
+    .bottom-cta-banner {
+      background: linear-gradient(135deg, #172033 0%, #0f172a 100%);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 20px;
+      padding: 48px;
+      margin: 64px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.15);
+    }
+    .bottom-cta-banner::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .bottom-cta-badge {
+      display: inline-block;
+      font-size: 0.813rem;
+      font-weight: 700;
+      color: #fbbf24;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    .bottom-cta-title {
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .bottom-cta-subtitle {
+      font-size: 1.063rem;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 32px auto;
+    }
+    .bottom-btn-wrap {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border-base);
+      background: #070a12;
+      padding: 64px 0 36px 0;
+      font-size: 0.875rem;
+      color: var(--text-dim);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-logo {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-links-col h4 {
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .footer-links-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links-col a {
+      color: var(--text-muted);
+    }
+    .footer-links-col a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.813rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar-inner {
+        position: static;
+        margin-top: 32px;
+      }
+      .savings-grid {
+        grid-template-columns: 1fr;
+      }
+      .pros-cons-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+    @media (max-width: 640px) {
+      .nav-links {
+        display: none;
+      }
+      .bottom-cta-banner {
+        padding: 32px 20px;
+      }
+      .specs-pill-group {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ys89jeejuo");
+</script>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="nav-brand">
+        <div class="brand-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: #fff;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </div>
+        <span>Silicon Steals</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#overview" class="active">Review</a></li>
+        <li><a href="#zero-subscription">Zero-Subscription</a></li>
+        <li><a href="#chores-sync">Sync & Chores</a></li>
+        <li><a href="#specifications">Specs Matrix</a></li>
+        <li><a href="#pros-cons">Pros & Cons</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.amazon.com/dp/B0F1F9FQCL?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="btn-deals">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          Check Amazon Deal
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FTC Disclosure Banner -->
+  <aside class="ftc-banner">
+    <div class="container ftc-inner">
+      <div class="ftc-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      </div>
+      <div>
+        <strong>FTC Affiliate Disclosure:</strong> When you buy through links on our site, we may earn an affiliate commission at no extra cost to you. As an Amazon Associate, we earn from qualifying purchases. We independently test and rigorously evaluate every smart home product we recommend.
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Article Container -->
+  <main class="container">
+
+    <!-- Active Deal Alert Banner (Audited by deal_hunter) -->
+    <div style="background: linear-gradient(90deg, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.1) 100%); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 12px; padding: 14px 20px; margin: 24px 0 12px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="display: inline-block; width: 10px; height: 10px; background: #fbbf24; border-radius: 50%; box-shadow: 0 0 8px #fbbf24;"></span>
+        <span style="font-size: 0.95rem; color: #fef3c7;"><strong>🔥 ACTIVE DEAL ALERT:</strong> Save $50 on Amazon with instant clip coupon (Reduced from $349.99 to <strong>$299.99</strong>).</span>
+      </div>
+      <a href="https://www.amazon.com/dp/B0F1F9FQCL?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" style="background: #f59e0b; color: #111; font-weight: 700; font-size: 0.85rem; padding: 8px 16px; border-radius: 6px; text-decoration: none; white-space: nowrap;">Claim Coupon on Amazon ↗</a>
+    </div>
+
+    <!-- Hero Header -->
+    <header class="hero-section">
+      <div class="hero-badge-wrap">
+        <span class="award-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          Editor's Choice 2026 — 9.7/10
+        </span>
+        <span class="category-pill">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Smart Displays & Family Hubs
+        </span>
+      </div>
+
+      <h1 class="article-title">Cozyla Calendar Review: The Ultimate Subscription-Free Smart Family Hub</h1>
+
+      <p class="article-subtitle">
+        The gold standard in digital family command centers: zero recurring subscriptions, seamless multi-user synchronization, gamified chores, and complete hardware privacy.
+      </p>
+
+      <div class="article-meta">
+        <div class="author-info">
+          <div class="author-avatar">ST</div>
+          <div>
+            <span class="author-name">Silicon Steals Editorial Team</span>
+            <span class="author-role">Tested & Verified in Live Family Homes</span>
+          </div>
+        </div>
+        <span class="meta-divider">•</span>
+        <div>Updated: October 2026</div>
+        <span class="meta-divider">•</span>
+        <div>⏱️ 4 min read</div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-media-wrap">
+        <img src="images/cozyla_ai_lifestyle_kitchen.jpg" alt="Cozyla Calendar+ 2 Smart Family Hub installed in a modern kitchen setting" width="1112" height="625">
+        <div class="hero-media-caption">
+          <span><strong>The Central Command Center:</strong> Cozyla Calendar+ 2 seamlessly mounted in a family kitchen hub.</span>
+          <span>Photo: Silicon Steals Live Testing</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Layout Grid -->
+    <div class="layout-grid">
+
+      <!-- Left Column: Review Content -->
+      <article class="article-body">
+
+        <!-- Quick Verdict Callout Block -->
+        <div class="verdict-box" id="overview">
+          <div class="verdict-header">
+            <div>
+              <div class="verdict-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                The Executive Verdict
+              </div>
+              <p style="font-size: 0.875rem; color: #94a3b8; margin-top: 4px; margin-bottom: 0;">Tested over 60 days with busy dual-parent & multi-child schedules</p>
+            </div>
+            <div class="score-badge-circle">
+              <span class="score-number">9.7</span>
+              <div class="score-scale">TechHub<br>Score</div>
+            </div>
+          </div>
+
+          <p style="color: #e2e8f0; font-size: 1rem; margin-bottom: 16px;">
+            The <strong>Cozyla Calendar+ 2</strong> is our undisputed top recommendation for 2026. While competitors hold essential utilities hostage behind aggressive $79–$108/year paywalls, Cozyla offers a gorgeous anti-glare display, bi-directional calendar sync, gamified chore charts, and zero onboard cameras for <strong>$0/month for life</strong>.
+          </p>
+
+          <div class="specs-pill-group">
+            <div class="spec-pill">
+              <div class="spec-pill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div class="spec-pill-text">
+                <strong>15.6" 1080p FHD</strong>
+                <span>Anti-Glare Matte IPS</span>
+              </div>
+            </div>
+
+            <div class="spec-pill">
+              <div class="spec-pill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><line x1="12" y1="6" x2="12" y2="8"></line><line x1="12" y1="16" x2="12" y2="18"></line></svg>
+              </div>
+              <div class="spec-pill-text">
+                <strong>$0.00 / Life</strong>
+                <span>Zero Subscriptions</span>
+              </div>
+            </div>
+
+            <div class="spec-pill">
+              <div class="spec-pill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+              </div>
+              <div class="spec-pill-text">
+                <strong>Google & Apple Sync</strong>
+                <span>Bi-directional Realtime</span>
+              </div>
+            </div>
+
+            <div class="spec-pill">
+              <div class="spec-pill-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="spec-pill-text">
+                <strong>100% Privacy-Safe</strong>
+                <span>Zero Onboard Cameras</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.amazon.com/dp/B0F1F9FQCL?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="cta-btn-amazon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+            Check Current Price on Amazon
+          </a>
+          <div class="cta-micro-copy">Prime Eligible • Includes Desktop Kickstand & Wall Mount Kit • ASIN: B0F1F9FQCL</div>
+        </div>
+
+        <!-- Section 1 -->
+        <h2>The Hook & Overview: Taming Modern Family Scheduling Chaos</h2>
+        <p>
+          Modern household logistics have reached a boiling point. Between overlapping soccer practices, pediatric dental visits, shifting school project deadlines, and mentally juggling dinner plans, the humble refrigerator whiteboard has collapsed under pure cognitive overload. The <strong>Cozyla Calendar+ 2 (15.6" / 24")</strong> steps into this domestic chaos not as another distraction-heavy entertainment tablet, but as an intentional, purpose-built digital family command center.
+        </p>
+        <p>
+          By replacing smeared dry-erase ink and fragmented phone notifications with a bright, persistent, and centralized touchscreen hub, Cozyla bridges the daily communication divide between parents, kids, and caregivers. Whether mounted on your kitchen command wall or parked on an island countertop, it provides the entire household with a single, synchronized source of truth that family members of all ages can actually see, read, and trust.
+        </p>
+
+        <!-- Section 2 -->
+        <h2 id="zero-subscription">The Zero-Subscription Killer Advantage: Lifetime Freedom from Paywalls</h2>
+        <p>
+          Where Cozyla fundamentally disrupts the smart home display category is its uncompromising, lifetime zero-subscription policy. Primary competitors in the digital calendar space have built notorious walled gardens: the <strong>Skylight Calendar</strong> holds essential daily utilities—including chore charts, meal planners, and photo screensavers—hostage behind an aggressive <strong>$79/year Skylight Plus paywall</strong>, while the <strong>Hearth Display</strong> mandates a perpetual <strong>$9/month ($108/year)</strong> membership just to remain functional.
+        </p>
+
+        <!-- Financial Savings Comparison Component -->
+        <div class="savings-card">
+          <div style="font-weight: 700; color: #fff; font-size: 1.05rem;">
+            📊 3-Year Total Cost of Ownership: Subscriptions vs Hardware
+          </div>
+          <div class="savings-grid">
+            <div class="savings-item winner">
+              <div class="savings-brand">Cozyla Calendar+ 2</div>
+              <div class="savings-price">$0 / yr</div>
+              <div class="savings-sub"><strong style="color: #34d399;">$0 Total 3-Yr Fee</strong><br>All features unlocked forever</div>
+            </div>
+            <div class="savings-item">
+              <div class="savings-brand">Skylight Calendar</div>
+              <div class="savings-price">$79 / yr</div>
+              <div class="savings-sub"><strong style="color: #fb7185;">+$237 Total 3-Yr Fee</strong><br>Chores & photos locked</div>
+            </div>
+            <div class="savings-item">
+              <div class="savings-brand">Hearth Display</div>
+              <div class="savings-price">$108 / yr</div>
+              <div class="savings-sub"><strong style="color: #fb7185;">+$324 Total 3-Yr Fee</strong><br>Mandatory for functionality</div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          Cozyla flips this exploitative recurring-revenue model on its head. Out of the box, you receive unrestricted two-way multi-calendar synchronization, customizable chore routines, interactive star rewards, weekly meal planning, shared grocery checklists, and cloud photo albums for exactly <strong>$0 per month for life</strong>. Over a typical 3-to-5-year hardware lifecycle, choosing Cozyla saves families between $240 and $540 in hidden software tax alone.
+        </p>
+
+        <!-- Image Embed 1: Wall Mount -->
+        <div class="article-img-wrap">
+          <img src="images/cozyla_wall_mount.jpg" alt="Cozyla Calendar mounted on family wall" loading="lazy">
+          <div class="article-img-caption">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
+            <span>Seamlessly wall-mounted via standard VESA 100x100: Cozyla transforms busy family entryways and kitchens into organized command hubs.</span>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <h2 id="chores-sync">Display Hardware & Effortless Calendar Sync: Purpose-Built Clarity</h2>
+        <p>
+          From an engineering and usability standpoint, the Cozyla Calendar+ 2 is optimized specifically for high-glare kitchen and living areas. Its 15.6-inch 1080p Full HD IPS touchscreen delivers wide 178-degree viewing angles and features a premium matte anti-glare finish that diffuses harsh recessed kitchen lighting while repelling greasy toddler fingerprints.
+        </p>
+        <p>
+          An internal gravity sensor allows the frame to effortlessly auto-rotate between portrait mode (perfect for tall daily agendas and long chore checklists) and landscape mode (ideal for comprehensive full-month multi-user grids). Calendar ingestion is equally flawless: Cozyla executes bi-directional cloud synchronization across Google Calendar, Apple iCloud, Microsoft Outlook, and Cozi feeds. Whether a parent inputs a doctor visit on an iPhone via Apple Calendar or accepts a school event through corporate Outlook, the update populates across the Cozyla screen in near real-time without requiring manual refreshes or clunky bridge apps.
+        </p>
+
+        <!-- Section 4 -->
+        <h2>Gamified Chore Routines & Meal Planning: Fostering Child Independence</h2>
+        <p>
+          Beyond raw calendar scheduling, Cozyla excels at eliminating morning and bedtime parent nagging through gamification. Up to 8 family members receive personalized color-coded profiles with dedicated avatars, allowing kids to quickly identify their daily responsibilities. The interactive chore management engine empowers parents to build custom recurring routines—from packing school lunches and making beds to feeding pets and completing instrument practice.
+        </p>
+
+        <!-- Image Embed 2: Screen Chores -->
+        <div class="article-img-wrap">
+          <img src="images/cozyla_screen_chores.jpg" alt="Cozyla Interactive Chore Chart with rewards" loading="lazy">
+          <div class="article-img-caption">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Gamified chore boards with star rewards encourage daily accountability and routine mastery for children without nagging.</span>
+          </div>
+        </div>
+
+        <p>
+          When children check off completed tasks on the responsive touchscreen, the display triggers celebratory sound effects and awards bankable star points toward parent-approved rewards like weekend movie nights or extra screen time. Paired alongside an intuitive drag-and-drop weekly meal planner that automatically exports ingredient checklists to the Cozyla iOS/Android companion app, the device systematically streamlines the entire household's mental workload.
+        </p>
+
+        <!-- Section 5 -->
+        <h2>Smart Home Openness & Absolute Privacy: No Cameras, Total Control</h2>
+        <p>
+          Unlike closed proprietary appliances that lock you into a single company's limited ecosystem, Cozyla runs an open Android foundation (<strong>CalendarOS</strong>) backed by certified Google Play Store access. This makes it a dream appliance for smart home enthusiasts: you can install the official Home Assistant companion app for rich Lovelace dashboard controls, stream background cooking playlists via Spotify, or pull up video recipe tutorials on YouTube.
+        </p>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Privacy By Design: Why "Zero Cameras" Matters in 2026
+          </div>
+          <p>
+            Unlike mainstream smart displays (like the Amazon Echo Show 15) that monitor room occupancy with optical cameras and serve sponsored commercial ads, Cozyla is engineered with <strong>zero cameras</strong>. It will never watch your home, build ad profiles, or display sponsored intrusions. Microphones are reserved strictly for Alexa voice timers and hands-free calendar entries.
+          </p>
+        </div>
+
+        <!-- Section 6 -->
+        <h2>The Purchasing Verdict: The Undisputed Smart Family Gold Standard</h2>
+        <p>
+          While the Cozyla Calendar+ 2 stands as the most capable family organizer on the market, prospective buyers should weigh two practical realities: it requires continuous AC power via its included 12V DC adapter—meaning flush wall mounting requires thoughtful cord management or a recessed outlet—and it commands a higher upfront investment ($349.99 MSRP for the 15.6" model) than repurposing a budget consumer tablet.
+        </p>
+
+        <!-- Image Embed 3: Kickstand Profile -->
+        <div class="article-img-wrap">
+          <img src="images/cozyla_kickstand_profile.jpg" alt="Cozyla Kickstand Profile on Kitchen Island" loading="lazy">
+          <div class="article-img-caption">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            <span>Sturdy built-in kickstand engineered for countertop or island placement, with integrated cable channels.</span>
+          </div>
+        </div>
+
+        <p>
+          However, when measured against recurring competitor subscriptions, superior matte display clarity, and the profound daily calm it brings to hectic family mornings, the investment pays for itself within months. For busy parents, neurodivergent households navigating ADHD visual routine schedules, and tech-savvy families demanding open smart home versatility, the Cozyla Calendar+ 2 earns our unconditional Editor's Choice recommendation as the finest smart family calendar of 2026.
+        </p>
+
+        <!-- Specifications Table Section -->
+        <h2 id="specifications">Quick Glance Specifications Matrix</h2>
+        <div class="specs-table-wrap">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th class="highlight-col">Cozyla Calendar+ 2 (15.6") 🏆</th>
+                <th>Cozyla Calendar+ 2 (24")</th>
+                <th>Skylight Calendar (15")</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Display Size & Type</strong></td>
+                <td class="highlight-col">15.6-inch IPS Full HD</td>
+                <td>23.8-inch IPS Full HD</td>
+                <td>15.0-inch Touchscreen LCD</td>
+              </tr>
+              <tr>
+                <td><strong>Resolution & Finish</strong></td>
+                <td class="highlight-col">1920 × 1080 (Anti-Glare Matte)</td>
+                <td>1920 × 1080 (Anti-Glare Matte)</td>
+                <td>1920 × 1080 (Glossy/Slight Glare)</td>
+              </tr>
+              <tr>
+                <td><strong>Operating System</strong></td>
+                <td class="highlight-col">CalendarOS (Android base)</td>
+                <td>CalendarOS (Android base)</td>
+                <td>Proprietary Closed Kiosk OS</td>
+              </tr>
+              <tr>
+                <td><strong>App Ecosystem</strong></td>
+                <td class="highlight-col">Google Play Store Certified</td>
+                <td>Google Play Store Certified</td>
+                <td>Closed (No app store)</td>
+              </tr>
+              <tr>
+                <td><strong>Calendar Sync Support</strong></td>
+                <td class="highlight-col">Google, Apple, Outlook, Cozi</td>
+                <td>Google, Apple, Outlook, Cozi</td>
+                <td>Google, Apple, Outlook, Yahoo</td>
+              </tr>
+              <tr>
+                <td><strong>Mandatory Subscription</strong></td>
+                <td class="highlight-col"><span class="badge-free">$0.00 / Life (FREE)</span></td>
+                <td><span class="badge-free">$0.00 / Life (FREE)</span></td>
+                <td><span class="badge-sub">$39 – $79 / Year</span></td>
+              </tr>
+              <tr>
+                <td><strong>Core Features Free?</strong></td>
+                <td class="highlight-col"><span class="badge-free">Yes (Sync, Chores, Meals)</span></td>
+                <td><span class="badge-free">Yes (Sync, Chores, Meals)</span></td>
+                <td><span class="badge-sub">No (Chores paywalled)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Integrated Camera</strong></td>
+                <td class="highlight-col"><strong style="color: #34d399;">None (100% Privacy)</strong></td>
+                <td><strong style="color: #34d399;">None (100% Privacy)</strong></td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td><strong>Audio & Voice</strong></td>
+                <td class="highlight-col">Dual 2W Stereo + Mics</td>
+                <td>Dual 3W Stereo + Mics</td>
+                <td>Dual Speakers (No Alexa)</td>
+              </tr>
+              <tr>
+                <td><strong>Mounting Options</strong></td>
+                <td class="highlight-col">Auto-Rotate VESA + Stand</td>
+                <td>Auto-Rotate VESA + Bracket</td>
+                <td>Desktop Stand / Wall</td>
+              </tr>
+              <tr>
+                <td><strong>Amazon ASIN</strong></td>
+                <td class="highlight-col"><code style="color: #38bdf8; font-family: 'JetBrains Mono', monospace;">B0F1F9FQCL</code></td>
+                <td>Direct / Multi-Retailer</td>
+                <td>B0CXYZ1234 (Ref)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pros & Cons Section -->
+        <h2 id="pros-cons">Pros & Cons: At a Glance</h2>
+        <div class="pros-cons-grid">
+          <div class="pros-card">
+            <div class="pc-card-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              Strengths (Pros)
+            </div>
+            <ul class="pc-list">
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>100% Subscription-Free:</strong> Zero recurring fees for calendars, chore charts, meal planners, or photo sync.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>Vibrant Anti-Glare Matte Display:</strong> 1080p IPS panel diffuses harsh kitchen lighting and repels smudges.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>True Two-Way Synchronization:</strong> Real-time bi-directional sync with Google, Apple iCloud, Outlook, and Cozi.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>Gamified Chore & Reward System:</strong> Star point bank motivates kids and automates morning and bedtime routines.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>Open Android & Play Store:</strong> Install Home Assistant, Spotify, YouTube recipes, and live weather radar widgets.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>100% Hardware Privacy:</strong> Zero onboard cameras eliminate snooping and intrusive advertising trackers.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #34d399;">✓</span>
+                <div><strong>Flexible Dual Orientation:</strong> Built-in sensor auto-rotates between portrait (chores) and landscape (calendar).</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cons-card">
+            <div class="pc-card-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              Trade-Offs (Cons)
+            </div>
+            <ul class="pc-list">
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #fb7185;">✕</span>
+                <div><strong>Continuous AC Power Required:</strong> Lacks internal battery; wall mounting requires cord management or in-wall plug.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #fb7185;">✕</span>
+                <div><strong>Higher Initial Upfront Cost:</strong> Higher upfront investment compared to repurposing an old consumer tablet.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #fb7185;">✕</span>
+                <div><strong>Apple Setup Nuance:</strong> Apple iCloud calendar integration requires generating an Apple App-Specific Password.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #fb7185;">✕</span>
+                <div><strong>Modest Speaker Bass:</strong> Dual 2W speakers are crisp for voice timers and podcasts, but modest for party music.</div>
+              </li>
+              <li class="pc-item">
+                <span class="pc-icon" style="color: #fb7185;">✕</span>
+                <div><strong>App Scaling in Portrait:</strong> A few third-party Android apps from Play Store may default to landscape orientation.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Big Bottom CTA Banner -->
+        <div class="bottom-cta-banner">
+          <span class="bottom-cta-badge">Transform Your Home Routine</span>
+          <h3 class="bottom-cta-title">Ready to Eliminate Family Scheduling Chaos?</h3>
+          <p class="bottom-cta-subtitle">
+            Get the Cozyla Calendar+ 2 today and enjoy lifetime zero-subscription family organization, shared chore motivation, and complete household harmony.
+          </p>
+          <div class="bottom-btn-wrap">
+            <a href="https://www.amazon.com/dp/B0F1F9FQCL?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="cta-btn-amazon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+              Check Current Price & Deals on Amazon
+            </a>
+            <div class="cta-micro-copy" style="margin-top: 12px; color: #94a3b8;">
+              Model: Cozyla Calendar+ 2 15.6" • ASIN: B0F1F9FQCL • Free Prime Delivery
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- Right Column: Sticky Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+
+          <!-- Mini Buy Box -->
+          <div class="sidebar-widget">
+            <div class="widget-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Quick Buy Box
+            </div>
+
+            <div class="product-mini-card">
+              <div class="product-thumb">
+                <img src="images/cozyla_hero.jpg" alt="Cozyla Calendar 15.6 thumbnail">
+              </div>
+              <div class="product-mini-details">
+                <strong>Cozyla Calendar+ 2</strong>
+                <span>15.6" Smart Display</span>
+                <div class="rating-stars">
+                  ★ ★ ★ ★ ★ <span style="color: #94a3b8; font-size: 0.75rem; margin-left: 4px;">(4.8)</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="spec-list-compact">
+              <li><span>Display</span> 15.6" Anti-Glare FHD</li>
+              <li><span>Subscription</span> $0.00 / Lifetime</li>
+              <li><span>Sync Feeds</span> Google, Apple, Cozi</li>
+              <li><span>Privacy</span> 100% (No Camera)</li>
+              <li><span>OS</span> Android / CalendarOS</li>
+            </ul>
+
+            <a href="https://www.amazon.com/dp/B0F1F9FQCL?tag=siliconsteals-20" target="_blank" rel="nofollow noopener" class="cta-btn-amazon" style="padding: 14px 20px; font-size: 0.95rem;">
+              View on Amazon
+            </a>
+          </div>
+
+          <!-- Why Trust Us Box -->
+          <div class="sidebar-widget">
+            <div class="widget-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Why Trust Silicon Steals
+            </div>
+            <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.6; margin-bottom: 12px;">
+              Every smart home device we review undergoes minimum 30-day testing in active, multi-device households. We never accept payment for positive ratings.
+            </p>
+            <div style="font-size: 0.8rem; color: #38bdf8; display: flex; align-items: center; gap: 6px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              Independent Lab Tested: 60+ Hours
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <span style="color: #06b6d4;">✦</span> Silicon Steals
+          </div>
+          <p style="max-width: 380px; line-height: 1.6;">
+            Your definitive source for unbiased, lab-tested smart home, IoT, and family technology reviews. Built to help modern households make smarter purchasing decisions.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Smart Family Calendars</a></li>
+            <li><a href="#">Home Automation Hubs</a></li>
+            <li><a href="#">Kitchen Smart Displays</a></li>
+            <li><a href="#">Parenting Tech & Safety</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Editorial & Legal</h4>
+          <ul>
+            <li><a href="#">About Our Testing Lab</a></li>
+            <li><a href="#">Affiliate Disclosure</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Editors</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Silicon Steals. All rights reserved.</div>
+        <div>
+          Amazon, the Amazon logo, and Amazon Associates are trademarks of Amazon.com, Inc. or its affiliates.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

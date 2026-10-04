@@ -1,0 +1,122 @@
+# Silicon Steals
+> Independent hardware reviews, verified street pricing, and zero-subscription smart home recommendations.
+
+Silicon Steals (https://siliconsteals.com) is a technology editorial and deal intelligence publication. We specialize in evaluating hardware for remote workers, home security enthusiasts, smart home builders, and digital privacy advocates.
+
+## Editorial Principles & Methodology
+- Zero Paid Brand Sponsorships: We never accept manufacturer sponsorships or pay-to-play placements.
+- True Deal Verification: We track 90-day baseline street prices to expose artificial retailer holiday price inflation vs genuine price drops.
+- Subscription-Free Preference: We emphasize local-first, zero-subscription hardware (PoE local NVRs, Matter over Thread, offline-capable smart home hubs).
+
+## Published In-Depth Editorial Reviews
+- [GL.iNet Mudi 7 (GL-E5800) Portable 5G Wi-Fi 7 Travel Router](https://siliconsteals.com/mudi_7/)
+  - Award: Editor's Choice: Best Portable 5G Router 2026 (9.6/10)
+  - Key Specs: Qualcomm X72 5G NR, Wi-Fi 7 BE9300 Tri-Band, 2.5GbE LAN, 5,380mAh battery (13.5h), Hardware WireGuard & OpenVPN acceleration.
+  - Verdict: The ultimate privacy-first cellular hotspot for mobile professionals.
+
+- [Reolink 4K PoE Security Camera System RLK8-800B4](https://siliconsteals.com/reolink_poe/)
+  - Award: Editor's Choice: Best No-Subscription 4K PoE Security System 2026 (9.2/10)
+  - Key Specs: 8-Channel 4K NVR with 2TB HDD, 4x 8MP IP66 bullet cameras, Power-over-Ethernet single cable, onboard person/vehicle AI.
+  - Verdict: Gold standard for subscription-free, continuous 24/7 home surveillance.
+
+- [Aqara Smart Lock U200 Kit (Matter over Thread)](https://siliconsteals.com/aqara_u200/)
+  - Award: Editor's Choice: Best Retrofit Smart Lock 2026 (9.5/10)
+  - Key Specs: Retrofit deadbolt mechanism, Apple Home Key with Express Mode & Power Reserve, Matter over Thread native, IPX5 keypad with fingerprint/PIN/NFC.
+  - Verdict: Best retrofit smart lock for multi-ecosystem households and Apple users.
+
+- [Logitech MX Master 3S Wireless Performance Mouse](https://siliconsteals.com/logitech_mx_master_3s/)
+  - Award: Editor's Choice: Best Ergonomic Productivity Mouse 2026 (9.7/10)
+  - Key Specs: 8,000 DPI Darkfield optical sensor, MagSpeed 1,000-line/sec scroll wheel, 90% quieter switches, 70-day battery, Logitech Flow.
+  - Verdict: Undisputed productivity champion for software engineers, analysts, and creators.
+
+- [eufy Security SoloCam S340 Wireless Solar 3K Camera](https://siliconsteals.com/eufy_s340/)
+  - Award: Editor's Choice: Best Solar Pan & Tilt Security Camera 2026 (9.3/10)
+  - Key Specs: Dual-camera 3K wide + 2K telephoto (8x hybrid zoom), 360-degree pan & 70-degree tilt, 2.2W SolarPlus panel (forever power on 2h sun/day), $0 monthly fees.
+  - Verdict: Top wire-free perimeter camera eliminating ladder climbing and cloud subscriptions.
+
+- [Cozyla Calendar Plus 2 (15.6" Smart Digital Family Hub)](https://siliconsteals.com/cozyla_calendar/)
+  - Award: Editor's Choice: Best Smart Family Command Center 2026 (9.4/10)
+  - Key Specs: 15.6" IPS touchscreen, Google Calendar/Apple/Outlook/Cozi sync, Chore charts, Full Google Play Store.
+  - Verdict: Replaces paper family chaos with centralized digital schedule synchronization.
+
+## Active Verified Deals & Price Tracking Radar
+- [Cozyla Calendar+ 2 15.6" Smart Family Calendar](https://siliconsteals.com/deals/deal-cozyla-15-coupon/)
+  - Category: Smart Home Tech
+  - Verified Price: $349.99 (Regular: $349.99)
+  - True Deal Verdict: FAIR VALUE — Standard Retail Price — Consistent Value
+  - ASIN: B0F1F9FQCL
+- [Aqara Smart Lock U200 Kit (Matter over Thread & Apple Home Key)](https://siliconsteals.com/deals/deal-aqara-u200-lock/)
+  - Category: Smart Home Tech
+  - Verified Price: $212.49 (Regular: $212.49)
+  - True Deal Verdict: TRUE DEAL — Verified True Deal — 15% Below 90-Day Average
+  - ASIN: B0FQMXS7WC
+- [GL.iNet Mudi 7 (GL-E5800) Portable 5G Wi-Fi 7 Travel Router](https://siliconsteals.com/deals/deal-glinet-mudi7-promo/)
+  - Category: Home Networking
+  - Verified Price: $377.99 (Regular: $419.99) (Requires Amazon Clip Coupon for $377.99)
+  - True Deal Verdict: TRUE DEAL — Verified True Deal —  Amazon Clip Coupon
+  - ASIN: B0GT4VH5M7
+- [GL.iNet GL-MT6000 (Flint 2) Dual 2.5GbE OpenWrt Wi-Fi 6 Router](https://siliconsteals.com/deals/deal-glinet-flint2-coupon/)
+  - Category: Home Networking
+  - Verified Price: $169.99 (Regular: $169.99)
+  - True Deal Verdict: FAIR VALUE — Standard Retail Street Price
+  - ASIN: B0CP7S3117
+- [Reolink 4K PoE Security Camera System (8-Channel NVR + 4 Cams)](https://siliconsteals.com/deals/deal-reolink-4k-poe-system/)
+  - Category: Security Cameras
+  - Verified Price: $699.99 (Regular: $749.99)
+  - True Deal Verdict: TRUE DEAL — Verified True Deal — $50 Instant Drop on 8CH 4K Kit
+  - ASIN: B07K734ZTW
+- [eufy SoloCam S340 Wireless Solar Dual-Lens Pan/Tilt Outdoor Camera](https://siliconsteals.com/deals/deal-eufy-solocam-s340/)
+  - Category: Security Cameras
+  - Verified Price: $139.99 (Regular: $199.99)
+  - True Deal Verdict: TRUE DEAL — Top True Deal — All-Time Low $139.99 ($60 Off)
+  - ASIN: B0CCYP6KFM
+- [Logitech MX Master 3S Wireless Performance Mouse (Graphite)](https://siliconsteals.com/deals/deal-logitech-mx-master-3s/)
+  - Category: Desk Tech
+  - Verified Price: $118.99 (Regular: $118.99)
+  - True Deal Verdict: WAIT FOR DROP — Price Elevated — Wait for Regular $79–$99 Price
+  - ASIN: B09HM94VDS
+- [Anker Prime 27,650mAh Power Bank (250W Multi-Port Fast Charger)](https://siliconsteals.com/deals/deal-anker-prime-250w-bank/)
+  - Category: Power & Charging
+  - Verified Price: $179.99 (Regular: $179.99)
+  - True Deal Verdict: FAIR VALUE — Standard Retail Street Price
+  - ASIN: B0BYP2F3SG
+- [ARZOPA 16.1" 144Hz FHD Portable Gaming Monitor](https://siliconsteals.com/deals/deal-arzopa-144hz-portable/)
+  - Category: Desk Tech
+  - Verified Price: $129.98 (Regular: $234.99)
+  - True Deal Verdict: TRUE DEAL — Solid Value — $129.98 Price Point
+  - ASIN: B0B2PN9215
+- [OnePlus 12 Unlocked Smartphone (16GB RAM, Snapdragon 8 Gen 3)](https://siliconsteals.com/deals/deal-oneplus-12-unlocked/)
+  - Category: Mobile Tech
+  - Verified Price: $799.99 (Regular: $899.99)
+  - True Deal Verdict: TRUE DEAL — Verified True Deal — $100 Price Drop on 16GB Flagship
+  - ASIN: B0CQ5JGH2Y
+- [UGREEN Nexode Pro 300W 5-Port GaN Desktop Fast Charger](https://siliconsteals.com/deals/deal-ugreen-nexode-300w-gan/)
+  - Category: Power & Charging
+  - Verified Price: $169.99 (Regular: $199.99)
+  - True Deal Verdict: TRUE DEAL — Verified True Deal — $30 Drop on 300W GaN Flagship
+  - ASIN: B0F9FH3WFR
+- [Google Pixel 8 Pro Unlocked (128GB, Obsidian)](https://siliconsteals.com/deals/deal-pixel-8-pro-unlocked/)
+  - Category: Mobile Tech
+  - Verified Price: $358.42 (Regular: $358.42)
+  - True Deal Verdict: ['FAIR VALUE'] — ['Current Street Price']
+  - ASIN: B0CS3RL6YG
+- [ASUS ROG Ally 7" 120Hz FHD Gaming Handheld (AMD Z1 Extreme, 512GB)](https://siliconsteals.com/deals/deal-rog-ally-z1-extreme/)
+  - Category: Gaming & VR
+  - Verified Price: $600.99 (Regular: $600.99)
+  - True Deal Verdict: ['FAIR VALUE'] — ['Current Street Price']
+  - ASIN: B0CY9DGQR9
+- [PlayStation 5 Slim Console (Disc Edition)](https://siliconsteals.com/deals/deal-ps5-slim-disc/)
+  - Category: Gaming & VR
+  - Verified Price: $615.99 (Regular: $615.99)
+  - True Deal Verdict: ['FAIR VALUE'] — ['Current Street Price']
+  - ASIN: B0CL61F39H
+- [Skytech Shadow Gaming Desktop PC (Ryzen 5 3600, RTX 3060, 16GB)](https://siliconsteals.com/deals/deal-skytech-shadow-4060/)
+  - Category: Gaming & VR
+  - Verified Price: $999.99 (Regular: $999.99)
+  - True Deal Verdict: ['FAIR VALUE'] — ['Current Street Price']
+  - ASIN: B0BRBPH5VW
+- [MSI Katana 15 HX Gaming Laptop (15.6" 165Hz QHD, Intel i7, RTX 4060)](https://siliconsteals.com/deals/deal-asus-tuf-a15-4070/)
+  - Category: Gaming & VR
+  - Verified Price: $1134.00 (Regular: $1299.00)
+  - True Deal Verdict: TRUE DEAL — Verified True Deal — $165 Drop on 165Hz QHD Machine
+  - ASIN: B0FRVZ7CLY
