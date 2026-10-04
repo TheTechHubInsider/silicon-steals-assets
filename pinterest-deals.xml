@@ -7,128 +7,439 @@
   <channel>
     <title>Silicon Steals - Verified Daily Tech Deals</title>
     <link>https://www.siliconsteals.com</link>
-    <description>In-depth tech reviews, verified deals, and buyer guides for smart home, desk setups, and gaming gear.</description>
+    <description>Verified price drops, hardware discounts, and Prime Big Deal Days specials.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 08:35:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 21:30:00 GMT</lastBuildDate>
     <atom:link href="https://www.siliconsteals.com/pinterest-deals.xml" rel="self" type="application/rss+xml"/>
-    
-<item>
-      <title>Huge 32% Price Drop: Samsung 990 PRO 2TB NVMe SSD</title>
+    <item>
+      <title>Cozyla Calendar+ 2 15.6" Smart Family Calendar (17% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-cozyla-15-coupon/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-cozyla-15-coupon/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[A 15.6-inch 1080p FHD anti-glare touch display that solves family scheduling bottlenecks with zero mandatory monthly fees. Features two-way sync with Google, Apple, and Outlook calendars, chore charts, and on-device privacy with no camera onboard. Live price: $349.99 (Save 17%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/cozyla_ai_lifestyle_kitchen.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/cozyla_ai_lifestyle_kitchen.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Cozyla Calendar+ 2 15.6" Smart Family Calendar (17% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Aqara Smart Lock U200 Kit (Matter over Thread & Apple Home Key) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-aqara-u200-lock/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-aqara-u200-lock/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The first mainstream smart lock bringing native Apple Home Key NFC unlocking and Matter over Thread without replacing your exterior deadbolt or key cylinder. Features an IPX5 outdoor fingerprint keypad and rechargeable 6-month battery pack. Live price: $212.49 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/aqara_u200.webp" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/aqara_u200.webp" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Aqara Smart Lock U200 Kit (Matter over Thread & Apple Home Key) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>GL.iNet Mudi 7 (GL-E5800) Portable 5G Wi-Fi 7 Travel Router (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-glinet-mudi7-promo/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-glinet-mudi7-promo/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The premier portable 5G NR and Wi-Fi 7 travel router for privacy-focused remote workers. Powered by a Qualcomm X72 modem with 2.5GbE LAN, 2.8" color touchscreen, built-in eSIM plus dual nano-SIM failover, and hardware WireGuard VPN acceleration. Live price: $419.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/mudi_lifestyle_travel.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/mudi_lifestyle_travel.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>GL.iNet Mudi 7 (GL-E5800) Portable 5G Wi-Fi 7 Travel Router (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>GL.iNet GL-MT6000 (Flint 2) Dual 2.5GbE OpenWrt Wi-Fi 6 Router (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-glinet-flint2-coupon/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-glinet-flint2-coupon/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[OpenWrt powerhouse router featuring dual 2.5GbE ports, quad-core MediaTek processor, and Wi-Fi 6 speeds up to 6,000 Mbps. Designed for self-hosters and power users wanting full control over VPN tunnels, AdGuard Home DNS, and LAN routing. Live price: $169.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/flint2.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/flint2.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>GL.iNet GL-MT6000 (Flint 2) Dual 2.5GbE OpenWrt Wi-Fi 6 Router (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Reolink 4K PoE Security Camera System (8-Channel NVR + 4 Cams) (7% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-reolink-4k-poe-system/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-reolink-4k-poe-system/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The gold standard for subscription-free perimeter security. 8-channel 4K NVR with 2TB pre-installed surveillance hard drive, four weatherproof 8MP bullet cameras, Power-over-Ethernet single-cable wiring, and smart person/vehicle/animal AI detection. Live price: $699.99 (Save 7%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/reolink_800b4.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/reolink_800b4.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Reolink 4K PoE Security Camera System (8-Channel NVR + 4 Cams) (7% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>eufy SoloCam S340 Wireless Solar Dual-Lens Pan/Tilt Outdoor Camera (30% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-eufy-solocam-s340/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-eufy-solocam-s340/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Dual-camera solar security camera combining a 3K wide-angle lens with a 2K telephoto sensor for up to 8x hybrid zoom. Delivers 360-degree pan and tilt motion tracking, SolarPlus forever battery with just 2 hours of sun daily, and 8GB on-device local storage. Live price: $139.99 (Save 30%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/eufy_s340.png" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/eufy_s340.png" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>eufy SoloCam S340 Wireless Solar Dual-Lens Pan/Tilt Outdoor Camera (30% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Logitech MX Master 3S Wireless Performance Mouse (Graphite) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-logitech-mx-master-3s/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-logitech-mx-master-3s/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The undisputed gold standard for productivity and ergonomics. Features an 8,000 DPI Darkfield sensor that tracks even on clear glass, 90% quieter acoustic click switches, MagSpeed electromagnetic scroll wheel, and Logitech Flow multi-computer control. Live price: $118.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/logitech_mx_master_3s.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/logitech_mx_master_3s.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Logitech MX Master 3S Wireless Performance Mouse (Graphite) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Anker Prime 27,650mAh Power Bank (250W Multi-Port Fast Charger) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-anker-prime-250w-bank/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-anker-prime-250w-bank/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Ultra-high-output 27,650mAh portable power station capable of delivering 250W total output and 140W single-port charging to fast-charge 16" MacBook Pros. Includes a smart digital display showing live wattage, battery health, and charging times. Live price: $179.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/anker_prime_250w.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/anker_prime_250w.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Anker Prime 27,650mAh Power Bank (250W Multi-Port Fast Charger) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>ARZOPA 16.1" 144Hz FHD Portable Gaming Monitor (45% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-arzopa-144hz-portable/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-arzopa-144hz-portable/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[A 16.1-inch 144Hz 1080p FHD portable gaming monitor with 100% sRGB color accuracy, HDR support, dual USB-C ports, and mini-HDMI. An ideal lightweight dual-screen upgrade for laptop workers and portable gaming setups. Live price: $129.98 (Save 45%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/arzopa_monitor.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/arzopa_monitor.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>ARZOPA 16.1" 144Hz FHD Portable Gaming Monitor (45% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>OnePlus 12 Unlocked Smartphone (16GB RAM, Snapdragon 8 Gen 3) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-oneplus-12-unlocked/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-oneplus-12-unlocked/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Comprehensive hardware breakdown, editorial assessment, and real-world evaluation of the OnePlus 12 5G Unlocked (256GB, Silky Black). Live price: $899.00 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/oneplus_12.png" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/oneplus_12.png" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>OnePlus 12 Unlocked Smartphone (16GB RAM, Snapdragon 8 Gen 3) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>UGREEN Nexode Pro 300W 5-Port GaN Desktop Fast Charger (15% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-ugreen-nexode-300w-gan/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-ugreen-nexode-300w-gan/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Comprehensive hardware breakdown, editorial assessment, and real-world evaluation of the UGREEN Nexode 300W 5-Port GaN Desktop Charger. Live price: $169.99 (Save 15%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/ugreen_300w.png" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/ugreen_300w.png" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>UGREEN Nexode Pro 300W 5-Port GaN Desktop Fast Charger (15% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Google Pixel 8 Pro Unlocked (128GB, Obsidian) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-pixel-8-pro-unlocked/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-pixel-8-pro-unlocked/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Comprehensive hardware breakdown, editorial assessment, and real-world evaluation of the Google Pixel 8 Pro Unlocked (128GB, Obsidian). Live price: $369.00 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/pixel_8_pro.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/pixel_8_pro.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Google Pixel 8 Pro Unlocked (128GB, Obsidian) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>ASUS ROG Ally 7" 120Hz FHD Gaming Handheld (AMD Z1 Extreme, 512GB) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-rog-ally-z1-extreme/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-rog-ally-z1-extreme/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Comprehensive hardware breakdown, editorial assessment, and real-world evaluation of the ASUS ROG Ally 7" 120Hz FHD Gaming Handheld (AMD Z1 Extreme, 512GB). Live price: $600.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/rog_ally.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/rog_ally.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>ASUS ROG Ally 7" 120Hz FHD Gaming Handheld (AMD Z1 Extreme, 512GB) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>PlayStation 5 Slim Console (Disc Edition) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-ps5-slim-disc/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-ps5-slim-disc/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Comprehensive hardware breakdown, editorial assessment, and real-world evaluation of the PlayStation 5 Slim Console (Disc Edition). Live price: $615.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/ps5_slim.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/ps5_slim.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>PlayStation 5 Slim Console (Disc Edition) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Skytech Shadow Gaming Desktop PC (Ryzen 5 3600, RTX 3060, 16GB) (SAVE $150)</title>
+      <link>https://www.siliconsteals.com/deals/deal-skytech-shadow-4060/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-skytech-shadow-4060/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Comprehensive hardware breakdown, editorial assessment, and real-world evaluation of the Skytech Shadow Gaming Desktop PC (Ryzen 5 3600, RTX 3060, 16GB). Live price: $849.99 (Save 15%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/skytech_shadow.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/skytech_shadow.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Skytech Shadow Gaming Desktop PC (Ryzen 5 3600, RTX 3060, 16GB) (SAVE $150)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>MSI Katana 15 HX Gaming Laptop (15.6" 165Hz QHD, Intel i7, RTX 4060) (FULL RETAIL PRICE)</title>
+      <link>https://www.siliconsteals.com/deals/deal-asus-tuf-a15-4070/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-asus-tuf-a15-4070/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[High-performance 15.6-inch QHD 165Hz gaming laptop equipped with an Intel Core i7-14650HX processor, NVIDIA GeForce RTX 4060 GPU, 16GB DDR5 memory, and 1TB NVMe SSD with Cooler Boost 5 thermals. Live price: $1569.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/asus_tuf_a15.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/asus_tuf_a15.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>MSI Katana 15 HX Gaming Laptop (15.6" 165Hz QHD, Intel i7, RTX 4060) (FULL RETAIL PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Samsung 990 PRO 2TB PCIe 4.0 NVMe M.2 SSD (39% OFF)</title>
       <link>https://www.siliconsteals.com/deals/deal-samsung-990-pro-2tb/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-samsung-990-pro-2tb/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:00:00 GMT</pubDate>
-      <description><![CDATA[Blazing fast 7,450 MB/s read speeds! The gold standard internal PCIe 4.0 M.2 SSD for PS5 console expansion and high-end PC gaming rigs drops to $169.99 for Prime Big Deal Days. Save $80 right now on Silicon Steals.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/samsung_990_pro_2tb_editorial.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/samsung_990_pro_2tb_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Samsung 990 PRO 2TB PCIe 4.0 NVMe M.2 SSD</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-samsung-990-pro-2tb/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The gold-standard PCIe 4.0 NVMe internal SSD delivering up to 7,450 MB/s read and 6,900 MB/s write speeds with top-tier power efficiency for PS5 storage expansion and high-performance PC workstations. Live price: $389.99 (Save 39%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/samsung_990_pro.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/samsung_990_pro.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Samsung 990 PRO 2TB PCIe 4.0 NVMe M.2 SSD (39% OFF)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Apple AirPods Pro 2 (USB-C) Drops to $189: Best Prime Audio Deal</title>
+    <item>
+      <title>Apple AirPods Pro (2nd Gen) with USB-C MagSafe Case (FULL RETAIL PRICE)</title>
       <link>https://www.siliconsteals.com/deals/deal-airpods-pro-2-usbc/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-airpods-pro-2-usbc/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:05:00 GMT</pubDate>
-      <description><![CDATA[Up to 2x more Active Noise Cancellation, Adaptive Audio, Transparency mode, and USB-C MagSafe charging case with precision speaker tracking. Save $60 on Silicon Steals.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/airpods_pro_2_editorial.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/airpods_pro_2_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Apple AirPods Pro 2 Wireless Earbuds (USB-C)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-airpods-pro-2-usbc/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Industry-benchmark active noise cancellation with the Apple H2 chip, Adaptive Audio, Transparency mode, personalized spatial audio, and USB-C MagSafe case with IP54 dust and water resistance. Live price: $263.86 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/airpods_pro_2.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/airpods_pro_2.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Apple AirPods Pro (2nd Gen) with USB-C MagSafe Case (FULL RETAIL PRICE)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Fire TV Stick 4K Max Wi-Fi 6E Drops 33% to $39.99</title>
+    <item>
+      <title>Amazon Fire TV Stick 4K Max Streaming Device (Wi-Fi 6E) (33% OFF DEAL)</title>
       <link>https://www.siliconsteals.com/deals/deal-fire-tv-stick-4k-max/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-fire-tv-stick-4k-max/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:10:00 GMT</pubDate>
-      <description><![CDATA[Upgrade your living room entertainment! 4K Ultra HD streaming, Dolby Vision, HDR10+, Dolby Atmos, Ambient Experience, and Wi-Fi 6E for ultra-smooth 4K playback. Claim the limited-time discount on Silicon Steals.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/fire_tv_stick_4k_max_editorial.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/fire_tv_stick_4k_max_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Amazon Fire TV Stick 4K Max Streaming Device (Wi-Fi 6E)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-fire-tv-stick-4k-max/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Amazon's most powerful streaming stick featuring a quad-core 2.0 GHz processor, Wi-Fi 6E support, 16GB internal storage, Fire TV Ambient Experience, and Dolby Vision / Atmos audio support. Live price: $39.99 (Save 33%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/fire_tv_stick_4k_max.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/fire_tv_stick_4k_max.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Amazon Fire TV Stick 4K Max Streaming Device (Wi-Fi 6E) (33% OFF DEAL)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Sony WH-1000XM5 ANC Headphones Drop $72 for Prime Days</title>
+    <item>
+      <title>Sony WH-1000XM5 Wireless Noise-Canceling Headphones (25% OFF)</title>
       <link>https://www.siliconsteals.com/deals/deal-sony-wh1000xm5/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-sony-wh1000xm5/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:15:00 GMT</pubDate>
-      <description><![CDATA[The undisputed king of over-ear noise cancellation! Two processors controlling 8 microphones, 30-hour battery life, ultra-comfortable lightweight design, and crystal-clear hands-free calls. Grab the deal on Silicon Steals.]]></description>
-      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/sony_wh1000xm5_editorial.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/sony_wh1000xm5_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Sony WH-1000XM5 Wireless Noise-Canceling Headphones</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-sony-wh1000xm5/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Industry-leading noise cancellation powered by Sony's Integrated Processor V1 and HD Noise Canceling Processor QN1, featuring 30-hour battery life, speak-to-chat, and multipoint Bluetooth connection. Live price: $298.00 (Save 25%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/sony_wh1000xm5.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/sony_wh1000xm5.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Sony WH-1000XM5 Wireless Noise-Canceling Headphones (25% OFF)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Rugged 2TB SanDisk Extreme Portable SSD on Sale: $149</title>
+    <item>
+      <title>SanDisk 2TB Extreme Portable External SSD (1050MB/s) (33% OFF DEAL)</title>
       <link>https://www.siliconsteals.com/deals/deal-sandisk-2tb-extreme/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-sandisk-2tb-extreme/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:20:00 GMT</pubDate>
-      <description><![CDATA[Ultra-fast 1050 MB/s NVMe speeds, IP65 water and dust resistance, 3-meter drop protection, and handy carabiner loop for on-the-go video editors and photographers. Save $75 right now on Silicon Steals.]]></description>
-      <enclosure url="https://www.siliconsteals.com/images/pins/pin_deal-sandisk-2tb-extreme.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://www.siliconsteals.com/images/pins/pin_deal-sandisk-2tb-extreme.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>SanDisk 2TB Extreme Portable External SSD (1050MB/s)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-sandisk-2tb-extreme/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Rugged, pocket-sized portable SSD delivering NVMe speeds up to 1050MB/s read and 1000MB/s write with IP65 water/dust resistance and 3-meter drop protection for outdoor creators and mobile pros. Live price: $149.99 (Save 33%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/sandisk_extreme_2tb.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/sandisk_extreme_2tb.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>SanDisk 2TB Extreme Portable External SSD (1050MB/s) (33% OFF DEAL)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Elgato Stream Deck MK.2 20% Off: Master Your Workflow</title>
+    <item>
+      <title>Elgato Stream Deck MK.2 Studio Controller (15 LCD Keys) (20% PRICE DROP)</title>
       <link>https://www.siliconsteals.com/deals/deal-elgato-stream-deck-mk2/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-elgato-stream-deck-mk2/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:25:00 GMT</pubDate>
-      <description><![CDATA[Control OBS, Spotify, Discord, smart lights, and complex keyboard macros with 15 tactile LCD keys. Detachable faceplate and 45-degree angled stand. Grab the productivity controller for $119.99 on Silicon Steals.]]></description>
-      <enclosure url="https://www.siliconsteals.com/images/pins/pin_deal-elgato-stream-deck-mk2.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://www.siliconsteals.com/images/pins/pin_deal-elgato-stream-deck-mk2.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Elgato Stream Deck MK.2 Studio Controller (15 LCD Keys)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-elgato-stream-deck-mk2/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[15 customizable LCD keys to trigger infinite actions across streaming, editing, coding, and smart home tools. Features detachable faceplates, angled desktop stand, and fixed USB-C connectivity. Live price: $119.99 (Save 20%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/elgato_stream_deck_mk2.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/elgato_stream_deck_mk2.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Elgato Stream Deck MK.2 Studio Controller (15 LCD Keys) (20% PRICE DROP)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Save $400 on Anker SOLIX C1000 Power Station (40% Off)</title>
+    <item>
+      <title>Anker SOLIX C1000 Portable Power Station (1056Wh, 1800W) (17% OFF)</title>
       <link>https://www.siliconsteals.com/deals/deal-anker-solix-c1000/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-anker-solix-c1000/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:30:00 GMT</pubDate>
-      <description><![CDATA[Ultra-fast 58-minute recharge! 1056Wh long-lasting LiFePO4 battery with 1800W continuous output (SurgePad up to 2400W). Power 99% of home appliances and outdoor gear. Claim the $400 savings on Silicon Steals.]]></description>
-      <enclosure url="https://www.siliconsteals.com/images/pins/pin_deal-anker-solix-c1000.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://www.siliconsteals.com/images/pins/pin_deal-anker-solix-c1000.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Anker SOLIX C1000 Portable Power Station (1056Wh, 1800W)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-anker-solix-c1000/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[1056Wh premium LiFePO4 portable battery station with 1800W pure sine wave AC output (2400W SurgePad), HyperFlash 58-minute full AC recharge, and 3,000+ cycle lifespan with 5-year full warranty. Live price: $499.99 (Save 17%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/anker_solix_c1000.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/anker_solix_c1000.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Anker SOLIX C1000 Portable Power Station (1056Wh, 1800W) (17% OFF)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Kindle Paperwhite 16GB Early Prime Deal: $25 Off</title>
+    <item>
+      <title>Amazon Kindle Paperwhite (16 GB, 6.8" 300 ppi, Waterproof) (FULL RETAIL PRICE)</title>
       <link>https://www.siliconsteals.com/deals/deal-kindle-paperwhite-16gb/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-kindle-paperwhite-16gb/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:35:00 GMT</pubDate>
-      <description><![CDATA[6.8-inch flush glare-free 300 ppi screen, adjustable warm light for comfortable night reading, waterproof IPX8 chassis, and up to 10 weeks of battery life per USB-C charge. Get yours on Silicon Steals.]]></description>
-      <enclosure url="https://www.siliconsteals.com/images/pins/pin_deal-kindle-paperwhite-16gb.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://www.siliconsteals.com/images/pins/pin_deal-kindle-paperwhite-16gb.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Amazon Kindle Paperwhite (16 GB, 6.8" 300 ppi, Waterproof)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-kindle-paperwhite-16gb/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Amazon's beloved dedicated e-reader featuring a 6.8-inch 300 ppi glare-free display with adjustable warm light, 16GB storage for thousands of books, IPX8 waterproofing, and 10 weeks of battery life. Live price: $111.07 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/kindle_paperwhite.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/kindle_paperwhite.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Amazon Kindle Paperwhite (16 GB, 6.8" 300 ppi, Waterproof) (FULL RETAIL PRICE)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Keychron K2 Wireless Mechanical Keyboard Drops to $63</title>
+    <item>
+      <title>Keychron K2 V2 Wireless Mechanical Keyboard (Gateron Brown) (FULL RETAIL PRICE)</title>
       <link>https://www.siliconsteals.com/deals/deal-keychron-k2-wireless/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-keychron-k2-wireless/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:40:00 GMT</pubDate>
-      <description><![CDATA[75% compact layout with tactile Gateron G Pro Brown switches, seamless Mac and Windows dual layout keycaps, Bluetooth 5.1 pairing with up to 3 devices, and 4000mAh battery. Claim the 20% discount on Silicon Steals.]]></description>
-      <enclosure url="https://www.siliconsteals.com/images/pins/pin_deal-keychron-k2-wireless.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://www.siliconsteals.com/images/pins/pin_deal-keychron-k2-wireless.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Keychron K2 V2 Wireless Mechanical Keyboard (Gateron Brown)</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-keychron-k2-wireless/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Compact 75% wireless mechanical keyboard engineered for both macOS and Windows with tactile Gateron switches, white LED backlighting, 4000mAh rechargeable battery, and 3-device Bluetooth 5.1 pairing. Live price: $79.99 (Save 0%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/keychron_k2.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/keychron_k2.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Keychron K2 V2 Wireless Mechanical Keyboard (Gateron Brown) (FULL RETAIL PRICE)</media:title>
       </media:content>
     </item>
 
-<item>
-      <title>Blink Outdoor 4 Drops 50%: Just $49.99 for Prime Days</title>
+    <item>
+      <title>Blink Outdoor 4 (4th Gen) Wire-Free 1080p Smart Security Camera (50% HALF PRICE)</title>
       <link>https://www.siliconsteals.com/deals/deal-blink-outdoor-4/</link>
-      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-blink-outdoor-4/#pin_v2</guid>
-      <pubDate>Sun, 04 Oct 2026 05:45:00 GMT</pubDate>
-      <description><![CDATA[Wire-free 1080p HD security with up to 2 years of battery life on included AA lithium batteries! Enhanced dual-zone motion detection, infrared night vision, and two-way audio. Claim the 50% discount on Silicon Steals.]]></description>
-      <enclosure url="https://www.siliconsteals.com/images/pins/pin_deal-blink-outdoor-4.jpg" length="750000" type="image/jpeg" />
-      <media:content url="https://www.siliconsteals.com/images/pins/pin_deal-blink-outdoor-4.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
-        <media:title>Blink Outdoor 4 (4th Gen) Wire-Free 1080p Smart Security Camera</media:title>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-blink-outdoor-4/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Fourth-generation wire-free smart outdoor security camera offering up to two years of battery life on two AA lithium batteries, 1080p HD video, infrared night vision, and enhanced motion detection. Live price: $49.99 (Save 50%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/blink_outdoor_4.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/blink_outdoor_4.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Blink Outdoor 4 (4th Gen) Wire-Free 1080p Smart Security Camera (50% HALF PRICE)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>SteelSeries Apex Pro TKL (Gen 3) Wireless Mechanical Gaming Keyboard (18% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-steelseries-apex-pro-tkl/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-steelseries-apex-pro-tkl/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The world's fastest gaming keyboard featuring OmniPoint 3.0 adjustable HyperMagnetic switches with 0.1mm actuation, Rapid Trigger, and an integrated OLED Smart Display. Live price: $229.99 (Save 18%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/steelseries_apex_pro_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/steelseries_apex_pro_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>SteelSeries Apex Pro TKL (Gen 3) Wireless Mechanical Gaming Keyboard (18% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Bose QuietComfort Wireless Noise Cancelling Over-Ear Headphones (29% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-bose-quietcomfort-wireless/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-bose-quietcomfort-wireless/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Iconic acoustic noise cancellation with plush over-ear comfort, adjustable EQ, Wind Block mode, and up to 24 hours of battery life on a single charge. Live price: $249.00 (Save 29%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/bose_qc_headphones_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/bose_qc_headphones_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Bose QuietComfort Wireless Noise Cancelling Over-Ear Headphones (29% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Marshall Emberton II Portable Bluetooth Speaker (IP67 Waterproof) (29% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-marshall-emberton-ii/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-marshall-emberton-ii/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[True Stereophonic multi-directional 360 sound in a rugged vintage enclosure. Delivers 30+ hours of portable playtime with IP67 dust and water resistance. Live price: $119.99 (Save 29%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/marshall_emberton_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/marshall_emberton_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Marshall Emberton II Portable Bluetooth Speaker (IP67 Waterproof) (29% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Logitech MX Brio 4K Ultra HD Collaboration & Streaming Webcam (20% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-logitech-mx-brio-4k/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-logitech-mx-brio-4k/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Ultra HD 4K webcam powered by an advanced Sony STARVIS sensor. Features 2x finer image detail, AI face-based auto exposure, and innovative Show Mode for physical desk sharing. Live price: $159.99 (Save 20%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/logitech_mx_brio_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/logitech_mx_brio_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Logitech MX Brio 4K Ultra HD Collaboration & Streaming Webcam (20% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Philips Hue Play White & Color Smart Light Bar (2-Pack Base Kit) (25% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-philips-hue-play-2pack/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-philips-hue-play-2pack/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Transform your gaming room or home theater with 16 million colors. Mount behind monitors or TVs, stand vertically on desks, and sync in real time with games and movies. Live price: $119.99 (Save 25%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/philips_hue_play_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/philips_hue_play_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Philips Hue Play White & Color Smart Light Bar (2-Pack Base Kit) (25% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Crucial X9 Pro 2TB Portable External SSD (1050MB/s Rugged USB-C) (24% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-crucial-x9-pro-2tb/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-crucial-x9-pro-2tb/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Blazing fast 1050MB/s sequential read and write speeds packed into a palm-sized anodized aluminum shell. Features IP55 water/dust resistance and 7.5-foot drop protection. Live price: $129.99 (Save 24%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/crucial_x9_pro_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/crucial_x9_pro_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Crucial X9 Pro 2TB Portable External SSD (1050MB/s Rugged USB-C) (24% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Baseus Blade 100W Ultra-Slim Laptop Power Bank (20,000mAh) (40% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-baseus-blade-100w/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-baseus-blade-100w/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The ultimate nomad power solution: 20,000mAh capacity in a razor-thin 0.7-inch card silhouette. Delivers 100W USB-C PD output to fast-charge laptops on planes and trains. Live price: $59.99 (Save 40%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/baseus_blade_100w_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/baseus_blade_100w_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Baseus Blade 100W Ultra-Slim Laptop Power Bank (20,000mAh) (40% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Amazon Echo Show 8 (3rd Gen) Smart Display with Spatial Audio (40% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-echo-show-8-3rd-gen/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-echo-show-8-3rd-gen/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[The centerpiece smart display with an 8-inch HD touchscreen, room-filling spatial audio, centered 13MP auto-framing camera, and built-in smart home hub for Zigbee, Matter, and Thread. Live price: $89.99 (Save 40%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/echo_show_8_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/echo_show_8_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Amazon Echo Show 8 (3rd Gen) Smart Display with Spatial Audio (40% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Roborock Q5 Pro+ Robot Vacuum with RockDock Self-Empty Base (46% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-roborock-q5-pro-plus/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-roborock-q5-pro-plus/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Massive 5,500 Pa HyperForce suction paired with DuoRoller dual rubber brushes for tangle-free pet hair cleaning, PreciSense LiDAR navigation, and 7-week auto-emptying base. Live price: $379.99 (Save 46%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/roborock_q5_pro_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/roborock_q5_pro_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Roborock Q5 Pro+ Robot Vacuum with RockDock Self-Empty Base (46% OFF)</media:title>
+      </media:content>
+    </item>
+
+    <item>
+      <title>Anker 737 Power Bank (PowerCore 24K 140W 3-Port Fast Charger) (33% OFF)</title>
+      <link>https://www.siliconsteals.com/deals/deal-anker-737-power-bank/</link>
+      <guid isPermaLink="true">https://www.siliconsteals.com/deals/deal-anker-737-power-bank/#pin_cdn_v1</guid>
+      <pubDate>Sun, 04 Oct 2026 21:00:00 GMT</pubDate>
+      <description><![CDATA[Equipped with Power Delivery 3.1 and bi-directional 140W fast-charging technology. Features a smart digital display with real-time output power and battery temperature telemetry. Live price: $99.99 (Save 33%). Verified genuine deal on Silicon Steals.]]></description>
+      <enclosure url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/anker_737_powerbank_editorial.jpg" length="750000" type="image/jpeg" />
+      <media:content url="https://raw.githubusercontent.com/TheTechHubInsider/silicon-steals-assets/main/pins/anker_737_powerbank_editorial.jpg" medium="image" type="image/jpeg" width="1000" height="1500">
+        <media:title>Anker 737 Power Bank (PowerCore 24K 140W 3-Port Fast Charger) (33% OFF)</media:title>
       </media:content>
     </item>
   </channel>
