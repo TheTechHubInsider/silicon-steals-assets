@@ -38,5 +38,5 @@ User-agent: Bingbot
 Allow: /
 
 # Canonical Sitemaps & Machine-Readable AI Standards
-Sitemap: https://siliconsteals.com/sitemap.xml
-Sitemap: https://siliconsteals.com/llms.txt
+Sitemap: https://www.siliconsteals.com/sitemap.xml
+Sitemap: https://www.siliconsteals.com/llms.txt
