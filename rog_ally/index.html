@@ -261,22 +261,22 @@
 
       <div class="article-body">
         <h2>The Hardware Dilemma & Market Context</h2>
-        <p>The <strong>ASUS ROG Ally Z1 Extreme</strong> delivers full Windows 11 PC gaming in an ergonomic 608g handheld, running Steam, Xbox Game Pass, and Battle.net natively on a vibrant 120Hz 1080p display.</p>
+        <p>The dream of carrying your entire PC gaming library in a comfortable handheld without being shackled to a desktop desk or locked into proprietary console operating systems has finally matured.</p>
 
         <h2>Power Delivery & Internal Architecture</h2>
-        <p>Powered by AMD's 8-core/16-thread Ryzen Z1 Extreme APU with RDNA 3 graphics and 16GB LPDDR5 RAM, the Ally handles AAA titles like Cyberpunk 2077 and Forza Horizon 5 at steady 45–60+ FPS at 1080p with AMD FSR.</p>
+        <p>At the heart of the ROG Ally is AMD's purpose-built Ryzen Z1 Extreme silicon, packing 8 high-performance Zen 4 cores, 16 threads, and 12 RDNA 3 graphics compute units operating up to 8.6 teraflops.</p>
 
         <h2>Charge Velocity & Efficiency Metrics</h2>
-        <p>The 7-inch 1080p 120Hz IPS touchscreen features 500 nits brightness and AMD FreeSync Premium VRR (48–120Hz), eliminating screen tearing and stutter even when frame rates fluctuate.</p>
+        <p>The visual experience is anchored by a gorgeous 7.0-inch 1080p IPS touchscreen that outclasses standard 800p handheld panels in sharpness and clarity.</p>
 
         <h2>Port Density & Real-World Utility</h2>
-        <p>Unlike SteamOS, native Windows 11 compatibility means zero anticheat locks: play Call of Duty, Fortnite, and the full Xbox Game Pass library without dual-boot workarounds.</p>
+        <p>Because the Ally runs full Windows 11 Home beneath ASUS's customized Armoury Crate SE overlay, game compatibility is virtually borderless.</p>
 
         <h2>Documented Trade-offs & Limitations</h2>
-        <p>Limitations: battery life is 60–90 minutes in demanding 25W/30W Turbo mode (a 65W+ power bank is recommended for travel), and navigating Windows desktop touch menus can feel tight on a 7-inch display.</p>
+        <p>Real-world trade-offs center primarily on battery endurance and mobile operating system ergonomics.</p>
 
         <h2>The Purchasing Verdict</h2>
-        <p>Dropping $150 down to $549.99 for sales events, the ROG Ally is the highest-performance handheld value on the market for gamers who want multi-store freedom and 1080p 120Hz fidelity.</p>
+        <p>Originally priced at $699.99, the ASUS ROG Ally Z1 Extreme was a premium enthusiast handheld. Dropping by $150 down to $549.99 for Prime Big Deal Days positions it as the most powerful handheld gaming value on the market.</p>
       </div>
 
       <h2>Technical Specifications Matrix</h2>
@@ -315,5 +315,58 @@
       <p>© 2026 Silicon Steals. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Sticky Mobile Bottom CTA Bar & Clarity Click Tracking -->
+  <style>
+    .sticky-review-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(9, 13, 22, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 0.7rem 1rem;
+      box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.65);
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .sticky-review-mobile-cta a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9900 0%, #f59e0b 100%);
+      color: #090d16 !important;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none !important;
+      padding: 0.75rem 1.2rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+    }
+    @media (max-width: 768px) {
+      .sticky-review-mobile-cta { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+  </style>
+  <div class="sticky-review-mobile-cta">
+    <a href="https://www.amazon.com/dp/B0CY9DGQR9?tag=thetechhubins-20" target="_blank" rel="sponsored noopener noreferrer">
+      Check Live Deal on Amazon &rarr;
+    </a>
+  </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href*="amazon.com"]');
+      if (a && window.clarity) {
+        window.clarity('event', 'amazon_outbound_click');
+        window.clarity('set', 'outbound_review_slug', 'rog_ally');
+      }
+    });
+  </script>
+
 </body>
 </html>

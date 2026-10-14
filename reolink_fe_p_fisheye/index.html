@@ -338,7 +338,7 @@
   <!-- Trust Bar -->
   <div class="trust-bar">
     <div class="trust-bar-inner">
-      <span>Silicon Steals ??? Editorial Review & Hardware Analysis</span>
+      <span>Silicon Steals — Editorial Review & Hardware Analysis</span>
       <span>FTC Disclosure: We earn affiliate commissions on verified purchases at no additional cost to you.</span>
     </div>
   </div>
@@ -359,7 +359,7 @@
 
   <main class="container">
     <div class="award-badge">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span>Editor's Choice: Best Single-Camera Blindspot Elimination ??? 9.6/10</span> </div> <h1 class="article-h1">REOLINK FE-P 6MP PoE Fisheye Camera Review: 360??</p>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> <span>Editor's Choice: Best Single-Camera Blindspot Elimination — 9.6/10</span> </div> <h1 class="article-h1">REOLINK FE-P 6MP PoE Fisheye Camera Review: 360??</p>
       <p>Rather than forcing users to monitor a distorted spherical image, Reolink's software dewarping engine dynamically converts the 360?? feed into four intuitive layouts.</p>
 
       <h2>Network Architecture, AI Analytics & Storage</h2>
@@ -385,7 +385,7 @@
     <div class="cta-banner">
       <h3>Ready to Upgrade Your Surveillance Setup?</h3><p>In stock on Amazon with Free Prime Shipping, verified returns, and zero mandatory cloud subscriptions.</p>
       <a href="https://www.amazon.com/dp/B0CDKN9H53?tag=thetechhubins-20" target="_blank" rel="sponsored noopener" class="btn-amazon-primary" style="display: inline-flex; width: auto; padding: 1rem 2.5rem; margin: 0 auto;">
-        <span>Claim Deal on Amazon ??? $119.99</span>
+        <span>Claim Deal on Amazon — $119.99</span>
       </a>
     </div>
 
@@ -397,6 +397,58 @@
       <div>Follow our curated boards on <a href="https://www.pinterest.com/thetechhubinsider/" target="_blank" rel="noopener" style="color: var(--cyan-400);">Official Pinterest</a></div>
     </div>
   </footer>
+
+  <!-- Sticky Mobile Bottom CTA Bar & Clarity Click Tracking -->
+  <style>
+    .sticky-review-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(9, 13, 22, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 0.7rem 1rem;
+      box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.65);
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .sticky-review-mobile-cta a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9900 0%, #f59e0b 100%);
+      color: #090d16 !important;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none !important;
+      padding: 0.75rem 1.2rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+    }
+    @media (max-width: 768px) {
+      .sticky-review-mobile-cta { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+  </style>
+  <div class="sticky-review-mobile-cta">
+    <a href="https://www.amazon.com/dp/B0CDKN9H53?tag=thetechhubins-20" target="_blank" rel="sponsored noopener noreferrer">
+      Check Live Deal on Amazon &rarr;
+    </a>
+  </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href*="amazon.com"]');
+      if (a && window.clarity) {
+        window.clarity('event', 'amazon_outbound_click');
+        window.clarity('set', 'outbound_review_slug', 'reolink_fe_p_fisheye');
+      }
+    });
+  </script>
 
 </body>
 </html>

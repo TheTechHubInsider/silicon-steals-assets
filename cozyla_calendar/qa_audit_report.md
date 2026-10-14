@@ -30,7 +30,7 @@
   - **No Misleading Static Dollar Claims:** Product links avoid claiming fluctuating Amazon prices as permanent guarantees; they utilize compliant dynamic CTA anchors: *"Check Current Price on Amazon"* and *"Check Current Price & Availability on Amazon"*.
   - **MSRP Qualification:** The referenced $349.99 figure is explicitly framed as manufacturer suggested retail price (MSRP) rather than a live Amazon quote.
   - **No Proprietary Data Scraping:** No proprietary Amazon customer review quotes, star rating aggregates, or copyrighted text are scraped or misattributed.
-  - **Valid Affiliate Tags:** All Amazon inbound links are correctly structured with clean standard query syntax and partner tag `siliconsteals-20` targeting ASIN `B0CKX7T26H`.
+  - **Valid Affiliate Tags:** All Amazon inbound links are correctly structured with clean standard query syntax and partner tag `thetechhubins-20` targeting ASIN `B0CKX7T26H`.
 
 ### 3. SEO & Structure Checklist: PASS (25/25)
 * **Keyword Optimization:**

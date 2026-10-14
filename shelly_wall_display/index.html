@@ -366,14 +366,24 @@
     <div class="verdict-card">
             <div>
         <div style="display: flex; align-items: baseline; gap: 0.85rem; flex-wrap: wrap;">
-          <span class="price-tag" style="font-family: var(--font-mono, monospace); font-size: 2.2rem; font-weight: 800; color: #38bdf8;">$349.99</span>
-          <span style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.3); font-size: 0.85rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 9999px;">VERIFIED RETAIL PRICE</span>
+          <span style="font-size: 1.35rem; color: #94a3b8; text-decoration: line-through; font-family: var(--font-mono, monospace); font-weight: 600;">$349.99</span>
+          <span class="price-tag" style="font-family: var(--font-mono, monospace); font-size: 2.2rem; font-weight: 800; color: #38bdf8;">$279.99</span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 0.85rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 9999px;">20% OFF</span>
         </div>
-        <div class="price-sub" style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.35rem; font-weight: 600;">Standard manufacturer retail price</div>
+        <div class="price-sub" style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.35rem; font-weight: 600;">Save $70.00 with verified Amazon deal</div>
       </div>
       <a href="https://www.amazon.com/dp/B0FPG8CNSZ?tag=thetechhubins-20" target="_blank" rel="sponsored noopener" class="btn-amazon">
         Check Current Price on Amazon
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg> </a> </div> <div class="specs-pills-row"> <span class='spec-pill'>10.1" Color Touchscreen</span><span class='spec-pill'>Built-In Room Thermostat</span><span class='spec-pill'>5A Smart Relay Integrated</span><span class='spec-pill'>Native Home Assistant Dashboards</span> </div> <div class="content-body"> <p>The biggest barrier to household adoption of smart home technology is smartphone app fatigue.</p><p>Featuring a vibrant 1280x752 IPS display with 5-point capacitive touch, the display renders interactive room climate dials, lighting dimmers, smart shades, and media playback widgets with immediate tactile responsiveness.</p><p>Unlike generic Android tablets tacked onto walls with unsightly cables, the Shelly Wall Display XL is designed for permanent architectural integration. It mounts directly into standard wall switch boxes, wiring into your home's 110V-240V AC power.</p><p>Environmental sensing is built directly into the chassis. High-precision onboard temperature, humidity, and lux sensors allow the panel to double as a full-featured digital room thermostat.</p><p>For advanced smart home enthusiasts, the open connectivity is unmatched.</p><p>At $349.99, the Shelly Wall Display XL delivers an architectural, hotel-grade smart home experience that eliminates phone clutter and gives every household member effortless control.</p>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="specs-pills-row">
+      <span class='spec-pill'>10.1" Color Touchscreen</span><span class='spec-pill'>Built-In Room Thermostat</span><span class='spec-pill'>5A Smart Relay Integrated</span><span class='spec-pill'>Native Home Assistant Dashboards</span>
+    </div>
+
+    <div class="content-body">
+      <p>The biggest barrier to household adoption of smart home technology is smartphone app fatigue.</p><p>Featuring a vibrant 1280x752 IPS display with 5-point capacitive touch, the display renders interactive room climate dials, lighting dimmers, smart shades, and media playback widgets with immediate tactile responsiveness.</p><p>Unlike generic Android tablets tacked onto walls with unsightly cables, the Shelly Wall Display XL is designed for permanent architectural integration. It mounts directly into standard wall switch boxes, wiring into your home's 110V-240V AC power.</p><p>Environmental sensing is built directly into the chassis. High-precision onboard temperature, humidity, and lux sensors allow the panel to double as a full-featured digital room thermostat.</p><p>For advanced smart home enthusiasts, the open connectivity is unmatched.</p><p>At $349.99, the Shelly Wall Display XL delivers an architectural, hotel-grade smart home experience that eliminates phone clutter and gives every household member effortless control.</p>
     </div>
 
     <h2 class="section-title">Technical Specifications</h2>
@@ -400,5 +410,58 @@
   <footer>
     <p>Silicon Steals &copy; 2026. All rights reserved. <a href="/privacy" style="color: #64748b; margin: 0 0.5rem;">Privacy</a> | <a href="/terms" style="color: #64748b; margin: 0 0.5rem;">Terms</a> | <a href="https://www.pinterest.com/thetechhubinsider/" target="_blank" style="color: #64748b; margin: 0 0.5rem;">Official Pinterest</a></p>
   </footer>
+
+  <!-- Sticky Mobile Bottom CTA Bar & Clarity Click Tracking -->
+  <style>
+    .sticky-review-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(9, 13, 22, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 0.7rem 1rem;
+      box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.65);
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .sticky-review-mobile-cta a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9900 0%, #f59e0b 100%);
+      color: #090d16 !important;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none !important;
+      padding: 0.75rem 1.2rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+    }
+    @media (max-width: 768px) {
+      .sticky-review-mobile-cta { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+  </style>
+  <div class="sticky-review-mobile-cta">
+    <a href="https://www.amazon.com/dp/B0FPG8CNSZ?tag=thetechhubins-20" target="_blank" rel="sponsored noopener noreferrer">
+      Check Live Deal on Amazon &rarr;
+    </a>
+  </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href*="amazon.com"]');
+      if (a && window.clarity) {
+        window.clarity('event', 'amazon_outbound_click');
+        window.clarity('set', 'outbound_review_slug', 'shelly_wall_display');
+      }
+    });
+  </script>
+
 </body>
 </html>

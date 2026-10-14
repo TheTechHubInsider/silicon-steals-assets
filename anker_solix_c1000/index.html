@@ -261,22 +261,22 @@
 
       <div class="article-body">
         <h2>The Hardware Dilemma & Market Context</h2>
-        <p>The <strong>Anker SOLIX C1000</strong> is the fastest-charging power station in the 1kWh class, engineered for home emergencies and mobile workstations with a full zero-to-100% AC wall recharge in just 58 minutes.</p>
+        <p>Whether you are weathering prolonged severe storm blackouts, setting up an off-grid overland mobile workstation, or running heavy power tools at a remote job site, the 1kWh portable battery class represents the ultimate sweet spot between real-world output and portable maneuverability.</p>
 
         <h2>Power Delivery & Internal Architecture</h2>
-        <p>Packing 1,056Wh of EV-grade LiFePO4 cells rated for 3,000+ cycles, its 1,800W pure sine wave inverter (2,400W SurgePad) powers 99% of home appliances. Capacity can be doubled to 2,112Wh with the optional BP1000 expansion pack.</p>
+        <p>Beneath the rugged unibody chassis lies a premium 1,056Wh lithium iron phosphate (LiFePO4) battery pack paired with an industrial-grade inverter delivering 1,800W continuous pure sine wave output.</p>
 
         <h2>Charge Velocity & Efficiency Metrics</h2>
-        <p>HyperFlash 1,300W AC charging pushes the battery from empty to 100% in 58 minutes without external power bricks. For off-grid use, the 600W MPPT solar input provides a full charge in roughly 1.8 hours.</p>
+        <p>Where the SOLIX C1000 unequivocally outclasses legacy competitors like Jackery and Goal Zero is raw recharge velocity.</p>
 
         <h2>Port Density & Real-World Utility</h2>
-        <p>It hosts 11 output ports including six 120V AC outlets and a 100W USB-C port, featuring a fast <20ms UPS switchover that prevents desktop PCs, NAS units, and CPAP machines from resetting during power cuts.</p>
+        <p>The physical interface is thoughtfully engineered for dense everyday utility, hosting 11 output ports across its clean front panel.</p>
 
         <h2>Documented Trade-offs & Limitations</h2>
         <p>In our rigorous hardware evaluation, only a few practical trade-offs surfaced. At 28.4 pounds (12.9 kg), the SOLIX C1000 is dense and clearly demands two-handed carry over long distances despite its solid built-in side handles.</p>
 
         <h2>The Purchasing Verdict</h2>
-        <p>Slashing $400 off down to $599.00 ($0.56/Wh), the SOLIX C1000 is the best 1kWh power station value on the market, backed by a comprehensive 5-year manufacturer warranty.</p>
+        <p>At its regular $999.00 MSRP, the Anker SOLIX C1000 stood as a competent, high-end power solution.</p>
       </div>
 
       <h2>Technical Specifications Matrix</h2>
@@ -315,5 +315,58 @@
       <p>© 2026 Silicon Steals. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Sticky Mobile Bottom CTA Bar & Clarity Click Tracking -->
+  <style>
+    .sticky-review-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(9, 13, 22, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 0.7rem 1rem;
+      box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.65);
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .sticky-review-mobile-cta a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff9900 0%, #f59e0b 100%);
+      color: #090d16 !important;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none !important;
+      padding: 0.75rem 1.2rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+    }
+    @media (max-width: 768px) {
+      .sticky-review-mobile-cta { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+  </style>
+  <div class="sticky-review-mobile-cta">
+    <a href="https://www.amazon.com/dp/B0FN7MSY4L?tag=thetechhubins-20" target="_blank" rel="sponsored noopener noreferrer">
+      Check Live Deal on Amazon &rarr;
+    </a>
+  </div>
+  <script>
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href*="amazon.com"]');
+      if (a && window.clarity) {
+        window.clarity('event', 'amazon_outbound_click');
+        window.clarity('set', 'outbound_review_slug', 'anker_solix_c1000');
+      }
+    });
+  </script>
+
 </body>
 </html>
