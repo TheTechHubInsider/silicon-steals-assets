@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![Check Current Price on Amazon](https://img.shields.io/badge/Amazon-Check%20Current%20Price%20%26%20Coupon-orange?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B09HM94VDS?tag=siliconsteals-20)
+[![Check Current Price on Amazon](https://img.shields.io/badge/Amazon-Check%20Current%20Price%20%26%20Coupon-orange?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B09HM94VDS?tag=thetechhubins-20)
 
 *Current Deal: Save $20 (20% off MSRP of $99.99 down to $79.99 on Amazon)*
 
@@ -99,7 +99,7 @@ Despite its peerless productivity credentials, our real-world workflow assessmen
 | **Click Sound Profile** | **Near-Silent** (90% dampened) | Moderate mechanical snap | Moderate tactile click |
 | **Cross-OS Clipboard** | **Logitech Flow** (Mac & Windows) | None (Hardware switch only) | None (Hardware switch only) |
 | **Target Workflow** | Power productivity, editing, multi-PC | Hybrid office & casual high-refresh gaming | Pure ergonomic palm-grip workstations |
-| **Direct Product Link** | [Check Amazon Deal](https://www.amazon.com/dp/B09HM94VDS?tag=siliconsteals-20) | Check Amazon | Check Amazon |
+| **Direct Product Link** | [Check Amazon Deal](https://www.amazon.com/dp/B09HM94VDS?tag=thetechhubins-20) | Check Amazon | Check Amazon |
 
 When weighed against its closest rivals, the MX Master 3S continues to hold the productivity crown. The **Keychron M6 Wireless** mounts an aggressive challenge for hybrid users who crave dual scroll wheels and want a featherweight 78g chassis with a 1,000Hz polling rate for casual gaming, but Keychron lacks glass-tracking capability, near-silent click acoustics, and the seamless clipboard-sharing intelligence of Logitech Flow. The **Razer Pro Click**, developed alongside posture specialist Humanscale, offers a comfortable high-arch ergonomic grip and superior gaming-grade polling rates, yet omits a secondary horizontal thumb wheel and struggles on non-standard desk surfaces. For pure workstation efficiency, Logitech's integrated hardware and software ecosystem remains unmatched.
 
@@ -111,9 +111,9 @@ Evaluating a premium workstation tool comes down to one metric: does it measurab
 
 <div align="center">
 
-[![Check Current Price on Amazon](https://img.shields.io/badge/Amazon-Check%20Current%20Price%20%26%20Coupon-orange?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B09HM94VDS?tag=siliconsteals-20)
+[![Check Current Price on Amazon](https://img.shields.io/badge/Amazon-Check%20Current%20Price%20%26%20Coupon-orange?style=for-the-badge&logo=amazon)](https://www.amazon.com/dp/B09HM94VDS?tag=thetechhubins-20)
 
-**[Click Here to Check Latest Price on Amazon for the Logitech MX Master 3S (ASIN: B09HM94VDS)](https://www.amazon.com/dp/B09HM94VDS?tag=siliconsteals-20)**
+**[Click Here to Check Latest Price on Amazon for the Logitech MX Master 3S (ASIN: B09HM94VDS)](https://www.amazon.com/dp/B09HM94VDS?tag=thetechhubins-20)**
 
 </div>
 

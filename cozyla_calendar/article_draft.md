@@ -8,11 +8,11 @@
 
 ### 🏆 Editor's Choice: Best Smart Family Calendar 2026 — 9.7/10
 
-[![Cozyla Calendar+ 2 Smart Digital Family Calendar](images/cozyla_hero.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=siliconsteals-20)
+[![Cozyla Calendar+ 2 Smart Digital Family Calendar](images/cozyla_hero.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=thetechhubins-20)
 
 **The Gold Standard in Digital Family Command Centers: Zero Subscriptions, Seamless Multi-User Sync, and Complete Privacy.**
 
-[👉 Check Current Price on Amazon (ASIN: B0CKX7T26H)](https://www.amazon.com/dp/B0CKX7T26H?tag=siliconsteals-20)
+[👉 Check Current Price on Amazon (ASIN: B0CKX7T26H)](https://www.amazon.com/dp/B0CKX7T26H?tag=thetechhubins-20)
 
 </div>
 
@@ -30,7 +30,7 @@ Where Cozyla fundamentally disrupts the smart home display category is its uncom
 
 <div align="center">
 
-[![Cozyla Calendar Wall Mount Installation](images/cozyla_wall_mount.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=siliconsteals-20)
+[![Cozyla Calendar Wall Mount Installation](images/cozyla_wall_mount.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=thetechhubins-20)
 *Seamlessly wall-mounted or kickstand-ready: Cozyla transforms busy family entryways and kitchens.*
 
 </div>
@@ -49,7 +49,7 @@ Beyond raw calendar scheduling, Cozyla excels at eliminating morning and bedtime
 
 <div align="center">
 
-[![Cozyla Interactive Chore Chart and Rewards](images/cozyla_screen_chores.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=siliconsteals-20)
+[![Cozyla Interactive Chore Chart and Rewards](images/cozyla_screen_chores.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=thetechhubins-20)
 *Gamified chore boards with star rewards encourage daily accountability and routine mastery for kids.*
 
 </div>
@@ -68,7 +68,7 @@ While the Cozyla Calendar+ 2 stands as the most capable family organizer on the 
 
 <div align="center">
 
-[![Cozyla Kickstand Profile on Kitchen Island](images/cozyla_kickstand_profile.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=siliconsteals-20)
+[![Cozyla Kickstand Profile on Kitchen Island](images/cozyla_kickstand_profile.jpg)](https://www.amazon.com/dp/B0CKX7T26H?tag=thetechhubins-20)
 *Equipped with an integrated desktop kickstand for counter placement and VESA 100x100 mounting.*
 
 </div>
@@ -113,7 +113,7 @@ While the Cozyla Calendar+ 2 stands as the most capable family organizer on the 
 
 **Get the Cozyla Calendar+ 2 today and enjoy lifetime zero-subscription family organization.**
 
-[👉 Check Current Price & Availability on Amazon](https://www.amazon.com/dp/B0CKX7T26H?tag=siliconsteals-20)
+[👉 Check Current Price & Availability on Amazon](https://www.amazon.com/dp/B0CKX7T26H?tag=thetechhubins-20)
 
 *(Model: Cozyla Calendar+ 2 15.6" | ASIN: B0CKX7T26H | Includes Desktop Kickstand & Wall Mount Kit)*
 

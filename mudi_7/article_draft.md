@@ -80,7 +80,7 @@ At an MSRP of ~$419, the Mudi 7 is definitely an investment piece, and users loo
 
 The GL.iNet Mudi 7 is the ultimate portable privacy gateway for serious travelers, nomads, and remote teams.
 
-[![Check Current Price on Amazon](https://img.shields.io/badge/Amazon-Check%20Current%20Price%20%26%20Availability-orange?style=for-the-badge&logo=amazon)](https://www.amazon.com/s?k=GL.iNet+Mudi+7+GL-E5800&tag=siliconsteals-20)
+[![Check Current Price on Amazon](https://img.shields.io/badge/Amazon-Check%20Current%20Price%20%26%20Availability-orange?style=for-the-badge&logo=amazon)](https://www.amazon.com/s?k=GL.iNet+Mudi+7+GL-E5800&tag=thetechhubins-20)
 
 *Available in North America (NA) and European/Global (EU) spectrum variants.*
 
