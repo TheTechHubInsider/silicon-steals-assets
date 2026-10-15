@@ -61,6 +61,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.siliconsteals.com/bluetti_elite_100_v2/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.siliconsteals.com/cozyla_calendar/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -4987,7 +4993,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0f42csqwg/</loc>
+    <loc>https://www.siliconsteals.com/deals/deal-bluetti-elite-100-v2/</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
