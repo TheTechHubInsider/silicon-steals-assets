@@ -319,12 +319,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0d4dx8ph3/</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.siliconsteals.com/deals/deal-b0b6xzlnhq/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -350,6 +344,12 @@
   </url>
   <url>
     <loc>https://www.siliconsteals.com/deals/deal-samsung-ssd-990-evo/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.siliconsteals.com/deals/deal-b07cms5q6p/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -397,18 +397,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0ff9fj1jw/</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0ffmmppkf/</loc>
-    <lastmod>2026-10-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.siliconsteals.com/deals/deal-tapo-c675d-kit/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>daily</changefreq>
@@ -427,7 +415,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0c1kpxpm9/</loc>
+    <loc>https://www.siliconsteals.com/deals/deal-b0fxz5gvbb/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.siliconsteals.com/deals/deal-reolink-e1-zoom/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
