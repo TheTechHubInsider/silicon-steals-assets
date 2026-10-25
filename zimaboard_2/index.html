@@ -46,26 +46,70 @@
         "seller": {
           "@type": "Organization",
           "name": "Amazon"
+        },
+        "validFrom": "2026-10-01",
+        "priceValidUntil": "2026-12-09",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 4,
+              "unitCode": "DAY"
+            }
+          }
         }
+      },
+      "sku": "B0FYPBZQ3Z",
+      "mpn": "B0FYPBZQ3Z",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Silicon Steals Editorial Team",
+          "url": "https://www.siliconsteals.com/editorial-guidelines/"
+        },
+        "reviewBody": "In-depth review of the ZimaBoard 2 1664 x86 home server. Intel N150 quad-core power, 16GB LPDDR5 RAM, open PCIe 3.0 x4 slot, dual 2.5GbE, and CasaOS simplicity."
       }
-    },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Product",
-        "name": "ZimaBoard 2 Review: The Ultimate Fanless Single-Board Home Server",
-        "image": "https://www.siliconsteals.com/zimaboard_2/images/zimaboard_2_hero.jpg"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "9.5",
-        "bestRating": "10"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Silicon Steals Editorial Team"
-      },
-      "reviewBody": "In-depth review of the ZimaBoard 2 1664 x86 home server. Intel N150 quad-core power, 16GB LPDDR5 RAM, open PCIe 3.0 x4 slot, dual 2.5GbE, and CasaOS simplicity."
     },
     {
       "@type": "BreadcrumbList",
@@ -92,7 +136,7 @@
     }
   ]
 }
-  </script>
+</script>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

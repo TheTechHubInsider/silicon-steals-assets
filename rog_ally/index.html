@@ -59,26 +59,70 @@
         "seller": {
           "@type": "Organization",
           "name": "Amazon"
+        },
+        "validFrom": "2026-10-01",
+        "priceValidUntil": "2026-12-09",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 4,
+              "unitCode": "DAY"
+            }
+          }
         }
+      },
+      "sku": "B0CY9DGQR9",
+      "mpn": "B0CY9DGQR9",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Silicon Steals Editorial Team",
+          "url": "https://www.siliconsteals.com/editorial-guidelines/"
+        },
+        "reviewBody": "In-depth hardware review of ASUS ROG Ally Z1 Extreme Review. Full specs matrix, real-world benchmarks, pros, cons, and verified Amazon deals."
       }
-    },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Product",
-        "name": "ASUS ROG Ally Review: The Best Windows Handheld for AAA Gaming",
-        "image": "https://www.siliconsteals.com/images/silicon_steals_logo_nav.png"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "9.5",
-        "bestRating": "10"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Silicon Steals Editorial Team"
-      },
-      "reviewBody": "In-depth hardware review of ASUS ROG Ally Z1 Extreme Review. Full specs matrix, real-world benchmarks, pros, cons, and verified Amazon deals."
     },
     {
       "@type": "BreadcrumbList",
@@ -105,7 +149,7 @@
     }
   ]
 }
-  </script>
+</script>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');

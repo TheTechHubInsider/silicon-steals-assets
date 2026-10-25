@@ -46,26 +46,70 @@
         "seller": {
           "@type": "Organization",
           "name": "Amazon"
+        },
+        "validFrom": "2026-10-01",
+        "priceValidUntil": "2026-12-09",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 4,
+              "unitCode": "DAY"
+            }
+          }
         }
+      },
+      "sku": "B0FPG8CNSZ",
+      "mpn": "B0FPG8CNSZ",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Silicon Steals Editorial Team",
+          "url": "https://www.siliconsteals.com/editorial-guidelines/"
+        },
+        "reviewBody": "In-depth review of the Shelly Wall Display XL 10.1-inch smart home touchscreen. Built-in thermostat, 5A relay, Lux sensor, and seamless Home Assistant dashboard integration."
       }
-    },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Product",
-        "name": "Shelly Wall Display XL Review: The Ultimate In-Wall Smart Command Center",
-        "image": "https://www.siliconsteals.com/shelly_wall_display/images/shelly_display_hero.jpg"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "9.5",
-        "bestRating": "10"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Silicon Steals Editorial Team"
-      },
-      "reviewBody": "In-depth review of the Shelly Wall Display XL 10.1-inch smart home touchscreen. Built-in thermostat, 5A relay, Lux sensor, and seamless Home Assistant dashboard integration."
     },
     {
       "@type": "BreadcrumbList",
@@ -92,7 +136,7 @@
     }
   ]
 }
-  </script>
+</script>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

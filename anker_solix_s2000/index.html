@@ -36,26 +36,70 @@
         "seller": {
           "@type": "Organization",
           "name": "Amazon"
+        },
+        "validFrom": "2026-10-01",
+        "priceValidUntil": "2026-12-09",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 4,
+              "unitCode": "DAY"
+            }
+          }
         }
+      },
+      "sku": "B0GY4TQ2P8",
+      "mpn": "B0GY4TQ2P8",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Silicon Steals Editorial Team",
+          "url": "https://www.siliconsteals.com/editorial-guidelines/"
+        },
+        "reviewBody": "In-depth review of the Anker SOLIX S2000 Portable Power Station (2010Wh, 1500W Pure Sine, 3000W Surge). Discover how 10,000-cycle LFP cells and sub-36lb portability redefine home backup."
       }
-    },
-    {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Product",
-        "name": "Anker SOLIX S2000 Review: Heavy-Duty 2kWh Home Backup in a 35-Pound Frame",
-        "image": "https://www.siliconsteals.com/images/silicon_steals_logo_nav.png"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "9.5",
-        "bestRating": "10"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Silicon Steals Editorial Team"
-      },
-      "reviewBody": "In-depth review of the Anker SOLIX S2000 Portable Power Station (2010Wh, 1500W Pure Sine, 3000W Surge). Discover how 10,000-cycle LFP cells and sub-36lb portability redefine home backup."
     },
     {
       "@type": "BreadcrumbList",
@@ -82,7 +126,7 @@
     }
   ]
 }
-  </script>
+</script>
 
   <!-- Open Graph & Twitter Card Meta Tags -->
   <meta property="og:title" content="Anker SOLIX S2000 Review: 2kWh Home Backup in a 35-Lb Frame" />

@@ -262,7 +262,7 @@
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
-    {
+{
   "@context": "https://schema.org/",
   "@graph": [
     {
@@ -280,20 +280,56 @@
         "url": "https://www.amazon.com/dp/B07Z841XYD?tag=thetechhubins-20",
         "priceCurrency": "USD",
         "price": "109.99",
-        "priceValidUntil": "2026-12-31",
+        "priceValidUntil": "2026-12-09",
         "itemCondition": "https://schema.org/NewCondition",
         "availability": "https://schema.org/InStock",
         "seller": {
           "@type": "Organization",
           "name": "Amazon"
+        },
+        "validFrom": "2026-10-01",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 4,
+              "unitCode": "DAY"
+            }
+          }
         }
       },
       "review": {
         "@type": "Review",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "9.4",
-          "bestRating": "10",
+          "ratingValue": "4.7",
+          "bestRating": "5",
           "worstRating": "1"
         },
         "author": {
@@ -304,6 +340,17 @@
           "@type": "Organization",
           "name": "Silicon Steals"
         }
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Reolink"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     },
     {
@@ -331,7 +378,7 @@
     }
   ]
 }
-  </script>
+</script>
   <meta name="google-site-verification" content="zZ4HIDmysjUy5b2bP0hlcpWZ8px5stwoe2Aj4mw1dN0" />
 </head>
 <body>
