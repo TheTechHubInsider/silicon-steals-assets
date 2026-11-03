@@ -889,12 +889,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0gqxn36k5/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.siliconsteals.com/deals/deal-b0dqy9m2fr/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>daily</changefreq>
@@ -1664,6 +1658,12 @@
   </url>
   <url>
     <loc>https://www.siliconsteals.com/deals/deal-b0cz7bl16w/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.siliconsteals.com/deals/deal-b0b1lvc5vz/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
