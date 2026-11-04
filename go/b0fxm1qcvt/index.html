@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- SMART-AMAZON-DEEP-LINK -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Opening Amazon Deal - Silicon Steals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.amazon.com/dp/B0FXM1QCVT/?tag=thetechhubins-20">
+  <script>
+    (function() {
+      var asin = "B0FXM1QCVT";
+      var tag = "thetechhubins-20";
+      var webUrl = "https://www.amazon.com/dp/B0FXM1QCVT/?tag=thetechhubins-20";
+      var ua = navigator.userAgent || navigator.vendor || window.opera || "";
+
+      if (/Android/i.test(ua)) {
+        // Android Intent: forces exit from Twitter/Pinterest in-app browser into official Amazon Shopping app
+        var intentUrl = "intent://amazon.com/dp/" + asin + "/?tag=" + tag + "#Intent;scheme=https;package=com.amazon.mShop.android.shopping;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end;";
+        window.location.replace(intentUrl);
+      } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        // iOS: native Amazon App URI scheme
+        var appUrl = "amzn://www.amazon.com/dp/" + asin + "/?tag=" + tag;
+        window.location.href = appUrl;
+        setTimeout(function() {
+          window.location.replace(webUrl);
+        }, 600);
+      } else {
+        // Desktop / Default browser: instant redirect to Amazon product page
+        window.location.replace(webUrl);
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://www.amazon.com/dp/B0FXM1QCVT/?tag=thetechhubins-20">
+  </noscript>
+</head>
+<body style="background:#090d16; color:#94a3b8; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; text-align:center;">
+  <div>
+    <div style="width:36px; height:36px; border:3px solid #38bdf8; border-top-color:transparent; border-radius:50%; margin:0 auto 16px; animation:spin 0.7s linear infinite;"></div>
+    <h3 style="color:#f8fafc; font-size:1.15rem; margin:0 0 8px;">Opening in Amazon App...</h3>
+    <p style="font-size:0.85rem; color:#64748b; margin:0 0 16px;">Connecting you directly to verified deal pricing</p>
+    <p style="font-size:0.8rem; margin:0;">If not redirected automatically, <a href="https://www.amazon.com/dp/B0FXM1QCVT/?tag=thetechhubins-20" style="color:#38bdf8; text-decoration:none; font-weight:600;">tap here</a>.</p>
+  </div>
+  <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+</body>
+</html>
