@@ -205,10 +205,39 @@
 
       document.addEventListener('click', function(e) {
         const a = e.target.closest('a[href*="amazon.com"]');
-        if (a && typeof window.clarity === 'function') {
+        if (!a) return;
+
+        if (typeof window.clarity === 'function') {
           window.clarity('event', 'amazon_outbound_click');
           window.clarity('set', 'last_amazon_url', a.href);
         }
-      });
+
+        const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(ua) && !window.MSStream;
+        if (!isMobile) return;
+
+        const href = a.getAttribute('href') || '';
+        const match = href.match(/\/dp\/([A-Za-z0-9]{10})/i) || href.match(/\/gp\/product\/([A-Za-z0-9]{10})/i);
+        if (!match) return;
+
+        const asin = match[1].toUpperCase();
+        const tag = "thetechhubins-20";
+        const webUrl = "https://www.amazon.com/dp/" + asin + "/?tag=" + tag;
+
+        e.preventDefault();
+
+        if (/Android/i.test(ua)) {
+          const intentUrl = "intent://amazon.com/dp/" + asin + "/?tag=" + tag + "#Intent;scheme=https;package=com.amazon.mShop.android.shopping;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end;";
+          window.location.href = intentUrl;
+        } else if (/iPad|iPhone|iPod/.test(ua)) {
+          const appUrl = "amzn://www.amazon.com/dp/" + asin + "/?tag=" + tag;
+          window.location.href = appUrl;
+          setTimeout(function() {
+            window.location.href = webUrl;
+          }, 600);
+        } else {
+          window.location.href = webUrl;
+        }
+      }, { passive: false });
     })();
   </script></body></html>
