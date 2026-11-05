@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Silicon Steals - Smart Router</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <script>
     (function() {
@@ -14,19 +14,18 @@
         var asin = match[1].toUpperCase();
         var webUrl = "https://www.amazon.com/dp/" + asin + "/?tag=" + tag;
         var ua = navigator.userAgent || navigator.vendor || window.opera || "";
+        var isAndroid = /Android/i.test(ua);
+        var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
 
-        if (/Android/i.test(ua)) {
-          var intentUrl = "intent://amazon.com/dp/" + asin + "/?tag=" + tag + "#Intent;scheme=https;package=com.amazon.mShop.android.shopping;S.browser_fallback_url=" + encodeURIComponent(webUrl) + ";end;";
-          window.location.replace(intentUrl);
-        } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-          var appUrl = "amzn://www.amazon.com/dp/" + asin + "/?tag=" + tag;
-          window.location.href = appUrl;
-          setTimeout(function() {
-            window.location.replace(webUrl);
-          }, 600);
-        } else {
-          window.location.replace(webUrl);
+        if (isAndroid) {
+          window.location.href = "com.amazon.mobile.shopping.web://amazon.com/dp/" + asin + "/?tag=" + tag;
+        } else if (isIOS) {
+          window.location.href = "amzn://www.amazon.com/dp/" + asin + "/?tag=" + tag;
         }
+
+        setTimeout(function() {
+          window.location.replace(webUrl);
+        }, 400);
         return;
       }
       // Fallback for non-go paths: return to home
@@ -34,8 +33,11 @@
     })();
   </script>
 </head>
-<body style="background:#090d16; color:#94a3b8; font-family:sans-serif; text-align:center; padding:60px 20px;">
-  <h2>Redirecting...</h2>
-  <p><a href="/" style="color:#38bdf8;">Click here to return to Silicon Steals</a></p>
+<body style="background:#070a12; color:#94a3b8; font-family:sans-serif; text-align:center; padding:40px 16px;">
+  <div style="max-width:380px; margin:0 auto; background:#0f172a; border:1px solid #1e293b; border-radius:14px; padding:24px 16px;">
+    <h3 style="color:#fff; margin:0 0 8px;">Connecting to Deal...</h3>
+    <p style="font-size:0.85rem; color:#94a3b8; margin:0 0 16px;">If not redirected, tap below:</p>
+    <a href="/" style="display:inline-block; background:#38bdf8; color:#090d16; font-weight:700; text-decoration:none; padding:10px 16px; border-radius:8px;">Visit Silicon Steals &rarr;</a>
+  </div>
 </body>
 </html>
