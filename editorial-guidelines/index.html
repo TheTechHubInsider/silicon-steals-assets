@@ -3,168 +3,535 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editorial Standards & Review Methodology | Silicon Steals</title>
-  <meta name="description" content="Editorial independence, review methodology, and testing standards of Silicon Steals.">
+  <title>Editorial Lab & Testing Standards | Silicon Steals</title>
+  <meta name="description" content="How Silicon Steals tests consumer hardware, verifies 90-day price drops, and conducts independent 60-second hardware teardowns without sponsored bias.">
   <link rel="canonical" href="https://www.siliconsteals.com/editorial-guidelines/" />
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/images/silicon_steals_logo_nav.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Silicon Steals" />
+  <meta property="og:url" content="https://www.siliconsteals.com/editorial-guidelines/" />
+  <meta property="og:title" content="Editorial Lab & Testing Standards | Silicon Steals" />
+  <meta property="og:description" content="How Silicon Steals tests consumer hardware, verifies 90-day price drops, and conducts independent 60-second hardware teardowns without sponsored bias." />
+  <meta property="og:image" content="https://www.siliconsteals.com/images/silicon_steals_og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@siliconsteals" />
+  <meta name="twitter:title" content="Editorial Lab & Testing Standards | Silicon Steals" />
+  <meta name="twitter:description" content="How Silicon Steals tests consumer hardware, verifies 90-day price drops, and conducts independent 60-second hardware teardowns without sponsored bias." />
+  <meta name="twitter:image" content="https://www.siliconsteals.com/images/silicon_steals_og.png" />
+
+  <!-- Schema.org JSON-LD Structured Data with Explicit Breadcrumb Hierarchy -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.siliconsteals.com/editorial-guidelines/#webpage",
+        "url": "https://www.siliconsteals.com/editorial-guidelines/",
+        "name": "Editorial Lab & Testing Standards | Silicon Steals",
+        "description": "How Silicon Steals tests consumer hardware, verifies 90-day price drops, and conducts independent 60-second hardware teardowns without sponsored bias.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.siliconsteals.com/#website",
+          "name": "Silicon Steals",
+          "url": "https://www.siliconsteals.com/"
+        },
+        "breadcrumb": {
+          "@id": "https://www.siliconsteals.com/editorial-guidelines/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.siliconsteals.com/editorial-guidelines/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Silicon Steals Home",
+            "item": "https://www.siliconsteals.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Editorial Standards & Methodology",
+            "item": "https://www.siliconsteals.com/editorial-guidelines/"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.siliconsteals.com/#organization",
+        "name": "Silicon Steals",
+        "url": "https://www.siliconsteals.com/",
+        "logo": "https://www.siliconsteals.com/images/silicon_steals_logo_nav.png",
+        "sameAs": [
+          "https://x.com/siliconsteals",
+          "https://www.pinterest.com/SiliconSteals/"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "ys89jeejuo");
-</script>
+  </script>
+  <meta name="google-site-verification" content="zZ4HIDmysjUy5b2bP0hlcpWZ8px5stwoe2Aj4mw1dN0" />
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #090d16;
+      background-color: #070a12;
       color: #e2e8f0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    header {
-      background: #0f172a;
+    a { color: #38bdf8; text-decoration: none; transition: all 0.2s ease; }
+    a:hover { color: #7dd3fc; }
+
+    /* TOP TRUST BAR */
+    .trust-bar {
+      background: #090e1a;
       border-bottom: 1px solid #1e293b;
-      padding: 1.25rem 2rem;
+      padding: 0.4rem 1.25rem;
+      font-size: 0.76rem;
+      color: #94a3b8;
+    }
+    .trust-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e293b;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0.85rem 1.5rem;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .brand {
-      color: #38bdf8;
-      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
       font-size: 1.25rem;
-      text-decoration: none;
+      font-weight: 800;
+      color: #ffffff;
       letter-spacing: -0.02em;
     }
+    .brand img {
+      border-radius: 8px;
+    }
+    .brand span strong {
+      color: #38bdf8;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      list-style: none;
+    }
     .nav-links a {
-      color: #94a3b8;
-      text-decoration: none;
-      margin-left: 1.5rem;
+      color: #cbd5e1;
       font-size: 0.9rem;
-      transition: color 0.2s;
+      font-weight: 500;
     }
-    .nav-links a:hover { color: #38bdf8; }
-    .container {
-      max-width: 860px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
+    .nav-links a:hover {
+      color: #38bdf8;
     }
-    h1 {
-      font-size: 2.25rem;
-      color: #f8fafc;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.03em;
+    .btn-deals {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #ffffff !important;
+      padding: 0.45rem 1rem;
+      border-radius: 8px;
+      font-weight: 700 !important;
+      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.3);
     }
-    .last-updated {
-      color: #64748b;
-      font-size: 0.875rem;
-      margin-bottom: 2.5rem;
+    .btn-deals:hover {
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+      transform: translateY(-1px);
     }
-    .card {
-      background: #111827;
-      border: 1px solid #1f2937;
+
+    /* HIGH-CONVERTING HERO DEALS BANNER */
+    .deal-jump-banner {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.15), rgba(37, 99, 235, 0.1));
+      border: 1px solid rgba(56, 189, 248, 0.3);
       border-radius: 12px;
-      padding: 2rem;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .deal-jump-left {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .jump-icon {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+    .jump-title {
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+    }
+    .jump-sub {
+      font-size: 0.86rem;
+      color: #94a3b8;
+    }
+    .jump-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #10b981;
+      color: #042f2e !important;
+      font-weight: 800;
+      font-size: 0.92rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      white-space: nowrap;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+    }
+    .jump-cta-btn:hover {
+      background: #059669;
+      color: #ffffff !important;
+      transform: translateY(-1px);
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+      max-width: 900px;
+      margin: 2.5rem auto 4rem auto;
+      padding: 0 1.5rem;
+      flex: 1;
+    }
+
+    .breadcrumbs {
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs a { color: #64748b; }
+    .breadcrumbs a:hover { color: #38bdf8; }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #f8fafc;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .editorial-lead {
+      font-size: 1.12rem;
+      color: #94a3b8;
+      line-height: 1.6;
       margin-bottom: 2rem;
     }
-    h2 {
-      font-size: 1.35rem;
+
+    .meta-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
       color: #38bdf8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    /* CARDS */
+    .pillar-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .pillar-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
       margin-bottom: 1rem;
     }
-    p { margin-bottom: 1rem; color: #cbd5e1; }
-    ul { margin-left: 1.5rem; margin-bottom: 1rem; color: #cbd5e1; }
-    li { margin-bottom: 0.5rem; }
+    .pillar-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    .pillar-card h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: -0.01em;
+    }
+    .pillar-card p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1rem;
+    }
+    .pillar-card p:last-child {
+      margin-bottom: 0;
+    }
+    .pillar-card ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+    .pillar-card li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .pillar-card strong {
+      color: #38bdf8;
+    }
+
+    /* BOTTOM NAV BACK */
+    .back-nav-box {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: #0d1322;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      margin-top: 3rem;
+    }
+    .back-nav-box h3 {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .back-nav-box p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+    .btn-return-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #38bdf8;
+      color: #090d16 !important;
+      font-weight: 700;
+      padding: 0.65rem 1.35rem;
+      border-radius: 8px;
+    }
+    .btn-return-home:hover {
+      background: #7dd3fc;
+    }
+
+    /* FOOTER */
     footer {
       border-top: 1px solid #1e293b;
-      background: #0b0f19;
+      background: #080c16;
       padding: 2.5rem 1.5rem;
-      text-align: center;
       color: #64748b;
       font-size: 0.85rem;
-      margin-top: 4rem;
     }
-    footer a { color: #94a3b8; text-decoration: none; }
-    footer a:hover { color: #38bdf8; }
-  </style>
-  <!-- Open Graph / Social Meta -->
-  <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Silicon Steals" />
-  <meta property="og:url" content="https://www.siliconsteals.com/editorial-guidelines/" />
-  <meta property="og:title" content="Editorial Standards & Review Methodology | Silicon Steals" />
-  <meta property="og:description" content="Editorial independence, review methodology, and testing standards of Silicon Steals." />
-  <meta property="og:image" content="https://www.siliconsteals.com/images/deals/editorial-guidelines.jpg" />
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-links a {
+      color: #94a3b8;
+      margin-left: 1.25rem;
+    }
+    .footer-links a:hover {
+      color: #38bdf8;
+    }
+    .disclosure {
+      max-width: 1100px;
+      margin: 1.5rem auto 0 auto;
+      font-size: 0.78rem;
+      color: #475569;
+      line-height: 1.5;
+    }
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@siliconsteals" />
-  <meta name="twitter:title" content="Editorial Standards & Review Methodology | Silicon Steals" />
-  <meta name="twitter:description" content="Editorial independence, review methodology, and testing standards of Silicon Steals." />
-  <meta name="twitter:image" content="https://www.siliconsteals.com/images/deals/editorial-guidelines.jpg" />
-  <!-- Schema.org JSON-LD Structured Data -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "WebPage",
-  "name": "Editorial Guidelines & Testing Methodology | Silicon Steals",
-  "url": "https://www.siliconsteals.com/editorial-guidelines/",
-  "description": "Official Editorial Guidelines & Testing Methodology for Silicon Steals independent hardware reviews.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Silicon Steals",
-    "url": "https://www.siliconsteals.com/",
-    "logo": "https://www.siliconsteals.com/images/silicon_steals_logo_nav.png"
-  }
-}
-</script>
-  <meta name="google-site-verification" content="zZ4HIDmysjUy5b2bP0hlcpWZ8px5stwoe2Aj4mw1dN0" />
+    @media (max-width: 640px) {
+      h1 { font-size: 1.85rem; }
+      .nav-links { display: none; }
+      .deal-jump-banner { flex-direction: column; align-items: flex-start; }
+      .jump-cta-btn { width: 100%; justify-content: center; }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- 1. TOP TRUST & FTC DISCLOSURE BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <span class="trust-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <span>Silicon Steals Independent Hardware Lab</span>
+      </span>
+      <span>FTC Disclosure: Reader-supported. Purchases made through verified links may earn an affiliate commission.</span>
+    </div>
+  </div>
+
+  <!-- 2. STICKY HEADER NAV -->
   <header>
-    <a href="/" class="brand">Silicon Steals</a>
-    <nav class="nav-links">
-      <a href="/">Home</a>
-      <a href="/deals">All Deals</a>
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-      <a href="/editorial-guidelines">Editorial</a>
-      <a href="/contact">Contact</a>
-    </nav>
+    <div class="nav-inner">
+      <a href="/" class="brand">
+        <img src="/images/silicon_steals_logo_nav.png" alt="Silicon Steals Logo" width="34" height="34">
+        <span>Silicon <strong>Steals</strong></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/news">Tech News</a></li>
+        <li><a href="/#deals">Today's Deals</a></li>
+        <li><a href="/#reviews">Hardware Reviews</a></li>
+        <li><a href="/deals" class="btn-deals">All Deals (341)</a></li>
+      </ul>
+    </div>
   </header>
 
   <main class="container">
-    <h1>Editorial Standards & Methodology</h1>
-    <div class="last-updated">Published: October 2026 | Silicon Steals Editorial Board</div>
-
-    <div class="card">
-      <h2>1. Complete Editorial Independence</h2>
-      <p>Silicon Steals operates strictly under an independent editorial charter.</p>
+    <div class="breadcrumbs">
+      <a href="/">Home</a> &rsaquo; <span>Editorial Standards & Testing Methodology</span>
     </div>
 
-    <div class="card">
-      <h2>2. Evaluation & Curation Methodology</h2>
-      <p>Our buying guides and product evaluations are driven by a multi-layered verification framework:</p>
+    <!-- HIGH-CONVERTING HERO PROMO BANNER FOR VISITORS LANDING FROM GOOGLE -->
+    <div class="deal-jump-banner">
+      <div class="deal-jump-left">
+        <div class="jump-icon">⚡</div>
+        <div>
+          <div class="jump-title">Looking for Today's Verified Tech Deals?</div>
+          <div class="jump-sub">We track historical 90-day price floors across 340+ tech products so you never pay retail.</div>
+        </div>
+      </div>
+      <a href="/deals" class="jump-cta-btn">Browse 340+ Verified Deals &rarr;</a>
+    </div>
+
+    <div class="meta-tagline">
+      <span>🛡️ 100% Independent Lab Testing Charter</span>
+    </div>
+
+    <h1>Editorial Standards & <span>Testing Methodology</span></h1>
+    <p class="editorial-lead">Silicon Steals is an independent consumer technology testing lab and real-time deal verification platform.</p>
+
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <span class="pillar-icon">⚖️</span>
+        <h2>1. Complete Editorial Independence & Zero Sponsored Bias</h2>
+      </div>
+      <p>Silicon Steals operates strictly under an independent editorial charter.</p>
+      <p>Every device evaluated in our laboratory is either purchased at market retail or sourced through standard press loans with zero editorial conditions.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <span class="pillar-icon">📉</span>
+        <h2>2. Real-Time 90-Day Price Floor Verification</h2>
+      </div>
+      <p>Most "deal" websites display artificial list prices created by sellers to fabricate fake 50% discounts.</p>
       <ul>
-        <li><strong>Hardware & Architecture Verification:</strong> We cross-examine manufacturer whitepapers, FCC filings, teardown schematics, and sensor specifications to uncover real-world capabilities vs marketing hype.</li>
-        <li><strong>Long-Term Ecosystem Viability:</strong> We prioritize products supporting open, subscription-free standards (such as Matter, Thread, RTSP/ONVIF, and local Home Assistant integration) over proprietary cloud paywalls.</li>
-        <li><strong>Buyer Propensity Index (BPI):</strong> Our proprietary algorithm evaluates real market pricing, historical discount depth, verified user return rates, and true cost-per-feature value.</li>
+        <li><strong>90-Day Street Floor Tracking:</strong> We continuously compare Amazon and retailer prices against rolling 90-day historical medians.</li>
+        <li><strong>Deal Score Algorithm:</strong> Only products offering genuine street-price savings earn our verified "True Deal" designation.</li>
+        <li><strong>Coupon & Lightning Deal Verification:</strong> We programmatically audit clippable coupons and lightning promotion codes before featuring any hardware offer.</li>
       </ul>
     </div>
 
-    <div class="card">
-      <h2>3. Honest Trade-offs & Limitations</h2>
-      <p>Every piece of consumer hardware involves engineering compromises.</p>
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <span class="pillar-icon">🔬</span>
+        <h2>3. 60-Second High-Density Hardware Teardowns</h2>
+      </div>
+      <p>We reject 3,000-word filler reviews packed with unboxing prose and SEO fluff.</p>
+      <ul>
+        <li><strong>Thermal & Sustained Power Dissipation:</strong> Measuring real-world temperatures under sustained synthetic workloads.</li>
+        <li><strong>Silicon & Controller Architecture:</strong> Inspecting NAND flash controllers, DRAM caches, Wi-Fi 7 chipset topologies, and USB-C PD power delivery negotiation.</li>
+        <li><strong>Local Ecosystem Viability:</strong> Prioritizing open local control (Home Assistant, Matter, Thread, RTSP/ONVIF) over proprietary monthly cloud paywalls.</li>
+      </ul>
     </div>
 
-    <div class="card">
-      <h2>4. Corrections & Transparency</h2>
-      <p>If an error, firmware change, or specification discrepancy is identified, we promptly review and update the respective article with a transparent change notice.</p>
+    <div class="pillar-card">
+      <div class="pillar-header">
+        <span class="pillar-icon">🤝</span>
+        <h2>4. Affiliate Disclosure & Monetization Ethics</h2>
+      </div>
+      <p>Silicon Steals participates in the Amazon Services LLC Associates Program and selected affiliate networks.</p>
+      <p>This affiliate revenue funds our independent testing bench, server infrastructure, and price tracking engines.</p>
+    </div>
+
+    <!-- RETURN HOME CALLOUT -->
+    <div class="back-nav-box">
+      <h3>Ready to explore verified hardware?</h3>
+      <p>Check out our real-time deals index, active buying guides, and hands-on prosumer reviews.</p>
+      <a href="/" class="btn-return-home">Visit Silicon Steals Homepage &rarr;</a>
     </div>
   </main>
 
   <footer>
-    <p>© 2026 Silicon Steals. All rights reserved. • <a href="/">Home</a> • <a href="/deals">Deals</a> • <a href="/privacy">Privacy</a> • <a href="/terms">Terms</a> • <a href="/editorial-guidelines">Editorial</a> • <a href="/contact">Contact</a></p>
+    <div class="footer-inner">
+      <div><strong>Silicon Steals</strong> &bull; Independent Hardware Reviews & Verified Deals</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/deals">All Deals</a>
+        <a href="/news">Tech News</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms</a>
+        <a href="/editorial-guidelines">Editorial Standards</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div class="disclosure">
+      FTC Disclosure: Silicon Steals is reader-supported. We curate deals and review hardware independently. When you buy through our links, we may earn an affiliate commission from Amazon and other retailers.
+    </div>
   </footer>
 
 </body>
