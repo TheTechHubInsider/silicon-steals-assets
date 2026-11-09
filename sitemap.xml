@@ -1501,12 +1501,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.siliconsteals.com/deals/deal-b0bqpgj9lq/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.siliconsteals.com/deals/deal-b0dkfbx75p/</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
@@ -2456,6 +2450,12 @@
   </url>
   <url>
     <loc>https://www.siliconsteals.com/deals/deal-b0fwdsz6q2/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.siliconsteals.com/deals/deal-reolink-e1-zoom/</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
