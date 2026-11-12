@@ -5,6 +5,7 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /go/
 Disallow: /deal_*
 Disallow: /product_*
 

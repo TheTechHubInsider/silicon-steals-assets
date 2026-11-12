@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- BFCM-BUYER-HUB -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Local-First Matter over Thread &amp; Home Assistant Hardware Kit | Silicon Steals</title>
+  <meta name="description" content="Zero-cloud smart locks, energy-monitoring plugs, and Thread border routers tested for local automation.">
+  <link rel="canonical" href="https://www.siliconsteals.com/guides/local-first-matter-zigbee-smart-home-kit/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Local-First Matter over Thread &amp; Home Assistant Hardware Kit">
+  <meta property="og:description" content="Zero-cloud smart locks, energy-monitoring plugs, and Thread border routers tested for local automation.">
+  <meta property="og:url" content="https://www.siliconsteals.com/guides/local-first-matter-zigbee-smart-home-kit/">
+  <meta property="og:image" content="https://www.siliconsteals.com/images/kits/kit_local-first-matter-zigbee-smart-home-kit.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ItemList", "name": "Local-First Matter over Thread & Home Assistant Hardware Kit", "url": "https://www.siliconsteals.com/guides/local-first-matter-zigbee-smart-home-kit/", "numberOfItems": 5, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Aqara Smart Lock U200 Kit (Matter over Thread & Apple Home Key)", "url": "https://www.amazon.com/dp/B0FQMXS7WC?tag=thetechhubins-20"}, {"@type": "ListItem", "position": 2, "name": "eufy Security Smart Lock C220, Fingerprint Keyless Entry Door Lock | Built-in Wi-Fi, App Remote Control, Up to", "url": "https://www.amazon.com/dp/B0FMY1HYJX?tag=thetechhubins-20"}, {"@type": "ListItem", "position": 3, "name": "Kasa Matter Smart Plug with Energy Monitoring, KP125MP2, 15A/1800W Max", "url": "https://www.amazon.com/dp/B0BYGRLRS1?tag=thetechhubins-20"}, {"@type": "ListItem", "position": 4, "name": "SwitchBot Lock Vision Pro Smart Lock, 3D Face Recognition + Palm Vein + Fingerprint, Keyless Entry Deadbolt fo", "url": "https://www.amazon.com/dp/B0GWZSS4VD?tag=thetechhubins-20"}, {"@type": "ListItem", "position": 5, "name": "Govee Smart RGBWIC Light Bars, 15-Inch WiFi TV Backlight for 45-70-Inch TVs | Compatible with Matter, Alexa, G", "url": "https://www.amazon.com/dp/B0B14V95FJ?tag=thetechhubins-20"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Aqara U200 require replacing the exterior deadbolt?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Aqara U200 retrofits over the interior thumbturn while preserving existing exterior keys and HOA hardware."}}]}]}</script>
+  <style>
+    body{margin:0;background:#090d16;color:#f8fafc;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.55;}
+    .wrap{max-width:1040px;margin:0 auto;padding:0 1rem 3rem;}
+    header{background:#0d1424;border-bottom:1px solid #1e293b;padding:0.85rem 0;}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;}
+    .brand{color:#fff;font-weight:800;text-decoration:none;font-size:1.15rem;min-height:48px;display:inline-flex;align-items:center;}
+    .nav a.link{color:#38bdf8;text-decoration:none;font-size:0.9rem;font-weight:700;min-height:48px;display:inline-flex;align-items:center;}
+    .verdict-fold{margin:1rem 0 1.5rem;background:linear-gradient(145deg,#121e36,#0d1526);border:1px solid #2a3f66;border-radius:16px;padding:1.15rem;}
+    .eyebrow{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.07em;color:#38bdf8;font-weight:800;}
+    h1{font-size:1.45rem;line-height:1.25;margin:0.35rem 0 0.5rem;}
+    .fold-grid{display:grid;grid-template-columns:1fr;gap:0.65rem;margin:0.75rem 0;font-size:0.9rem;}
+    .v-row{background:#0b1120;border-left:3px solid #10b981;padding:0.55rem 0.75rem;border-radius:6px;}
+    .v-row.skip{border-left-color:#f59e0b;}
+    .v-row.trap{border-left-color:#ef4444;color:#fecaca;}
+    .btn-amz{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0.75rem 1.25rem;background:#ffa724;color:#111827;font-weight:800;border-radius:10px;text-decoration:none;border:1px solid #f08804;width:100%;box-sizing:border-box;text-align:center;}
+    .disc-inline{font-size:0.76rem;color:#cbd5e1;margin-top:0.55rem;}
+    table{width:100%;border-collapse:collapse;background:#111a2e;border-radius:12px;overflow:hidden;margin:1.25rem 0 1.75rem;font-size:0.88rem;}
+    th,td{padding:0.75rem;border-bottom:1px solid #1e293b;text-align:left;}
+    th{background:#0d1424;color:#cbd5e1;font-size:0.78rem;text-transform:uppercase;}
+    .mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;}
+    .tbl-cta{display:inline-flex;align-items:center;min-height:48px;padding:0 0.75rem;background:#ffa724;color:#111827;font-weight:800;border-radius:8px;text-decoration:none;white-space:nowrap;}
+    .sku-card{display:grid;grid-template-columns:140px 1fr;gap:1.15rem;background:#121c33;border:1px solid #1e293b;border-radius:14px;padding:1.1rem;margin-bottom:1rem;align-items:center;}
+    @media(max-width:640px){.sku-card{grid-template-columns:1fr;} .table-wrap{overflow-x:auto;}}
+    .sku-img{width:120px;height:120px;object-fit:contain;background:#fff;border-radius:10px;padding:6px;margin:0 auto;display:block;}
+    .sku-body h2{font-size:1.05rem;margin:0.35rem 0 0.5rem;}
+    .sku-badges{display:flex;gap:0.5rem;flex-wrap:wrap;font-size:0.75rem;font-weight:800;}
+    .pill-rank{background:#0ea5e9;color:#090d16;padding:0.15rem 0.55rem;border-radius:99px;}
+    .pill-unit{background:rgba(16,185,129,0.18);color:#34d399;border:1px solid rgba(16,185,129,0.4);padding:0.15rem 0.55rem;border-radius:99px;}
+    .sku-prices{display:flex;gap:0.75rem;align-items:baseline;flex-wrap:wrap;margin-bottom:0.75rem;}
+    .p-now{font-size:1.35rem;font-weight:800;color:#34d399;}
+    .p-90d{font-size:0.85rem;color:#94a3b8;text-decoration:line-through;}
+    .p-save{font-size:0.82rem;color:#fbbf24;font-weight:700;}
+    footer{border-top:1px solid #1e293b;padding-top:1.5rem;margin-top:2.5rem;font-size:0.82rem;color:#94a3b8;}
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav">
+    <a href="/" class="brand">Silicon Steals</a>
+    <div><a href="/guides/" class="link" style="margin-right:1rem;">All 8 BFCM Buyer Hubs</a><a href="/deals/" class="link">Live Deals</a></div>
+  </div></header>
+  <main class="wrap">
+    <section class="verdict-fold" aria-label="3-Second Engineer Verdict">
+      <div class="eyebrow">Smart Home Tech • 3-Second Engineer Verdict</div>
+      <h1>Local-First Matter over Thread &amp; Home Assistant Hardware Kit</h1>
+      <p style="margin:0 0 0.6rem;color:#cbd5e1;font-size:0.92rem;">Zero-cloud smart locks, energy-monitoring plugs, and Thread border routers tested for local automation. Complete 3-item rig floor: <strong>$318.97</strong> (saves $151.00 vs 90-day street avg).</p>
+      <div class="fold-grid">
+        <div class="v-row"><strong>BUY IF:</strong> You want Apple Home Key / Matter over Thread responsiveness and local energy telemetry without vendor cloud lock-in.</div>
+        <div class="v-row skip"><strong>SKIP IF:</strong> You lack a Thread Border Router (HomePod mini, Apple TV 4K, Aqara M3, or HA SkyConnect) for Thread-only endpoints.</div>
+        <div class="v-row trap"><strong>SKIP THIS TRAP:</strong> Check model suffixes on smart plugs: Kasa KP125M includes Matter + energy monitoring, whereas base non-M models omit local Matter.</div>
+      </div>
+      <a href="https://www.amazon.com/dp/B0FQMXS7WC?tag=thetechhubins-20" target="_blank" rel="sponsored noopener" class="btn-amz">
+        Top Verdict Pick: Check Aqara Smart Lock U200 Kit (Matter over Thread  ($189.99) on Amazon.com &rarr;
+      </a>
+      <div class="disc-inline">
+        <strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. As of 2026-11-12 10:11 UTC &mdash; Prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com at the time of purchase will apply to the purchase of this product.
+      </div>
+    </section>
+
+    <h2 style="font-size:1.2rem;margin:1.25rem 0 0.5rem;">90-Day Street Price vs. Live Black Friday Matrix</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Model</th><th>Live Price</th><th>90d Street Avg</th><th>Unit Metric</th><th>Amazon Link</th></tr></thead>
+        <tbody><tr><td><strong>#1</strong> Aqara Smart Lock U200 Kit (Matter over Thread &amp; Apple Home Key)</td><td class='mono' style='color:#34d399;font-weight:800;'>$189.99</td><td class='mono' style='color:#94a3b8;text-decoration:line-through;'>$269.99</td><td class='mono'>-30% vs 90d Avg</td><td><a href='https://www.amazon.com/dp/B0FQMXS7WC?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='tbl-cta'>Check Amazon &rarr;</a></td></tr><tr><td><strong>#2</strong> eufy Security Smart Lock C220, Fingerprint Keyless Entry Door Lock |</td><td class='mono' style='color:#34d399;font-weight:800;'>$109.99</td><td class='mono' style='color:#94a3b8;text-decoration:line-through;'>$169.99</td><td class='mono'>-35% vs 90d Avg</td><td><a href='https://www.amazon.com/dp/B0FMY1HYJX?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='tbl-cta'>Check Amazon &rarr;</a></td></tr><tr><td><strong>#3</strong> Kasa Matter Smart Plug with Energy Monitoring, KP125MP2, 15A/1800W M</td><td class='mono' style='color:#34d399;font-weight:800;'>$18.99</td><td class='mono' style='color:#94a3b8;text-decoration:line-through;'>$29.99</td><td class='mono'>-37% vs 90d Avg</td><td><a href='https://www.amazon.com/dp/B0BYGRLRS1?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='tbl-cta'>Check Amazon &rarr;</a></td></tr><tr><td><strong>#4</strong> SwitchBot Lock Vision Pro Smart Lock, 3D Face Recognition + Palm Vei</td><td class='mono' style='color:#34d399;font-weight:800;'>$169.99</td><td class='mono' style='color:#94a3b8;text-decoration:line-through;'>$229.99</td><td class='mono'>-26% vs 90d Avg</td><td><a href='https://www.amazon.com/dp/B0GWZSS4VD?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='tbl-cta'>Check Amazon &rarr;</a></td></tr><tr><td><strong>#5</strong> Govee Smart RGBWIC Light Bars, 15-Inch WiFi TV Backlight for 45-70-I</td><td class='mono' style='color:#34d399;font-weight:800;'>$49.99</td><td class='mono' style='color:#94a3b8;text-decoration:line-through;'>$69.99</td><td class='mono'>-29% vs 90d Avg</td><td><a href='https://www.amazon.com/dp/B0B14V95FJ?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='tbl-cta'>Check Amazon &rarr;</a></td></tr></tbody>
+      </table>
+    </div>
+
+    <section aria-label="Detailed Hardware Breakdown"><article class='sku-card'><img src='/images/deals/aqara_u200.webp' alt='Aqara Smart Lock U200 Kit (Matter over Thread &amp; Apple Home Key)' class='sku-img' loading='lazy' onerror="this.src='/images/silicon_steals_og.png'"><div class='sku-body'><div class='sku-badges'><span class='pill-rank'>Pick #1</span><span class='pill-unit'>-30% vs 90d Avg</span></div><h2>Aqara Smart Lock U200 Kit (Matter over Thread &amp; Apple Home Key)</h2><div class='sku-prices'><span class='p-now'>$189.99</span><span class='p-90d'>90d Avg: $269.99</span><span class='p-save'>Save $80.00 (-30%)</span><span style='font-size:0.75rem;color:#94a3b8;'>As of 2026-11-12 12:11 UTC</span></div><a href='https://www.amazon.com/dp/B0FQMXS7WC?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='btn-amz'>Check Live Price on Amazon.com &rarr;</a></div></article><article class='sku-card'><img src='/images/deals/deal_b0fmy1hyjx.jpg' alt='eufy Security Smart Lock C220, Fingerprint Keyless Entry Door Lock | Built-in Wi-Fi, App Remote Control, Up to' class='sku-img' loading='lazy' onerror="this.src='/images/silicon_steals_og.png'"><div class='sku-body'><div class='sku-badges'><span class='pill-rank'>Pick #2</span><span class='pill-unit'>-35% vs 90d Avg</span></div><h2>eufy Security Smart Lock C220, Fingerprint Keyless Entry Door Lock | Built-in Wi-Fi, App Remote Control, Up to</h2><div class='sku-prices'><span class='p-now'>$109.99</span><span class='p-90d'>90d Avg: $169.99</span><span class='p-save'>Save $60.00 (-35%)</span><span style='font-size:0.75rem;color:#94a3b8;'>As of 2026-11-12 10:23 UTC</span></div><a href='https://www.amazon.com/dp/B0FMY1HYJX?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='btn-amz'>Check Live Price on Amazon.com &rarr;</a></div></article><article class='sku-card'><img src='/images/deals/deal_b0bygrlrs1.jpg' alt='Kasa Matter Smart Plug with Energy Monitoring, KP125MP2, 15A/1800W Max' class='sku-img' loading='lazy' onerror="this.src='/images/silicon_steals_og.png'"><div class='sku-body'><div class='sku-badges'><span class='pill-rank'>Pick #3</span><span class='pill-unit'>-37% vs 90d Avg</span></div><h2>Kasa Matter Smart Plug with Energy Monitoring, KP125MP2, 15A/1800W Max</h2><div class='sku-prices'><span class='p-now'>$18.99</span><span class='p-90d'>90d Avg: $29.99</span><span class='p-save'>Save $11.00 (-37%)</span><span style='font-size:0.75rem;color:#94a3b8;'>As of 2026-11-12 10:11 UTC</span></div><a href='https://www.amazon.com/dp/B0BYGRLRS1?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='btn-amz'>Check Live Price on Amazon.com &rarr;</a></div></article><article class='sku-card'><img src='/images/deals/deal_b0gwzss4vd.jpg' alt='SwitchBot Lock Vision Pro Smart Lock, 3D Face Recognition + Palm Vein + Fingerprint, Keyless Entry Deadbolt fo' class='sku-img' loading='lazy' onerror="this.src='/images/silicon_steals_og.png'"><div class='sku-body'><div class='sku-badges'><span class='pill-rank'>Pick #4</span><span class='pill-unit'>-26% vs 90d Avg</span></div><h2>SwitchBot Lock Vision Pro Smart Lock, 3D Face Recognition + Palm Vein + Fingerprint, Keyless Entry Deadbolt fo</h2><div class='sku-prices'><span class='p-now'>$169.99</span><span class='p-90d'>90d Avg: $229.99</span><span class='p-save'>Save $60.00 (-26%)</span><span style='font-size:0.75rem;color:#94a3b8;'>As of 2026-11-12 14:25 UTC</span></div><a href='https://www.amazon.com/dp/B0GWZSS4VD?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='btn-amz'>Check Live Price on Amazon.com &rarr;</a></div></article><article class='sku-card'><img src='/images/deals/deal_b0b14v95fj.jpg' alt='Govee Smart RGBWIC Light Bars, 15-Inch WiFi TV Backlight for 45-70-Inch TVs | Compatible with Matter, Alexa, G' class='sku-img' loading='lazy' onerror="this.src='/images/silicon_steals_og.png'"><div class='sku-body'><div class='sku-badges'><span class='pill-rank'>Pick #5</span><span class='pill-unit'>-29% vs 90d Avg</span></div><h2>Govee Smart RGBWIC Light Bars, 15-Inch WiFi TV Backlight for 45-70-Inch TVs | Compatible with Matter, Alexa, G</h2><div class='sku-prices'><span class='p-now'>$49.99</span><span class='p-90d'>90d Avg: $69.99</span><span class='p-save'>Save $20.00 (-29%)</span><span style='font-size:0.75rem;color:#94a3b8;'>As of 2026-11-12 11:11 UTC</span></div><a href='https://www.amazon.com/dp/B0B14V95FJ?tag=thetechhubins-20' target='_blank' rel='sponsored noopener' class='btn-amz'>Check Live Price on Amazon.com &rarr;</a></div></article></section>
+
+    <section style="background:#111a2e;border:1px solid #1e293b;border-radius:12px;padding:1.15rem;margin-top:1.5rem;">
+      <h2 style="font-size:1.05rem;margin:0 0 0.4rem;">Engineer FAQ: Does Aqara U200 require replacing the exterior deadbolt?</h2>
+      <p style="margin:0;color:#cbd5e1;font-size:0.9rem;">No. The Aqara U200 retrofits over the interior thumbturn while preserving existing exterior keys and HOA hardware.</p>
+    </section>
+
+    <footer>
+      <p><strong>Affiliate Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.</p>
+      <p>As of 2026-11-12 10:11 UTC: Prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com at the time of purchase will apply to the purchase of this product.</p>
+    </footer>
+  </main>
+</body>
+</html>
